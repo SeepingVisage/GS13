@@ -1893,7 +1893,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 
 		// Hyperstation 13: Mood now influences action speed.
 
-		if(H.fatness) // GS13
+		if(H.fatness && !HAS_TRAIT(H, TRAIT_NO_FAT_SLOWDOWN)) // GS13
 			var/fatness_delay = (H.fatness / FATNESS_DIVISOR)
 			if(H.fatness < FATNESS_LEVEL_BARELYMOBILE)
 				fatness_delay = fatness_delay - flight
@@ -2461,6 +2461,8 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			H.adjustOrganLoss(ORGAN_SLOT_BRAIN, damage * hit_percent * H.physiology.brain_mod)
 		if(AROUSAL)											//Citadel edit - arousal
 			H.adjustArousalLoss(damage * hit_percent)
+		if(FAT)
+			H.applyFatnessDamage(damage * hit_percent)
 	return 1
 
 /datum/species/proc/on_hit(obj/item/projectile/P, mob/living/carbon/human/H)

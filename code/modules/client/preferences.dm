@@ -105,9 +105,11 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 	//GS13
 	var/starting_weight = 0				//how thicc you wanna be at start
+	var/permanent_fat = 0				//If it isn't the consequences of your own actions
 	var/wg_rate = 0.5
 	var/wl_rate = 0.5
 	var/voice = "human"
+	var/ckeyslot
 
 	//HS13 jobs
 	var/sillyroles = TRUE //for clown and mime
@@ -1056,6 +1058,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			dat += "<b>Maximum Weight:</b><a href='?_src_=prefs;preference=max_fatness'>[max_weight == FALSE ? "None" : max_weight]</a><BR>"
 			dat += "<b>NonCon - Weight Gain:</b><a href='?_src_=prefs;preference=noncon_weight_gain'>[noncon_weight_gain == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 
+			dat += "<b>Bot Feeding:</b><a href='?_src_=prefs;preference=bot_feeding'>[bot_feeding == TRUE ? "Enabled" : "Disabled"]</a><BR>"
+
 			dat += "<h2>GS13 Weight Gain</h2>"
 			dat += "<b>Weight Gain - Food:</b><a href='?_src_=prefs;preference=weight_gain_food'>[weight_gain_food == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 			dat += "<b>Weight Gain - Items:</b><a href='?_src_=prefs;preference=weight_gain_items'>[weight_gain_items == TRUE ? "Enabled" : "Disabled"]</a><BR>"
@@ -1067,8 +1071,15 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			dat += "<b>Blueberry Inflation:</b><a href='?_src_=prefs;preference=blueberry_inflation'>[blueberry_inflation == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 
 			dat += "<h2>GS13 Gameplay Preferences</h2>"
-			dat += "<b>Stuckage (weight results in getting stuck in doors):</b><a href='?_src_=prefs;preference=stuckage'>[stuckage == TRUE ? "Enabled" : "Disabled"]</a><BR>"
+			dat += "<b>Stuckage (at what weight will you get stuck in doors?):</b><a href='?_src_=prefs;preference=stuckage'>[stuckage == FALSE ? "Disabled" : stuckage]</a><BR>"
+			dat += "<b>Chair Breakage (at what weight will you break chairs?):</b><a href='?_src_=prefs;preference=chair_breakage'>[chair_breakage == FALSE ? "Disabled" : chair_breakage]</a><BR>"
+			dat += "This preference will allow items that work based on weight to work to you, <b>usually to your detriment.</b> <BR>"
+			dat += "<b>Fatness Vulnerability:</b><a href='?_src_=prefs;preference=fatness_vulnerable'>[fatness_vulnerable == TRUE ? "Enabled" : "Disabled"]</a><BR>"
+			dat += "This preference functions similar to the one before but allows for items with more drastic effects. <b>Do not enable this if you aren't okay with more drastic things happening to your character.</b><BR>"
+			dat += "<b>Extreme Fatness Vulnerability:</b><a href='?_src_=prefs;preference=extreme_fatness_vulnerable'>[extreme_fatness_vulnerable == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 			dat += "<b>Extreme Weight Gain (Sprite Size scales with weight):</b><a href='?_src_=prefs;preference=weight_gain_extreme'>[weight_gain_extreme == TRUE ? "Enabled" : "Disabled"]</a><BR>"
+			dat += "<b>Persistent Fat (endround/cryo weight becomes your new start weight):</b><a href='?_src_=prefs;preference=weight_gain_persistent'>[weight_gain_persistent == TRUE ? "Enabled" : "Disabled"]</a><BR>"
+			dat += "<b>Permanent Weight (hard to remove and persistent weight):</b><a href='?_src_=prefs;preference=weight_gain_permanent'>[weight_gain_permanent == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 
 			dat += "<h2>GS13 Helplessness Preferences</h2>"
 			dat += "<b>Please be careful when using these mechanics as not to use them in a way that negatively impacts those around you. If you are seriously needed for something, especially something station critical, do not use these as an excuse to ignore your duty.</b><BR><BR>"
@@ -2658,10 +2669,23 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					weight_gain_nanites = !weight_gain_nanites
 				if("weight_gain_extreme")
 					weight_gain_extreme = !weight_gain_extreme
+				if("weight_gain_persistent")
+					weight_gain_persistent = !weight_gain_persistent
+				if("weight_gain_permanent")
+					weight_gain_permanent = !weight_gain_permanent
 				if("noncon_weight_gain")
 					noncon_weight_gain = !noncon_weight_gain
+				if("bot_feeding")
+					bot_feeding = !bot_feeding
 				if("stuckage")
-					stuckage = !stuckage
+					stuckage = chose_weight("Choose the level of fatness where your weight will hinder your ability to go through airlocks? None will disable this alltogether", user)
+				if("chair_breakage")
+					chair_breakage = chose_weight("Choose the level of fatness where your weight will be too much for chairs to handle? None will disable this alltogether", user)
+				if("fatness_vulnerable")
+					fatness_vulnerable = !fatness_vulnerable
+				if("extreme_fatness_vulnerable")
+					extreme_fatness_vulnerable = !extreme_fatness_vulnerable
+
 				if("blueberry_inflation")
 					blueberry_inflation = !blueberry_inflation
 				if("max_fatness")
@@ -2981,8 +3005,12 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	//GS13
 	character.fatness = starting_weight
 	character.fatness_real = starting_weight
+	if(weight_gain_permanent)
+		character.fatness_perma = permanent_fat
 	character.weight_gain_rate = wg_rate
 	character.weight_loss_rate = wl_rate
+	character.savekey = clientckey
+	character.ckeyslot = ckeyslot
 
 	character.gender = gender
 	character.age = age

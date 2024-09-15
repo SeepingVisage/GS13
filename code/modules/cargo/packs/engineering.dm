@@ -20,14 +20,9 @@
 
 /datum/supply_pack/engineering/conveyor
 	name = "Conveyor Assembly Crate"
-	desc = "Keep production moving along with six conveyor belts. Conveyor switch included. If you have any questions, check out the enclosed instruction book."
-	cost = 750
-	contains = list(/obj/item/conveyor_construct,
-					/obj/item/conveyor_construct,
-					/obj/item/conveyor_construct,
-					/obj/item/conveyor_construct,
-					/obj/item/conveyor_construct,
-					/obj/item/conveyor_construct,
+	desc = "Keep production moving along with thirty conveyor belts. Conveyor switch included. If you have any questions, check out the enclosed instruction book."
+	cost = 1500
+	contains = list(/obj/item/stack/conveyor/thirty,
 					/obj/item/conveyor_switch_construct,
 					/obj/item/paper/guides/conveyor)
 	crate_name = "conveyor assembly crate"
@@ -124,8 +119,8 @@
 	access = ACCESS_ENGINE
 	contains = list(/obj/item/clothing/head/hardhat,
 					/obj/item/clothing/suit/hazardvest,
-					/obj/item/screwdriver/power,
-					/obj/item/crowbar/power)
+					/obj/item/handdrill,
+					/obj/item/jawsoflife)
 	crate_name = "power tools crate"
 	crate_type = /obj/structure/closet/crate/secure/engineering
 

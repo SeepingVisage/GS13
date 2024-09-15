@@ -93,7 +93,8 @@
 /turf/open/floor/plating/asteroid/snow,
 /area/awaymission/snowdin/outside)
 "aw" = (
-/obj/machinery/computer,
+/obj/machinery/vending/wardrobe/science_wardrobe,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/snowdin/post/research)
 "ax" = (
@@ -101,30 +102,26 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/obj/item/stack/credits{
-	amount = 25
-	},
+/obj/item/clothing/mask/cigarette,
+/obj/item/reagent_containers/food/snacks/burger/cheese,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/snowdin/post/research)
 "ay" = (
-/obj/structure/table,
-/obj/item/flashlight/lamp,
+/obj/machinery/vending/wardrobe/robo_wardrobe,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/snowdin/post/research)
 "az" = (
 /turf/closed/wall,
 /area/awaymission/snowdin/post/research)
 "aA" = (
-/obj/structure/table,
 /obj/machinery/light/small{
 	dir = 1
 	},
-/obj/item/disk/holodisk/snowdin/weregettingpaidright,
+/obj/structure/frame/machine,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/snowdin/post/research)
 "aB" = (
-/obj/structure/table,
-/obj/item/pen,
+/obj/structure/frame/machine,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/snowdin/post/research)
 "aC" = (
@@ -134,37 +131,41 @@
 /turf/closed/mineral/snowmountain/cavern,
 /area/awaymission/snowdin/cave/cavern)
 "aD" = (
-/obj/structure/table,
-/obj/item/flashlight/lamp,
-/obj/item/pen,
+/obj/machinery/mecha_part_fabricator,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/snowdin/post/research)
 "aE" = (
 /turf/open/floor/plasteel/dark,
 /area/awaymission/snowdin/post/research)
 "aF" = (
-/obj/structure/chair/office/dark{
-	dir = 8
+/obj/structure/cable{
+	icon_state = "2-4"
 	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/snowdin/post/research)
+/turf/open/floor/engine,
+/area/awaymission/snowdin/comms)
 "aG" = (
-/obj/structure/table,
-/obj/item/paper_bin,
+/obj/item/trash/plate,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/snowdin/post/research)
 "aH" = (
-/obj/structure/chair/office/dark{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/snowdin/post/research)
+/obj/effect/decal/fakelattice,
+/turf/open/floor/plating/asteroid/snow,
+/area/awaymission/snowdin/outside)
 "aI" = (
-/obj/structure/chair/office/dark{
+/obj/structure/sign/departments/cargo{
+	pixel_y = 30
+	},
+/obj/effect/turf_decal/weather/snow/corner{
 	dir = 1
 	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/snowdin/post/research)
+/obj/effect/decal/fakelattice,
+/turf/open/floor/plating/asteroid/snow,
+/area/awaymission/snowdin/cave)
 "aJ" = (
 /obj/effect/baseturf_helper/asteroid/snow,
 /turf/closed/wall/ice,
@@ -173,23 +174,34 @@
 /turf/closed/wall/ice,
 /area/awaymission/snowdin/post/dorm)
 "aL" = (
-/obj/item/pen,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/snowdin/post/research)
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/space_heater,
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/awaymission/snowdin/comms)
 "aM" = (
-/obj/structure/filingcabinet/chestdrawer,
-/obj/item/paper/fluff/awaymissions/snowdin/research_feed,
-/obj/item/paper/fluff/awaymissions/snowdin/research_feed,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/snowdin/post/research)
 "aN" = (
-/obj/item/paper/fluff/awaymissions/snowdin/research_feed,
+/obj/machinery/poweredfans,
+/obj/machinery/door/airlock/mining,
 /turf/open/floor/plasteel/dark,
-/area/awaymission/snowdin/post/research)
+/area/awaymission/snowdin/cargo)
 "aO" = (
-/obj/structure/filingcabinet/chestdrawer,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/snowdin/post/research)
+/obj/structure/rack,
+/obj/item/pickaxe/drill,
+/obj/item/pickaxe/drill{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/effect/turf_decal/bot,
+/turf/open/floor/pod/dark,
+/area/awaymission/snowdin/cargo)
 "aP" = (
 /obj/structure/spawner/skeleton{
 	max_mobs = 5
@@ -197,25 +209,20 @@
 /turf/open/floor/plating/snowed/cavern,
 /area/awaymission/snowdin/cave/cavern)
 "aQ" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 6;
-	piping_layer = 3;
-	pixel_x = 5;
-	pixel_y = 5
+/obj/machinery/computer/telecomms/monitor{
+	dir = 1
 	},
-/turf/open/floor/wood{
-	icon_state = "wood-broken"
-	},
-/area/awaymission/snowdin/post/dorm)
+/obj/machinery/light,
+/turf/open/floor/circuit/red/telecomms,
+/area/awaymission/snowdin/comms)
 "aR" = (
-/obj/structure/bed,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	piping_layer = 3;
 	pixel_x = 5;
 	pixel_y = 5
 	},
-/obj/effect/landmark/awaystart,
 /obj/item/bedsheet/cult,
+/obj/effect/mob_spawn/human/exiled,
 /turf/open/floor/wood,
 /area/awaymission/snowdin/post/dorm)
 "aS" = (
@@ -250,14 +257,13 @@
 /turf/open/floor/wood,
 /area/awaymission/snowdin/post/dorm)
 "aX" = (
-/obj/structure/bed,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	piping_layer = 3;
 	pixel_x = 5;
 	pixel_y = 5
 	},
-/obj/effect/landmark/awaystart,
 /obj/item/bedsheet/red,
+/obj/effect/mob_spawn/human/exiled,
 /turf/open/floor/wood,
 /area/awaymission/snowdin/post/dorm)
 "aY" = (
@@ -289,31 +295,25 @@
 /obj/structure/sign/poster/contraband/kudzu{
 	pixel_y = 32
 	},
-/turf/open/floor/wood{
-	icon_state = "wood-broken"
-	},
+/turf/open/floor/wood,
 /area/awaymission/snowdin/post/dorm)
 "bb" = (
-/obj/structure/bed,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	piping_layer = 3;
 	pixel_x = 5;
 	pixel_y = 5
 	},
-/obj/effect/landmark/awaystart,
-/obj/item/paper/crumpled/ruins/snowdin/dontdeadopeninside,
 /obj/item/bedsheet/green,
+/obj/effect/mob_spawn/human/exiled,
 /turf/open/floor/wood,
 /area/awaymission/snowdin/post/dorm)
 "bc" = (
-/obj/structure/window,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/snowdin/post/research)
+/turf/closed/wall/r_wall,
+/area/awaymission/snowdin/post/mining_main)
 "bd" = (
-/obj/structure/window,
-/obj/item/flashlight/lamp,
-/turf/open/floor/plasteel/dark,
-/area/awaymission/snowdin/post/research)
+/obj/effect/spawner/lootdrop/snowdin/dungeonlite,
+/turf/open/floor/plating/asteroid/snow,
+/area/awaymission/snowdin/cave)
 "be" = (
 /obj/effect/baseturf_helper/asteroid/snow,
 /turf/closed/wall/ice,
@@ -332,24 +332,18 @@
 /turf/closed/indestructible/rock/snow/ice,
 /area/awaymission/snowdin/cave/cavern)
 "bi" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	piping_layer = 3;
-	pixel_x = 5;
-	pixel_y = 5
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 6
-	},
-/turf/open/floor/wood{
-	icon_state = "wood-broken"
-	},
-/area/awaymission/snowdin/post/dorm)
+/obj/effect/turf_decal/loading_area,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/snowdin/cargo)
 "bj" = (
 /obj/structure/table/wood,
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 8
 	},
-/obj/machinery/light/small/broken{
+/obj/item/card/id/away/snowdin/sci{
+	access = list(200,201,207,208)
+	},
+/obj/machinery/light/small{
 	dir = 4
 	},
 /turf/open/floor/wood,
@@ -362,8 +356,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/obj/item/paper/crumpled/ruins/snowdin/foreshadowing,
-/obj/item/crowbar,
+/obj/item/card/id/away/snowdin/eng,
 /turf/open/floor/wood,
 /area/awaymission/snowdin/post/dorm)
 "bl" = (
@@ -385,6 +378,9 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
+/obj/item/card/id/away/snowdin/explore{
+	access = list(200,203,201,208)
+	},
 /turf/open/floor/wood,
 /area/awaymission/snowdin/post/dorm)
 "bn" = (
@@ -395,9 +391,8 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/turf/open/floor/wood{
-	icon_state = "wood-broken"
-	},
+/obj/item/card/id/away/snowdin/botany,
+/turf/open/floor/wood,
 /area/awaymission/snowdin/post/dorm)
 "bo" = (
 /obj/effect/decal/cleanable/dirt,
@@ -418,10 +413,6 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/machinery/firealarm{
-	dir = 2;
-	pixel_y = 24
-	},
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
@@ -440,8 +431,12 @@
 /turf/open/floor/plasteel,
 /area/awaymission/snowdin/post/research)
 "bs" = (
-/turf/open/floor/plating,
-/area/awaymission/snowdin/post/research)
+/obj/effect/turf_decal/stripes/white/line{
+	dir = 4
+	},
+/obj/item/clothing/head/cone,
+/turf/open/floor/engine,
+/area/awaymission/snowdin/cargo)
 "bt" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	piping_layer = 3;
@@ -466,7 +461,6 @@
 /area/awaymission/snowdin/post/kitchen)
 "bv" = (
 /obj/machinery/gibber,
-/obj/structure/spider/stickyweb,
 /turf/open/floor/plasteel/freezer,
 /area/awaymission/snowdin/post/kitchen)
 "bw" = (
@@ -498,12 +492,10 @@
 	pixel_y = -25;
 	specialfunctions = 4
 	},
-/obj/item/tome,
 /turf/open/floor/wood,
 /area/awaymission/snowdin/post/dorm)
 "bz" = (
 /obj/structure/closet/cabinet,
-/obj/item/clothing/suit/hooded/wintercoat/science,
 /obj/item/clothing/shoes/winterboots,
 /obj/machinery/button/door{
 	id = "snowdindormresearch2";
@@ -512,19 +504,19 @@
 	pixel_y = -25;
 	specialfunctions = 4
 	},
+/obj/item/clothing/suit/hooded/wintercoat/engineering,
 /turf/open/floor/wood,
 /area/awaymission/snowdin/post/dorm)
 "bA" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	piping_layer = 3;
-	pixel_x = 5;
-	pixel_y = 5
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/open/floor/wood{
-	icon_state = "wood-broken"
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
 	},
-/area/awaymission/snowdin/post/dorm)
+/obj/item/weldingtool/mini,
+/turf/open/floor/plasteel/white,
+/area/awaymission/snowdin/post)
 "bB" = (
 /obj/structure/closet/cabinet,
 /obj/item/clothing/shoes/winterboots,
@@ -535,6 +527,7 @@
 	pixel_y = -25;
 	specialfunctions = 4
 	},
+/obj/item/clothing/suit/hooded/wintercoat/cargo,
 /turf/open/floor/wood,
 /area/awaymission/snowdin/post/dorm)
 "bC" = (
@@ -546,6 +539,8 @@
 	pixel_y = -25;
 	specialfunctions = 4
 	},
+/obj/item/clothing/suit/hooded/wintercoat/medical,
+/obj/item/clothing/shoes/winterboots,
 /turf/open/floor/wood,
 /area/awaymission/snowdin/post/dorm)
 "bD" = (
@@ -577,7 +572,7 @@
 	pixel_y = 5
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating,
+/turf/open/floor/plasteel,
 /area/awaymission/snowdin/post/research)
 "bH" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -618,15 +613,10 @@
 	pixel_x = 5;
 	pixel_y = -32
 	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/turf/open/floor/plasteel,
+/turf/open/floor/mech_bay_recharge_floor,
 /area/awaymission/snowdin/post/research)
 "bL" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/obj/structure/spider/stickyweb,
 /turf/open/floor/plasteel/freezer,
 /area/awaymission/snowdin/post/kitchen)
 "bM" = (
@@ -640,7 +630,6 @@
 	pixel_x = 5;
 	pixel_y = 5
 	},
-/obj/structure/spider/stickyweb,
 /turf/open/floor/plasteel/freezer,
 /area/awaymission/snowdin/post/kitchen)
 "bO" = (
@@ -737,28 +726,27 @@
 	pixel_x = 5;
 	pixel_y = 5
 	},
-/obj/machinery/door/firedoor,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating{
-	icon_state = "platingdmg1"
+/obj/machinery/door/airlock/science/glass{
+	req_access_txt = "207";
+	name = "Science Department"
 	},
+/turf/open/floor/plasteel,
 /area/awaymission/snowdin/post/research)
 "bW" = (
-/obj/machinery/door/firedoor,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel,
+/turf/closed/wall,
 /area/awaymission/snowdin/post/research)
 "bX" = (
-/obj/machinery/door/firedoor,
-/turf/open/floor/plasteel,
-/area/awaymission/snowdin/post/research)
+/turf/open/floor/pod/dark,
+/area/awaymission/snowdin/cargo)
 "bY" = (
-/obj/machinery/door/firedoor,
-/turf/open/floor/plating,
-/area/awaymission/snowdin/post/research)
+/obj/machinery/space_heater,
+/obj/effect/turf_decal/box/white,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/snowdin/cargo)
 "bZ" = (
-/obj/machinery/door/firedoor,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
@@ -766,21 +754,19 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
+/obj/machinery/door/poddoor/shutters{
+	id = 9987
 	},
 /turf/open/floor/plasteel,
 /area/awaymission/snowdin/post/research)
 "ca" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/obj/structure/spider/stickyweb,
 /obj/machinery/light/broken{
 	dir = 8
 	},
 /turf/open/floor/plasteel/freezer,
 /area/awaymission/snowdin/post/kitchen)
 "cb" = (
-/obj/structure/spider/stickyweb,
 /turf/open/floor/plasteel/freezer,
 /area/awaymission/snowdin/post/kitchen)
 "cc" = (
@@ -790,7 +776,6 @@
 	pixel_y = 5
 	},
 /obj/structure/kitchenspike,
-/obj/structure/spider/stickyweb,
 /turf/open/floor/plasteel/freezer,
 /area/awaymission/snowdin/post/kitchen)
 "cd" = (
@@ -810,7 +795,6 @@
 /obj/machinery/airalarm{
 	pixel_y = 23
 	},
-/obj/structure/spider/stickyweb,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel,
 /area/awaymission/snowdin/post/kitchen)
@@ -825,6 +809,7 @@
 	icon_state = "0-2"
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/vending/wardrobe/chef_wardrobe,
 /turf/open/floor/plasteel,
 /area/awaymission/snowdin/post/kitchen)
 "ch" = (
@@ -1086,15 +1071,12 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 5
 	},
-/obj/structure/spider/stickyweb,
-/mob/living/simple_animal/hostile/poison/giant_spider/hunter/ice,
 /turf/open/floor/plasteel/freezer,
 /area/awaymission/snowdin/post/kitchen)
 "cH" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/obj/structure/spider/stickyweb,
 /turf/open/floor/plasteel/freezer,
 /area/awaymission/snowdin/post/kitchen)
 "cI" = (
@@ -1107,7 +1089,6 @@
 	pixel_x = 5;
 	pixel_y = 5
 	},
-/obj/structure/spider/stickyweb,
 /turf/open/floor/plasteel/freezer,
 /area/awaymission/snowdin/post/kitchen)
 "cJ" = (
@@ -1120,12 +1101,10 @@
 	pixel_x = 5;
 	pixel_y = 5
 	},
-/obj/machinery/door/airlock{
-	name = "Freezer";
-	req_access_txt = "201"
+/obj/machinery/door/airlock/public/glass{
+	name = "Kitchen";
+	req_access_txt = "206"
 	},
-/obj/structure/barricade/wooden,
-/obj/structure/spider/stickyweb,
 /turf/open/floor/plasteel/freezer,
 /area/awaymission/snowdin/post/kitchen)
 "cK" = (
@@ -1520,14 +1499,12 @@
 /area/awaymission/snowdin/post/kitchen)
 "do" = (
 /obj/structure/closet/secure_closet/freezer/meat,
-/obj/structure/spider/stickyweb,
 /turf/open/floor/plasteel/freezer,
 /area/awaymission/snowdin/post/kitchen)
 "dp" = (
 /turf/closed/wall/rust,
 /area/awaymission/snowdin/post/kitchen)
 "dq" = (
-/obj/structure/spider/stickyweb,
 /turf/open/floor/plasteel,
 /area/awaymission/snowdin/post/kitchen)
 "dr" = (
@@ -1591,6 +1568,7 @@
 /area/awaymission/snowdin/post/dorm)
 "dA" = (
 /obj/structure/falsewall,
+/obj/structure/falsewall,
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post/dorm)
 "dB" = (
@@ -1631,10 +1609,12 @@
 /area/awaymission/snowdin/post/dorm)
 "dG" = (
 /obj/machinery/light,
+/obj/structure/closet/crate/bin,
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post/dorm)
 "dH" = (
 /obj/structure/table,
+/obj/item/paper/crumpled/ruins/snowdin/foreshadowing,
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post/dorm)
 "dI" = (
@@ -1698,9 +1678,8 @@
 "dQ" = (
 /obj/machinery/door/airlock/public/glass{
 	name = "Kitchen";
-	req_access_txt = "201"
+	req_access_txt = "206"
 	},
-/obj/structure/barricade/wooden/crude,
 /turf/open/floor/plasteel,
 /area/awaymission/snowdin/post/kitchen)
 "dR" = (
@@ -1820,7 +1799,6 @@
 /area/awaymission/snowdin/post/dorm)
 "ef" = (
 /obj/structure/closet/cabinet,
-/obj/item/clothing/suit/hooded/wintercoat/security,
 /obj/item/clothing/shoes/winterboots,
 /obj/machinery/button/door{
 	id = "snowdindormsec";
@@ -1830,6 +1808,9 @@
 	specialfunctions = 4
 	},
 /obj/effect/decal/cleanable/cobweb,
+/obj/item/clothing/suit/hooded/wintercoat/hos{
+	name = "chief of security's winter coat"
+	},
 /turf/open/floor/wood,
 /area/awaymission/snowdin/post/dorm)
 "eg" = (
@@ -1838,22 +1819,14 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/obj/item/trash/cheesie,
+/obj/item/card/id/away/snowdin/sec{
+	access = list(200,203,201,208,202)
+	},
 /turf/open/floor/wood,
 /area/awaymission/snowdin/post/dorm)
 "eh" = (
-/obj/structure/bed,
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
-	piping_layer = 3;
-	pixel_x = 5;
-	pixel_y = 5
-	},
-/obj/effect/landmark/awaystart,
-/obj/item/bedsheet/red,
-/turf/open/floor/wood{
-	icon_state = "wood-broken"
-	},
-/area/awaymission/snowdin/post/dorm)
+/turf/open/floor/plating/airless,
+/area/awaymission/snowdin/post/mining_main)
 "ei" = (
 /obj/effect/baseturf_helper/asteroid/snow,
 /turf/closed/wall,
@@ -2002,7 +1975,7 @@
 /obj/effect/turf_decal/tile/bar{
 	dir = 1
 	},
-/obj/machinery/vending/mealdor,
+/obj/machinery/vending/wardrobe/bar_wardrobe,
 /turf/open/floor/plasteel,
 /area/awaymission/snowdin/post/messhall)
 "ex" = (
@@ -2181,9 +2154,7 @@
 	pixel_x = 5;
 	pixel_y = 5
 	},
-/turf/open/floor/wood{
-	icon_state = "wood-broken"
-	},
+/turf/open/floor/wood,
 /area/awaymission/snowdin/post/dorm)
 "eV" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -2195,7 +2166,6 @@
 	pixel_x = 5;
 	pixel_y = 5
 	},
-/obj/item/trash/cheesie,
 /turf/open/floor/wood,
 /area/awaymission/snowdin/post/dorm)
 "eW" = (
@@ -2205,19 +2175,11 @@
 	pixel_x = 5;
 	pixel_y = 5
 	},
-/obj/item/trash/cheesie,
 /turf/open/floor/wood,
 /area/awaymission/snowdin/post/dorm)
 "eX" = (
-/obj/structure/closet/crate/freezer,
-/obj/effect/turf_decal/tile/blue{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/blue{
-	dir = 8
-	},
-/turf/open/floor/plasteel/white,
-/area/awaymission/snowdin/post)
+/turf/closed/wall/mineral/iron,
+/area/awaymission/snowdin/outside)
 "eY" = (
 /obj/machinery/iv_drip,
 /obj/effect/turf_decal/tile/blue{
@@ -2226,6 +2188,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
+/obj/item/reagent_containers/blood/universal,
 /turf/open/floor/plasteel/white,
 /area/awaymission/snowdin/post)
 "eZ" = (
@@ -2271,11 +2234,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
-/obj/machinery/quantumpad{
-	map_pad_id = "snowmed1";
-	map_pad_link_id = "snowmed2";
-	name = "medical outpost link"
-	},
+/obj/machinery/vending/wardrobe/medi_wardrobe,
 /turf/open/floor/plasteel/white,
 /area/awaymission/snowdin/post)
 "fc" = (
@@ -2330,12 +2289,11 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
+/obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/public/glass{
 	name = "Kitchen";
-	req_access_txt = "201"
+	req_access_txt = "206"
 	},
-/obj/machinery/door/firedoor,
-/obj/structure/barricade/wooden/crude,
 /turf/open/floor/plasteel,
 /area/awaymission/snowdin/post/kitchen)
 "fk" = (
@@ -2345,7 +2303,6 @@
 "fl" = (
 /obj/structure/table,
 /obj/machinery/door/firedoor,
-/obj/structure/barricade/wooden/crude,
 /turf/open/floor/plasteel,
 /area/awaymission/snowdin/post/kitchen)
 "fm" = (
@@ -2442,7 +2399,6 @@
 /turf/open/floor/plasteel/white,
 /area/awaymission/snowdin/post)
 "fx" = (
-/obj/item/reagent_containers/blood,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	piping_layer = 3;
 	pixel_x = 5;
@@ -2488,9 +2444,6 @@
 /turf/open/floor/plasteel/white,
 /area/awaymission/snowdin/post)
 "fB" = (
-/obj/item/storage/firstaid{
-	empty = 1
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
@@ -2498,6 +2451,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
+/obj/item/storage/firstaid/ancient,
 /turf/open/floor/plasteel/white,
 /area/awaymission/snowdin/post)
 "fC" = (
@@ -2601,12 +2555,11 @@
 /turf/open/floor/plasteel,
 /area/awaymission/snowdin/post/messhall)
 "fO" = (
-/obj/structure/table/reinforced,
-/obj/item/storage/fancy/donut_box,
 /obj/effect/turf_decal/tile/bar,
 /obj/effect/turf_decal/tile/bar{
 	dir = 1
 	},
+/obj/machinery/smartfridge/drinks,
 /turf/open/floor/plasteel,
 /area/awaymission/snowdin/post/messhall)
 "fP" = (
@@ -2738,9 +2691,8 @@
 /turf/open/floor/plasteel/cult,
 /area/awaymission/snowdin/cave/cavern)
 "gg" = (
-/obj/structure/bed,
-/obj/effect/landmark/awaystart,
 /obj/item/bedsheet/nanotrasen,
+/obj/effect/mob_spawn/human/exiled,
 /turf/open/floor/carpet,
 /area/awaymission/snowdin/post/dorm)
 "gh" = (
@@ -2888,7 +2840,10 @@
 /area/awaymission/snowdin/post)
 "gs" = (
 /mob/living/simple_animal/hostile/bear/snow{
-	name = ""
+	name = "Surprise Mountain Bear";
+	health = 1;
+	melee_damage_lower = 1;
+	melee_damage_upper = 1
 	},
 /turf/closed/mineral/snowmountain,
 /area/awaymission/snowdin/cave/mountain)
@@ -3008,10 +2963,16 @@
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post/hydro)
 "gK" = (
-/obj/machinery/hydroponics/constructable,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating,
-/area/awaymission/snowdin/post/hydro)
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/structure/lattice/catwalk,
+/obj/effect/turf_decal/weather/snow,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 9
+	},
+/turf/open/floor/plating/snowed,
+/area/awaymission/snowdin/outside)
 "gL" = (
 /obj/structure/sink{
 	dir = 4;
@@ -3035,7 +2996,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 6
 	},
-/turf/open/floor/plating/snowed/smoothed,
+/turf/open/floor/plating/snowed,
 /area/awaymission/snowdin/outside)
 "gN" = (
 /obj/structure/cable{
@@ -3089,7 +3050,6 @@
 "gS" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/circuitboard/computer/rdconsole,
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post/garage)
 "gT" = (
@@ -3226,15 +3186,9 @@
 /turf/open/floor/plating/asteroid/snow,
 /area/awaymission/snowdin/outside)
 "hg" = (
-/obj/item/shard,
-/obj/effect/turf_decal/tile/blue{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/blue{
-	dir = 8
-	},
-/turf/open/floor/plasteel/white,
-/area/awaymission/snowdin/post)
+/obj/effect/spawner/lootdrop/snowdin/dungeonmisc,
+/turf/open/floor/plating/asteroid/snow,
+/area/awaymission/snowdin/cave)
 "hh" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	piping_layer = 3;
@@ -3242,10 +3196,6 @@
 	pixel_y = 5
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/obj/item/storage/firstaid/o2{
-	pixel_x = 4;
-	pixel_y = 4
-	},
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
 	},
@@ -3481,13 +3431,7 @@
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post)
 "hN" = (
-/obj/structure/grille/broken,
-/obj/item/shard{
-	icon_state = "medium"
-	},
-/obj/item/stack/rods{
-	amount = 2
-	},
+/obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post)
 "hO" = (
@@ -3660,15 +3604,15 @@
 /turf/open/floor/plasteel/dark/snowdin,
 /area/awaymission/snowdin/cave)
 "il" = (
-/obj/structure/closet/crate/wooden,
-/obj/effect/spawner/lootdrop/snowdin/dungeonmid,
-/turf/open/floor/plasteel/cult,
-/area/awaymission/snowdin/cave/cavern)
+/obj/effect/turf_decal/bot,
+/obj/machinery/space_heater,
+/turf/open/floor/plating/snowed/smoothed,
+/area/awaymission/snowdin/cave)
 "im" = (
 /obj/effect/decal/cleanable/blood/old,
 /obj/effect/rune/apocalypse,
 /obj/structure/spawner/nether{
-	max_mobs = 5;
+	max_mobs = 3;
 	spawn_time = 300;
 	name = "active netherworld link"
 	},
@@ -4389,6 +4333,7 @@
 "jA" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table,
+/obj/machinery/smartfridge/disks,
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post/hydro)
 "jB" = (
@@ -4862,6 +4807,7 @@
 /obj/machinery/airalarm{
 	pixel_y = 23
 	},
+/obj/item/storage/bag/trash,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/snowdin/post/custodials)
 "kF" = (
@@ -5030,6 +4976,7 @@
 /area/awaymission/snowdin/post/garage)
 "kY" = (
 /obj/structure/table/reinforced,
+/obj/item/circuitboard/computer/rdconsole,
 /turf/open/floor/plasteel,
 /area/awaymission/snowdin/post/garage)
 "kZ" = (
@@ -5449,11 +5396,11 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
+/obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/public/glass{
 	name = "Hydroponics";
-	req_access_txt = "201"
+	req_access_txt = "206"
 	},
-/obj/machinery/door/firedoor,
 /turf/open/floor/plasteel/cafeteria,
 /area/awaymission/snowdin/post/messhall)
 "lF" = (
@@ -5549,6 +5496,7 @@
 	pixel_x = 5;
 	pixel_y = 5
 	},
+/obj/item/stack/sheet/metal,
 /turf/open/floor/plating{
 	icon_state = "platingdmg2"
 	},
@@ -5562,11 +5510,13 @@
 	pixel_y = 5
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
+/obj/machinery/poweredfans,
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post/garage)
 "lN" = (
 /obj/machinery/door/airlock/external/glass,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
+/obj/machinery/poweredfans,
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post/garage)
 "lO" = (
@@ -5630,10 +5580,9 @@
 /turf/open/floor/plating/asteroid/snow,
 /area/awaymission/snowdin/outside)
 "lT" = (
-/obj/structure/closet/crate/wooden,
-/obj/effect/spawner/lootdrop/snowdin/dungeonlite,
-/turf/open/floor/plasteel/cult,
-/area/awaymission/snowdin/cave/cavern)
+/obj/machinery/telecomms/message_server,
+/turf/open/floor/circuit/red/telecomms,
+/area/awaymission/snowdin/comms)
 "lU" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 1
@@ -5849,11 +5798,11 @@
 /turf/open/floor/plasteel/cafeteria,
 /area/awaymission/snowdin/post/messhall)
 "mq" = (
+/obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/public/glass{
 	name = "Hydroponics";
-	req_access_txt = "201"
+	req_access_txt = "206"
 	},
-/obj/machinery/door/firedoor,
 /turf/open/floor/plasteel/cafeteria,
 /area/awaymission/snowdin/post/messhall)
 "mr" = (
@@ -6129,6 +6078,7 @@
 	pixel_y = 5
 	},
 /obj/machinery/light/broken,
+/obj/structure/closet/crate/bin,
 /turf/open/floor/plating{
 	icon_state = "platingdmg1"
 	},
@@ -6277,6 +6227,7 @@
 /obj/effect/turf_decal/tile/yellow{
 	dir = 8
 	},
+/obj/item/wirecutters,
 /turf/open/floor/plasteel,
 /area/awaymission/snowdin/post/engineering)
 "np" = (
@@ -6353,6 +6304,7 @@
 /obj/effect/turf_decal/tile/green{
 	dir = 8
 	},
+/obj/structure/closet/crate/bin,
 /turf/open/floor/plasteel,
 /area/awaymission/snowdin/post/hydro)
 "ny" = (
@@ -6392,6 +6344,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 1
 	},
+/obj/machinery/vending/wardrobe/jani_wardrobe,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/snowdin/post/custodials)
 "nD" = (
@@ -6439,10 +6392,6 @@
 "nI" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/firedoor,
-/obj/item/shard,
-/obj/item/stack/cable_coil/red{
-	amount = 1
-	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
@@ -6452,6 +6401,10 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8
+	},
+/obj/machinery/door/window/brigdoor/security{
+	req_access = list(203);
+	name = "security desk"
 	},
 /turf/open/floor/plasteel,
 /area/awaymission/snowdin/post/secpost)
@@ -6559,7 +6512,7 @@
 	},
 /obj/machinery/door/airlock/public/glass{
 	name = "Hydroponics";
-	req_access_txt = "204"
+	req_access_txt = "206"
 	},
 /turf/open/floor/plasteel,
 /area/awaymission/snowdin/post/hydro)
@@ -6652,7 +6605,6 @@
 /obj/structure/chair/office/dark{
 	dir = 1
 	},
-/obj/item/shard,
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post/secpost)
 "oi" = (
@@ -6794,6 +6746,7 @@
 	dir = 1
 	},
 /obj/structure/barricade/wooden/snowed,
+/obj/structure/fans/tiny/invisible,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/snowdin/cave)
 "ot" = (
@@ -6992,6 +6945,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/item/wrench,
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post/engineering)
 "oO" = (
@@ -7012,7 +6966,6 @@
 /obj/structure/sign/warning/enginesafety{
 	pixel_x = 32
 	},
-/obj/item/areaeditor/blueprints,
 /turf/open/floor/plasteel,
 /area/awaymission/snowdin/post/engineering)
 "oR" = (
@@ -7034,6 +6987,7 @@
 /area/awaymission/snowdin/post/hydro)
 "oT" = (
 /obj/machinery/light,
+/obj/machinery/vending/wardrobe/hydro_wardrobe,
 /turf/open/floor/plasteel,
 /area/awaymission/snowdin/post/hydro)
 "oU" = (
@@ -7055,7 +7009,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/structure/lattice/catwalk,
-/obj/machinery/door/airlock/external,
+/obj/machinery/door/airlock/external{
+	req_access = list(201)
+	},
 /obj/machinery/poweredfans,
 /turf/open/floor/plating/snowed/smoothed,
 /area/awaymission/snowdin/post/engineering)
@@ -7125,7 +7081,6 @@
 /obj/structure/sign/poster/official/do_not_question{
 	pixel_y = -32
 	},
-/obj/item/wirecutters,
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
@@ -7136,17 +7091,13 @@
 /turf/open/floor/plasteel,
 /area/awaymission/snowdin/post/secpost)
 "pk" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/item/screwdriver,
-/obj/effect/turf_decal/tile/red,
-/obj/effect/turf_decal/tile/red{
-	dir = 8
+/obj/structure/sign/warning{
+	pixel_y = 31
 	},
-/turf/open/floor/plasteel,
-/area/awaymission/snowdin/post/secpost)
+/turf/open/floor/plating/asteroid/snow,
+/area/awaymission/snowdin/outside)
 "pl" = (
 /obj/machinery/light,
-/obj/item/crowbar,
 /obj/structure/noticeboard{
 	dir = 1;
 	pixel_y = -32
@@ -7320,7 +7271,7 @@
 "pJ" = (
 /obj/machinery/door/airlock/vault{
 	name = "Armory";
-	req_access_txt = "203"
+	req_access_txt = "206"
 	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/snowdin/post/secpost)
@@ -7355,16 +7306,8 @@
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post/secpost)
 "pN" = (
-/obj/structure/closet/emcloset,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/turf/open/floor/plasteel,
-/area/awaymission/snowdin/post)
+/turf/closed/wall,
+/area/awaymission/snowdin/cave/mountain)
 "pO" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/effect/decal/cleanable/dirt,
@@ -7463,6 +7406,7 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/visible{
 	dir = 1
 	},
+/obj/structure/tank_dispenser/oxygen,
 /turf/open/floor/plating{
 	icon_state = "platingdmg1"
 	},
@@ -7691,6 +7635,9 @@
 	icon_state = "1-8"
 	},
 /obj/structure/lattice/catwalk,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post/engineering)
 "qE" = (
@@ -7721,6 +7668,8 @@
 /area/awaymission/snowdin/post/cavern2)
 "qJ" = (
 /obj/machinery/light/small,
+/obj/item/ammo_box/magazine/wt550m9,
+/obj/structure/rack,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/snowdin/post/secpost)
 "qK" = (
@@ -7890,13 +7839,6 @@
 /turf/open/floor/plasteel,
 /area/awaymission/snowdin/post/engineering)
 "qX" = (
-/obj/machinery/computer/atmos_control/tank{
-	dir = 1;
-	frequency = 1442;
-	name = "Toxins Supply Control";
-	output_tag = "snowdin_toxins_out";
-	sensors = list("snowdin_toxins" = "Tank")
-	},
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
@@ -7929,30 +7871,12 @@
 /turf/open/floor/plasteel,
 /area/awaymission/snowdin/post/engineering)
 "ra" = (
-/obj/machinery/computer/atmos_control/tank{
-	dir = 1;
-	frequency = 1442;
-	name = "Oxygen Supply Control";
-	output_tag = "snowdin_oxygen_out";
-	sensors = list("snowdin_oxygen" = "Tank")
+/obj/structure/fence{
+	pixel_x = 16
 	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/effect/turf_decal/tile/yellow,
-/obj/effect/turf_decal/tile/yellow{
-	dir = 8
-	},
-/turf/open/floor/plasteel,
-/area/awaymission/snowdin/post/engineering)
+/turf/open/floor/plating/snowed/smoothed,
+/area/awaymission/snowdin/outside)
 "rb" = (
-/obj/machinery/computer/atmos_control/tank{
-	dir = 1;
-	frequency = 1442;
-	name = "Nitrogen Supply Control";
-	output_tag = "snowdin_nitrogen_out";
-	sensors = list("snowdin_nitrogen" = "Tank")
-	},
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
@@ -7968,6 +7892,7 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
 	},
+/obj/structure/barricade/wooden/crude/snow,
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post/cavern2)
 "rd" = (
@@ -8148,10 +8073,10 @@
 /turf/open/floor/engine/cult,
 /area/awaymission/snowdin/post/cavern2)
 "rD" = (
-/obj/machinery/power/port_gen/pacman,
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
+/obj/machinery/power/rtg/advanced/fullupgrade,
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post/cavern2)
 "rE" = (
@@ -8240,14 +8165,8 @@
 /turf/open/floor/engine,
 /area/awaymission/snowdin/post/engineering)
 "rM" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/on{
-	dir = 1;
-	frequency = 1442;
-	id_tag = "snowdin_toxins_out";
-	name = "toxin out"
-	},
-/turf/open/floor/plating/airless,
-/area/awaymission/snowdin/post/engineering)
+/turf/open/floor/plating/ice/smooth,
+/area/awaymission/snowdin/cave/mountain)
 "rN" = (
 /obj/machinery/air_sensor{
 	frequency = 1442;
@@ -8257,11 +8176,9 @@
 /turf/open/floor/plating/airless,
 /area/awaymission/snowdin/post/engineering)
 "rO" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/on{
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 1;
-	frequency = 1442;
-	id_tag = "snowdin_oxygen_out";
-	name = "oxygen out"
+	piping_layer = 3
 	},
 /turf/open/floor/plating/airless,
 /area/awaymission/snowdin/post/engineering)
@@ -8274,14 +8191,10 @@
 /turf/open/floor/plating/airless,
 /area/awaymission/snowdin/post/engineering)
 "rQ" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/on{
-	dir = 1;
-	frequency = 1442;
-	id_tag = "snowdin_nitrogen_out";
-	name = "nitrogen out"
-	},
-/turf/open/floor/plating/airless,
-/area/awaymission/snowdin/post/engineering)
+/obj/structure/flora/grass/both,
+/obj/effect/turf_decal/weather/snow,
+/turf/open/floor/plating/asteroid/snow,
+/area/awaymission/snowdin/outside)
 "rR" = (
 /obj/machinery/air_sensor{
 	frequency = 1442;
@@ -8335,7 +8248,7 @@
 /area/awaymission/snowdin/post/cavern2)
 "sb" = (
 /obj/structure/spawner/nether{
-	max_mobs = 10;
+	max_mobs = 3;
 	spawn_time = 300;
 	name = "active netherworld link"
 	},
@@ -8703,14 +8616,12 @@
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 8
 	},
-/obj/machinery/computer{
-	desc = "A console meant for calling and sending a transit ferry. It seems iced-over and non-functional.";
+/obj/machinery/computer/shuttle/snowdin/transit{
 	dir = 4;
-	icon_screen = null;
-	name = "Shuttle Transist Console"
+	possible_destinations = "snowdintransit_a;snowdintransit_b;snowdintransit_c"
 	},
 /turf/open/floor/plasteel/dark/snowdin,
-/area/awaymission/snowdin/outside)
+/area/awaymission/snowdin/transit)
 "sV" = (
 /obj/structure/statue/snow/snowman{
 	anchored = 1
@@ -8946,10 +8857,13 @@
 /turf/open/floor/plating/asteroid/snow,
 /area/awaymission/snowdin/cave)
 "tJ" = (
-/obj/effect/decal/cleanable/blood/old,
-/obj/item/circuitboard/machine/circuit_imprinter,
-/turf/open/floor/plating/asteroid/snow,
-/area/awaymission/snowdin/cave)
+/obj/item/seeds/watermelon/milk,
+/obj/item/seeds/chili/pink{
+	pixel_y = -8;
+	pixel_x = 7
+	},
+/turf/open/floor/wood,
+/area/awaymission/snowdin/igloo)
 "tK" = (
 /obj/effect/mob_spawn/human/clown/corpse,
 /turf/open/floor/plating/asteroid/snow/ice,
@@ -8958,6 +8872,17 @@
 /mob/living/simple_animal/hostile/poison/giant_spider/nurse/ice,
 /turf/open/floor/plating/asteroid/snow/ice,
 /area/awaymission/snowdin/cave/cavern)
+"tM" = (
+/obj/effect/light_emitter{
+	name = "outdoor light";
+	set_cap = 3;
+	set_luminosity = 6
+	},
+/obj/structure/sign/warning{
+	pixel_y = 31
+	},
+/turf/open/floor/plating/asteroid/snow,
+/area/awaymission/snowdin/outside)
 "tN" = (
 /turf/open/floor/plating/ice/smooth,
 /area/awaymission/snowdin/outside)
@@ -9030,6 +8955,7 @@
 /area/awaymission/snowdin/post/cavern1)
 "uc" = (
 /obj/structure/table/wood,
+/obj/item/card/mining_point_card/mp2000,
 /turf/open/floor/wood,
 /area/awaymission/snowdin/post/cavern1)
 "ud" = (
@@ -9074,7 +9000,7 @@
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
-/obj/machinery/power/rtg,
+/obj/machinery/power/rtg/advanced/fullupgrade,
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post/cavern1)
 "uk" = (
@@ -9207,10 +9133,9 @@
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post/cavern1)
 "uC" = (
-/obj/structure/fence{
-	pixel_x = -16
-	},
-/turf/open/floor/plating/asteroid/snow,
+/obj/structure/flora/bush,
+/obj/structure/lattice/catwalk,
+/turf/open/floor/plating/snowed,
 /area/awaymission/snowdin/outside)
 "uD" = (
 /obj/machinery/door/airlock/maintenance{
@@ -9266,11 +9191,11 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/obj/item/storage/firstaid/ancient,
 /turf/open/floor/plasteel,
 /area/awaymission/snowdin/post/cavern1)
 "uM" = (
 /obj/structure/table,
+/obj/item/mining_voucher,
 /turf/open/floor/plating{
 	icon_state = "platingdmg1"
 	},
@@ -9330,6 +9255,7 @@
 /area/awaymission/snowdin/post/cavern1)
 "uU" = (
 /obj/item/chair,
+/mob/living/simple_animal/hostile/skeleton/plasmaminer,
 /turf/open/floor/plasteel,
 /area/awaymission/snowdin/post/cavern1)
 "uV" = (
@@ -9376,6 +9302,7 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
 	},
+/obj/structure/barricade/wooden/crude/snow,
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post/cavern1)
 "va" = (
@@ -9638,6 +9565,7 @@
 /obj/structure/rack,
 /obj/machinery/light,
 /obj/item/twohanded/kinetic_crusher,
+/obj/item/t_scanner/adv_mining_scanner,
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post/cavern1)
 "vD" = (
@@ -9700,13 +9628,15 @@
 	},
 /area/awaymission/snowdin/cave)
 "vM" = (
-/obj/structure/spawner/mining/basilisk,
+/obj/structure/spawner/mining/basilisk{
+	max_mobs = 1
+	},
 /turf/open/floor/plating/asteroid/snow/ice,
 /area/awaymission/snowdin/cave/cavern)
 "vN" = (
 /obj/machinery/door/airlock/mining/glass,
-/turf/open/floor/plating,
-/area/awaymission/snowdin/cave)
+/turf/open/floor/pod,
+/area/awaymission/snowdin/cargo)
 "vO" = (
 /obj/structure/fluff/fokoff_sign,
 /turf/open/floor/plating/asteroid/snow,
@@ -9781,8 +9711,12 @@
 "wb" = (
 /mob/living/simple_animal/hostile/skeleton/plasmaminer{
 	name = "Charles";
-	health = 300;
-	maxHealth = 300
+	health = 1000;
+	maxHealth = 300;
+	melee_damage_upper = 40;
+	melee_damage_lower = 40;
+	desc = "It's Charles!";
+	speed = 0.2
 	},
 /turf/open/floor/plating/asteroid/snow/ice,
 /area/awaymission/snowdin/cave/cavern)
@@ -9893,9 +9827,14 @@
 	},
 /area/awaymission/snowdin/cave)
 "wp" = (
-/obj/structure/flora/tree/pine/xmas/presents,
-/turf/open/floor/plating/asteroid/snow,
-/area/awaymission/snowdin/outside)
+/obj/machinery/atmospherics/pipe/simple/orange/visible{
+	dir = 6
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/awaymission/snowdin/cargo)
 "wq" = (
 /obj/effect/turf_decal/weather/snow/corner{
 	dir = 5
@@ -9963,7 +9902,7 @@
 /obj/effect/light_emitter{
 	light_color = "#FAA019";
 	light_power = 1;
-	light_range = 4;
+	light_range = 5;
 	name = "fire light"
 	},
 /turf/open/floor/plating/asteroid/snow{
@@ -10078,12 +10017,13 @@
 	pixel_x = 26
 	},
 /obj/structure/cable/yellow,
+/obj/machinery/power/rtg/advanced/fullupgrade,
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post/mining_dock)
 "wO" = (
-/obj/machinery/power/port_gen/pacman,
-/turf/open/floor/plating,
-/area/awaymission/snowdin/post/mining_dock)
+/obj/machinery/computer/security/wooden_tv,
+/turf/open/floor/wood,
+/area/awaymission/snowdin/cabin)
 "wP" = (
 /obj/machinery/atmospherics/components/binary/valve/digital{
 	dir = 4
@@ -10174,18 +10114,15 @@
 /area/awaymission/snowdin/post/mining_dock)
 "xa" = (
 /obj/effect/turf_decal/stripes/white/line,
-/turf/open/floor/plating/snowed,
-/area/awaymission/snowdin/cave)
+/turf/open/floor/engine,
+/area/awaymission/snowdin/cargo)
 "xb" = (
 /obj/effect/turf_decal/stripes/white/line,
 /obj/effect/turf_decal/caution/stand_clear{
 	dir = 1
 	},
-/obj/machinery/light/small{
-	dir = 1
-	},
-/turf/open/floor/plating/snowed,
-/area/awaymission/snowdin/cave)
+/turf/open/floor/engine,
+/area/awaymission/snowdin/cargo)
 "xc" = (
 /obj/structure/closet/crate{
 	icon_state = "crateopen"
@@ -10254,7 +10191,7 @@
 	icon_state = "2-8"
 	},
 /obj/structure/spawner/nether{
-	max_mobs = 4;
+	max_mobs = 1;
 	name = "weak netherworld link"
 	},
 /turf/open/floor/engine/cult,
@@ -10263,19 +10200,20 @@
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 4
 	},
-/turf/open/floor/plating/snowed,
-/area/awaymission/snowdin/cave)
+/turf/open/floor/engine,
+/area/awaymission/snowdin/cargo)
 "xl" = (
 /turf/open/floor/plasteel/elevatorshaft{
 	initial_gas_mix = "o2=22;n2=82;TEMP=180"
 	},
-/area/awaymission/snowdin/cave)
+/area/awaymission/snowdin/cargo)
 "xp" = (
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 8
 	},
-/turf/open/floor/plating/snowed,
-/area/awaymission/snowdin/cave)
+/obj/item/clothing/head/cone,
+/turf/open/floor/engine,
+/area/awaymission/snowdin/cargo)
 "xq" = (
 /obj/effect/decal/cleanable/blood/tracks,
 /turf/open/floor/plating/snowed,
@@ -10366,8 +10304,8 @@
 /obj/effect/turf_decal/caution/stand_clear{
 	dir = 8
 	},
-/turf/open/floor/plating/snowed,
-/area/awaymission/snowdin/cave)
+/turf/open/floor/engine,
+/area/awaymission/snowdin/cargo)
 "xD" = (
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 8
@@ -10375,21 +10313,22 @@
 /obj/effect/turf_decal/caution/stand_clear{
 	dir = 4
 	},
-/turf/open/floor/plating/snowed,
-/area/awaymission/snowdin/cave)
+/turf/open/floor/engine,
+/area/awaymission/snowdin/cargo)
 "xE" = (
 /obj/machinery/atmospherics/pipe/simple/orange/visible{
 	dir = 6
 	},
-/turf/open/floor/plating/snowed,
-/area/awaymission/snowdin/cave)
+/turf/open/floor/plasteel/dark,
+/area/awaymission/snowdin/cargo)
 "xF" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
 	dir = 8
 	},
 /obj/machinery/portable_atmospherics/canister,
-/turf/open/floor/plating/snowed,
-/area/awaymission/snowdin/cave)
+/obj/effect/turf_decal/bot,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/snowdin/cargo)
 "xG" = (
 /obj/machinery/holopad,
 /obj/item/disk/holodisk/snowdin/overrun,
@@ -10449,26 +10388,26 @@
 	height = 6;
 	id = "snowdin_excavation_top";
 	name = "snowdin excavation top";
-	roundstart_template = /datum/map_template/shuttle/snowdin/excavation;
 	width = 6
 	},
 /turf/open/floor/plasteel/elevatorshaft{
 	initial_gas_mix = "o2=22;n2=82;TEMP=180"
 	},
-/area/awaymission/snowdin/cave)
+/area/awaymission/snowdin/cargo)
 "xL" = (
 /obj/machinery/atmospherics/pipe/manifold/orange/visible{
 	dir = 8
 	},
-/turf/open/floor/plating/snowed,
-/area/awaymission/snowdin/cave)
+/turf/open/floor/plasteel/dark,
+/area/awaymission/snowdin/cargo)
 "xM" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
 	dir = 8
 	},
 /obj/machinery/portable_atmospherics/canister/toxins,
-/turf/open/floor/plating/snowed,
-/area/awaymission/snowdin/cave)
+/obj/effect/turf_decal/bot,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/snowdin/cargo)
 "xN" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
@@ -10492,7 +10431,8 @@
 	height = 6;
 	id = "snowdin_excavation_down";
 	name = "snowdin excavation down";
-	width = 6
+	width = 6;
+	roundstart_template = /datum/map_template/shuttle/snowdin/excavation
 	},
 /turf/open/floor/plasteel/elevatorshaft,
 /area/awaymission/snowdin/post/mining_dock)
@@ -10526,14 +10466,18 @@
 /obj/item/stack/sheet/mineral/plasma{
 	amount = 3
 	},
-/turf/open/floor/plating/snowed/smoothed,
-/area/awaymission/snowdin/cave)
+/obj/effect/turf_decal/bot,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/turf/open/floor/plasteel/dark,
+/area/awaymission/snowdin/cargo)
 "xT" = (
 /obj/machinery/atmospherics/pipe/simple/orange/visible{
 	dir = 5
 	},
-/turf/open/floor/plating/snowed,
-/area/awaymission/snowdin/cave)
+/turf/open/floor/plasteel/dark,
+/area/awaymission/snowdin/cargo)
 "xU" = (
 /obj/machinery/atmospherics/pipe/simple/orange/visible{
 	dir = 10
@@ -10541,8 +10485,8 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/turf/open/floor/plating/snowed,
-/area/awaymission/snowdin/cave)
+/turf/open/floor/plasteel/dark,
+/area/awaymission/snowdin/cargo)
 "xV" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4;
@@ -10597,6 +10541,12 @@
 /area/awaymission/snowdin/cave)
 "yc" = (
 /obj/item/circuitboard/machine/power_turbine,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post/mining_main)
 "yd" = (
@@ -10605,13 +10555,13 @@
 /area/awaymission/snowdin/post/mining_dock)
 "ye" = (
 /obj/machinery/atmospherics/pipe/simple/orange/visible,
-/turf/open/floor/plating/snowed,
-/area/awaymission/snowdin/cave)
+/turf/open/floor/plasteel/dark,
+/area/awaymission/snowdin/cargo)
 "yf" = (
 /obj/structure/window/reinforced/fulltile/ice,
 /obj/structure/grille,
 /turf/open/floor/plating,
-/area/awaymission/snowdin/cave)
+/area/awaymission/snowdin/cargo)
 "yg" = (
 /turf/open/floor/engine/vacuum,
 /area/awaymission/snowdin/cave)
@@ -10659,21 +10609,14 @@
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post/mining_dock)
 "ym" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 4
+/obj/machinery/power/terminal{
+	dir = 1
 	},
-/obj/machinery/computer/shuttle/snowdin/mining{
-	dir = 8;
-	name = "Excavation Elevator Console";
-	possible_destinations = "snowdin_excavation_top;snowdin_excavation_down";
-	shuttleId = "snowdin_excavation"
+/obj/structure/cable{
+	icon_state = "0-8"
 	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/turf/open/floor/plasteel,
-/area/awaymission/snowdin/post/mining_dock)
+/turf/open/floor/engine,
+/area/awaymission/snowdin/comms)
 "yn" = (
 /turf/closed/mineral/snowmountain,
 /area/awaymission/snowdin/cave/cavern)
@@ -10685,29 +10628,23 @@
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 1
 	},
-/turf/open/floor/plating/snowed,
-/area/awaymission/snowdin/cave)
+/obj/item/clothing/head/cone,
+/turf/open/floor/engine,
+/area/awaymission/snowdin/cargo)
 "yq" = (
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 1
 	},
 /obj/effect/turf_decal/caution/stand_clear,
-/turf/open/floor/plating/snowed,
-/area/awaymission/snowdin/cave)
+/turf/open/floor/engine,
+/area/awaymission/snowdin/cargo)
 "yr" = (
-/obj/effect/turf_decal/stripes/white/line{
-	dir = 1
-	},
-/obj/machinery/computer/shuttle/snowdin/mining{
-	dir = 8;
-	name = "Excavation Elevator Console";
-	possible_destinations = "snowdin_excavation_top;snowdin_excavation_down";
-	shuttleId = "snowdin_excavation"
-	},
-/turf/open/floor/plating/snowed,
+/obj/machinery/light/small,
+/turf/open/floor/plating/snowed/smoothed,
 /area/awaymission/snowdin/cave)
 "ys" = (
-/obj/machinery/atmospherics/pipe/manifold4w/orange/visible,
+/obj/effect/turf_decal/bot,
+/obj/structure/closet/crate/secure/loot,
 /turf/open/floor/plating/snowed,
 /area/awaymission/snowdin/cave)
 "yt" = (
@@ -10717,7 +10654,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating,
-/area/awaymission/snowdin/cave)
+/area/awaymission/snowdin/cargo)
 "yu" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/siphon/on{
 	dir = 8;
@@ -10861,10 +10798,7 @@
 "yI" = (
 /obj/effect/decal/remains/human,
 /mob/living/simple_animal/hostile/netherworld/migo,
-/turf/open/floor/engine/cult{
-	initial_gas_mix = "o2=0;n2=82;plasma=24;TEMP=120";
-	temperature = 120
-	},
+/turf/open/floor/plasteel/cult,
 /area/awaymission/snowdin/cave/cavern)
 "yJ" = (
 /obj/effect/decal/cleanable/blood/old,
@@ -10879,8 +10813,9 @@
 	dir = 1
 	},
 /obj/machinery/portable_atmospherics/canister,
-/turf/open/floor/plating/snowed,
-/area/awaymission/snowdin/cave)
+/obj/effect/turf_decal/bot,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/snowdin/cargo)
 "yM" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
 	dir = 1
@@ -10889,8 +10824,9 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/turf/open/floor/plating/snowed,
-/area/awaymission/snowdin/cave)
+/obj/effect/turf_decal/bot,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/snowdin/cargo)
 "yN" = (
 /obj/structure/barricade/sandbags,
 /turf/open/floor/plating/asteroid/snow{
@@ -10979,21 +10915,28 @@
 /turf/closed/wall,
 /area/awaymission/snowdin/post/minipost)
 "yY" = (
-/turf/closed/wall/rust,
-/area/awaymission/snowdin/post/minipost)
+/obj/structure/dresser,
+/obj/item/stack/credits{
+	amount = 25;
+	pixel_y = 14
+	},
+/turf/open/floor/wood,
+/area/awaymission/snowdin/cabin)
 "yZ" = (
 /obj/effect/baseturf_helper/asteroid/snow,
 /turf/closed/wall,
 /area/awaymission/snowdin/post/minipost)
 "za" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/on{
-	dir = 4;
-	frequency = 1442;
-	id_tag = "snowdin_toxins_mine_1";
-	name = "toxin out"
+/obj/structure/lattice/catwalk,
+/turf/open/floor/plating/snowed/smoothed,
+/area/awaymission/snowdin/outside)
+"zb" = (
+/obj/machinery/door/airlock/wood{
+	name = "wooden cabin"
 	},
-/turf/open/floor/engine/vacuum,
-/area/awaymission/snowdin/cave)
+/obj/structure/fans/tiny,
+/turf/open/floor/wood,
+/area/awaymission/snowdin/cabin)
 "zc" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/hostile/netherworld/blankbody,
@@ -11019,8 +10962,9 @@
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/turf/open/floor/plating/snowed,
-/area/awaymission/snowdin/cave)
+/obj/effect/turf_decal/bot,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/snowdin/cargo)
 "zg" = (
 /obj/structure/barricade/sandbags,
 /obj/effect/turf_decal/weather/snow/corner{
@@ -11163,8 +11107,9 @@
 	dir = 4
 	},
 /obj/item/t_scanner/adv_mining_scanner/lesser,
-/turf/open/floor/plating/snowed,
-/area/awaymission/snowdin/cave)
+/obj/effect/turf_decal/bot,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/snowdin/cargo)
 "zA" = (
 /obj/effect/turf_decal/weather/snow/corner{
 	dir = 8
@@ -11186,26 +11131,14 @@
 	},
 /area/awaymission/snowdin/outside)
 "zC" = (
-/obj/structure/rack,
-/obj/item/grown/log/tree,
-/obj/item/grown/log/tree{
-	pixel_x = 2;
-	pixel_y = 2
-	},
-/obj/item/grown/log/tree{
-	pixel_x = -2;
-	pixel_y = 3
-	},
+/obj/machinery/plantgenes,
 /turf/open/floor/wood,
 /area/awaymission/snowdin/igloo)
 "zD" = (
 /turf/open/floor/wood,
 /area/awaymission/snowdin/igloo)
 "zE" = (
-/obj/structure/rack,
-/obj/item/stack/sheet/mineral/wood{
-	amount = 15
-	},
+/obj/machinery/hydroponics/constructable,
 /turf/open/floor/wood,
 /area/awaymission/snowdin/igloo)
 "zF" = (
@@ -11260,17 +11193,25 @@
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post/minipost)
 "zM" = (
-/obj/machinery/portable_atmospherics/canister,
 /obj/machinery/light/small{
 	brightness = 3;
 	dir = 8
 	},
-/turf/open/floor/plating/snowed/smoothed,
-/area/awaymission/snowdin/cave)
+/obj/structure/closet/wardrobe/cargotech,
+/obj/effect/turf_decal/bot,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/snowdin/cargo)
 "zN" = (
 /obj/structure/rack,
-/turf/open/floor/plating/snowed,
-/area/awaymission/snowdin/cave)
+/obj/effect/turf_decal/bot,
+/obj/item/stack/ore/glass{
+	amount = 50
+	},
+/obj/item/stack/ore/glass{
+	amount = 50
+	},
+/turf/open/floor/plasteel/dark,
+/area/awaymission/snowdin/cargo)
 "zO" = (
 /obj/effect/turf_decal/weather/snow/corner{
 	dir = 6
@@ -11282,16 +11223,13 @@
 	},
 /area/awaymission/snowdin/outside)
 "zP" = (
-/obj/structure/table/wood,
-/obj/effect/spawner/lootdrop/snowdin/dungeonmisc,
-/obj/effect/spawner/lootdrop/snowdin/dungeonmisc,
-/turf/open/floor/wood,
-/area/awaymission/snowdin/igloo)
-"zQ" = (
-/obj/item/hatchet{
-	pixel_x = 4;
-	pixel_y = 4
+/obj/structure/cable{
+	icon_state = "1-4"
 	},
+/turf/open/floor/engine,
+/area/awaymission/snowdin/comms)
+"zQ" = (
+/obj/item/vending_refill/wardrobe/hydro_wardrobe,
 /turf/open/floor/wood,
 /area/awaymission/snowdin/igloo)
 "zR" = (
@@ -11353,8 +11291,10 @@
 "zY" = (
 /obj/effect/turf_decal/bot,
 /obj/structure/ore_box,
-/turf/open/floor/plating/snowed/smoothed,
-/area/awaymission/snowdin/cave)
+/obj/effect/turf_decal/bot,
+/obj/effect/turf_decal/delivery,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/snowdin/cargo)
 "zZ" = (
 /obj/effect/baseturf_helper/asteroid/snow,
 /turf/closed/wall/mineral/snow,
@@ -11377,13 +11317,10 @@
 	},
 /area/awaymission/snowdin/outside)
 "Ac" = (
-/obj/structure/table/wood,
-/obj/item/hatchet{
-	pixel_x = 4;
-	pixel_y = 4
-	},
-/turf/open/floor/wood,
-/area/awaymission/snowdin/igloo)
+/obj/structure/rack,
+/obj/item/clothing/suit/hooded/wintercoat/engineering,
+/turf/open/floor/plasteel,
+/area/awaymission/snowdin/comms)
 "Ad" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 9
@@ -11433,7 +11370,6 @@
 /area/awaymission/snowdin/post/minipost)
 "Ak" = (
 /obj/structure/table,
-/obj/item/paper_bin,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
@@ -11441,6 +11377,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
+/obj/item/circuitboard/machine/circuit_imprinter,
 /turf/open/floor/plasteel,
 /area/awaymission/snowdin/post/minipost)
 "Al" = (
@@ -11451,7 +11388,10 @@
 /turf/open/floor/plating/ice/smooth,
 /area/awaymission/snowdin/cave)
 "Am" = (
-/obj/effect/turf_decal/bot,
+/obj/effect/turf_decal/delivery,
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 1
+	},
 /turf/open/floor/plating/snowed/smoothed,
 /area/awaymission/snowdin/cave)
 "An" = (
@@ -11541,6 +11481,7 @@
 "Az" = (
 /obj/effect/turf_decal/bot,
 /obj/machinery/portable_atmospherics/canister,
+/obj/effect/turf_decal/delivery,
 /turf/open/floor/plating/snowed/smoothed,
 /area/awaymission/snowdin/cave)
 "AA" = (
@@ -11595,7 +11536,7 @@
 /obj/effect/light_emitter{
 	light_color = "#FAA019";
 	light_power = 1;
-	light_range = 4;
+	light_range = 5;
 	name = "fire light"
 	},
 /turf/open/floor/wood,
@@ -11673,11 +11614,13 @@
 /turf/open/floor/plating/asteroid/snow,
 /area/awaymission/snowdin/cave)
 "AU" = (
-/obj/structure/table/wood,
-/obj/effect/spawner/lootdrop/snowdin/dungeonlite,
-/obj/effect/spawner/lootdrop/snowdin/dungeonlite,
-/turf/open/floor/wood,
-/area/awaymission/snowdin/igloo)
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/window/reinforced/fulltile/ice,
+/obj/structure/grille,
+/turf/open/floor/plating,
+/area/awaymission/snowdin/post/engineering)
 "AV" = (
 /obj/structure/table/wood,
 /obj/effect/spawner/lootdrop/snowdin/dungeonlite,
@@ -11803,6 +11746,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
+/obj/item/storage/firstaid/brute,
 /turf/open/floor/plasteel/white,
 /area/awaymission/snowdin/post/minipost)
 "Bm" = (
@@ -11892,16 +11836,17 @@
 /turf/open/floor/plasteel/white,
 /area/awaymission/snowdin/post/minipost)
 "Bv" = (
-/obj/machinery/atmospherics/components/unary/portables_connector/visible,
-/obj/machinery/portable_atmospherics/canister,
-/turf/open/floor/plating/snowed,
-/area/awaymission/snowdin/cave)
+/obj/structure/falsewall,
+/turf/closed/wall/rust,
+/area/awaymission/snowdin/post/dorm)
 "Bw" = (
-/obj/machinery/atmospherics/components/unary/portables_connector/visible,
-/obj/machinery/portable_atmospherics/canister/toxins,
 /obj/machinery/light/small{
 	dir = 4
 	},
+/obj/item/gps/engineering,
+/obj/item/gps/engineering,
+/obj/item/gps/engineering,
+/obj/structure/rack,
 /turf/open/floor/plating/snowed,
 /area/awaymission/snowdin/cave)
 "Bx" = (
@@ -11940,10 +11885,7 @@
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
-/obj/machinery/power/port_gen/pacman,
-/obj/item/stack/sheet/mineral/plasma{
-	amount = 3
-	},
+/obj/machinery/power/rtg/advanced/fullupgrade,
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post/minipost)
 "BD" = (
@@ -11983,28 +11925,24 @@
 /turf/closed/mineral/snowmountain/cavern,
 /area/awaymission/snowdin/cave/cavern)
 "BI" = (
-/obj/machinery/atmospherics/pipe/simple/orange/visible{
-	dir = 9
-	},
 /obj/machinery/light/small{
 	dir = 4
 	},
 /turf/open/floor/plating/snowed,
 /area/awaymission/snowdin/cave)
 "BJ" = (
-/obj/machinery/atmospherics/components/unary/portables_connector/visible,
 /obj/machinery/light/small{
 	brightness = 3;
 	dir = 8
 	},
+/obj/effect/turf_decal/bot,
+/obj/structure/closet/crate/secure/loot,
 /turf/open/floor/plating/snowed,
 /area/awaymission/snowdin/cave)
 "BK" = (
-/obj/machinery/atmospherics/components/unary/portables_connector/visible{
-	dir = 8
-	},
-/turf/open/floor/plating/snowed,
-/area/awaymission/snowdin/cave)
+/obj/machinery/telecomms/broadcaster,
+/turf/open/floor/circuit/red/telecomms,
+/area/awaymission/snowdin/comms)
 "BL" = (
 /obj/effect/turf_decal/weather/snow/corner,
 /mob/living/simple_animal/hostile/skeleton/eskimo,
@@ -12016,14 +11954,13 @@
 /area/awaymission/snowdin/outside)
 "BM" = (
 /obj/structure/table/wood,
+/obj/item/seeds/firelemon,
 /turf/open/floor/wood,
 /area/awaymission/snowdin/igloo)
 "BN" = (
-/obj/machinery/atmospherics/pipe/simple/orange/visible{
-	dir = 9
-	},
-/turf/open/floor/plating/snowed,
-/area/awaymission/snowdin/cave)
+/obj/structure/flora/grass/both,
+/turf/open/floor/plating/snowed/smoothed,
+/area/awaymission/snowdin/outside)
 "BO" = (
 /obj/effect/turf_decal/stripes/end{
 	dir = 1
@@ -12053,11 +11990,10 @@
 /turf/open/floor/plating/snowed/cavern,
 /area/awaymission/snowdin/cave/cavern)
 "BS" = (
-/obj/machinery/atmospherics/pipe/simple/orange/visible{
-	dir = 10
-	},
-/turf/open/floor/plating/snowed,
-/area/awaymission/snowdin/cave)
+/obj/machinery/power/floodlight,
+/obj/effect/turf_decal/bot,
+/turf/open/floor/pod/dark,
+/area/awaymission/snowdin/cargo)
 "BT" = (
 /obj/effect/turf_decal/stripes/corner{
 	dir = 8
@@ -12068,22 +12004,20 @@
 /turf/open/floor/plating/snowed/cavern,
 /area/awaymission/snowdin/cave/cavern)
 "BU" = (
-/obj/machinery/atmospherics/components/unary/portables_connector/visible{
-	dir = 1
-	},
-/obj/machinery/portable_atmospherics/canister/toxins,
 /obj/machinery/light/small{
 	brightness = 3;
 	dir = 8
 	},
+/obj/effect/turf_decal/bot,
+/obj/structure/closet/crate/freezer/blood,
 /turf/open/floor/plating/snowed,
 /area/awaymission/snowdin/cave)
 "BV" = (
-/obj/machinery/atmospherics/components/unary/portables_connector/visible{
-	dir = 1
+/obj/structure/cable/yellow{
+	icon_state = "1-8"
 	},
-/turf/open/floor/plating/snowed,
-/area/awaymission/snowdin/cave)
+/turf/open/floor/engine,
+/area/awaymission/snowdin/comms)
 "BW" = (
 /obj/item/clothing/head/cone,
 /turf/open/floor/plating/asteroid/snow,
@@ -12302,6 +12236,7 @@
 	desc = "It's a storage unit for a Syndicate boarding party."
 	},
 /obj/effect/turf_decal/bot_white,
+/obj/item/clothing/under/syndicate/coldres,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/snowdin/cave)
 "CL" = (
@@ -12511,7 +12446,8 @@
 /area/awaymission/snowdin/cave)
 "Df" = (
 /mob/living/simple_animal/hostile/skeleton/eskimo{
-	name = "undead eskimo scout"
+	name = "undead eskimo scout";
+	health = 35
 	},
 /turf/open/floor/plating/asteroid/snow,
 /area/awaymission/snowdin/outside)
@@ -12776,6 +12712,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
+/obj/structure/fans/tiny/invisible,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/snowdin/cave)
 "DH" = (
@@ -13004,8 +12941,8 @@
 /turf/open/floor/plating/asteroid/snow,
 /area/awaymission/snowdin/cave)
 "Ei" = (
-/turf/open/floor/plating,
-/area/awaymission/snowdin/cave)
+/turf/open/floor/pod,
+/area/awaymission/snowdin/cargo)
 "Ej" = (
 /obj/structure/trash_pile,
 /turf/open/floor/plating/snowed,
@@ -13184,22 +13121,11 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/awaymission/snowdin/cave)
 "EC" = (
-/obj/structure/window/reinforced{
-	dir = 8
+/obj/structure/fence{
+	pixel_x = -16
 	},
-/obj/item/circular_saw,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/awaymission/snowdin/cave)
+/turf/open/floor/plating/asteroid/snow,
+/area/awaymission/snowdin/outside)
 "ED" = (
 /obj/item/toy/plush/nukeplushie,
 /turf/open/floor/plasteel/dark,
@@ -13223,7 +13149,8 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/weather/snow,
-/obj/machinery/suit_storage_unit/syndicate,
+/obj/machinery/suit_storage_unit/open,
+/obj/item/clothing/suit/space/hardsuit/syndi,
 /turf/open/floor/mineral/plastitanium{
 	initial_gas_mix = "o2=22;n2=82;TEMP=180";
 	planetary_atmos = 1;
@@ -13285,8 +13212,6 @@
 /area/awaymission/snowdin/cave)
 "EL" = (
 /obj/item/shard,
-/obj/item/retractor,
-/obj/item/cautery,
 /obj/effect/decal/cleanable/blood/old,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
@@ -13303,7 +13228,6 @@
 "EM" = (
 /obj/structure/table/optable,
 /obj/effect/turf_decal/bot_white,
-/obj/item/surgical_drapes,
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/snowdin/cave)
@@ -13333,6 +13257,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
+/obj/item/storage/toolbox/syndicate,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/snowdin/cave)
 "ER" = (
@@ -13366,6 +13291,7 @@
 	dir = 4
 	},
 /obj/item/crowbar,
+/obj/item/card/id/away/snowdin/med,
 /turf/open/floor/wood,
 /area/awaymission/snowdin/post/dorm)
 "EU" = (
@@ -13492,7 +13418,7 @@
 "Fo" = (
 /obj/structure/flora/bush,
 /obj/effect/decal/cleanable/blood/old,
-/turf/open/floor/plating/asteroid/snow,
+/turf/open/floor/plating/snowed/smoothed,
 /area/awaymission/snowdin/outside)
 "Fp" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible,
@@ -13770,6 +13696,7 @@
 "Gb" = (
 /obj/machinery/door/airlock/external/glass,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
+/obj/machinery/poweredfans,
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post/mining_main)
 "Gc" = (
@@ -14457,6 +14384,7 @@
 	id = "snowdingarage3";
 	name = "garage door"
 	},
+/obj/machinery/poweredfans,
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post/mining_main)
 "Ib" = (
@@ -15237,6 +15165,16 @@
 "JQ" = (
 /turf/open/floor/plasteel/elevatorshaft,
 /area/awaymission/snowdin/post/mining_main)
+"JR" = (
+/turf/open/floor/carpet/royalblack,
+/area/awaymission/snowdin/cabin)
+"JT" = (
+/obj/machinery/door/airlock/science{
+	req_access_txt = "207";
+	name = "Research and Development"
+	},
+/turf/open/floor/plasteel/dark,
+/area/awaymission/snowdin/post/research)
 "JU" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -15319,6 +15257,32 @@
 	},
 /turf/open/floor/plasteel,
 /area/awaymission/snowdin/post/mining_main)
+"Kd" = (
+/obj/structure/grille/ratvar,
+/obj/machinery/door/window/clockwork{
+	dir = 4
+	},
+/obj/machinery/door/window/clockwork{
+	dir = 1
+	},
+/obj/machinery/door/window/clockwork{
+	dir = 8
+	},
+/obj/structure/window/reinforced/clockwork/fulltile,
+/turf/open/floor/wood,
+/area/awaymission/snowdin/cabin)
+"Ke" = (
+/obj/docking_port/stationary{
+	name = "Snowdin Outpost";
+	area_type = /area/awaymission/snowdin/outside;
+	dwidth = 2;
+	height = 5;
+	id = "snowdintransit_a";
+	width = 5;
+	dir = 8
+	},
+/turf/open/floor/plating/snowed,
+/area/awaymission/snowdin/outside)
 "Kg" = (
 /obj/structure/ore_box,
 /obj/effect/turf_decal/bot,
@@ -15491,6 +15455,9 @@
 /obj/machinery/power/terminal{
 	dir = 1
 	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post/mining_main)
 "Kw" = (
@@ -15521,7 +15488,8 @@
 /obj/machinery/power/apc{
 	dir = 1;
 	name = "Mining Post APC";
-	pixel_y = 24
+	pixel_y = 24;
+	start_charge = 0
 	},
 /obj/structure/cable/yellow{
 	icon_state = "0-8"
@@ -15543,6 +15511,13 @@
 	},
 /turf/open/floor/plasteel,
 /area/awaymission/snowdin/post/mining_main)
+"KC" = (
+/obj/effect/turf_decal/caution/stand_clear,
+/obj/effect/turf_decal/stripes/white/line{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark/snowdin,
+/area/awaymission/snowdin/outside)
 "KD" = (
 /obj/structure/ore_box,
 /obj/effect/turf_decal/bot,
@@ -15638,31 +15613,26 @@
 	},
 /area/awaymission/snowdin/post/mining_main)
 "KO" = (
-/obj/machinery/computer/shuttle/snowdin/mining{
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/brown,
-/obj/effect/turf_decal/tile/brown{
-	dir = 4
-	},
-/turf/open/floor/plasteel,
-/area/awaymission/snowdin/post/mining_main)
+/obj/machinery/chem_master,
+/turf/open/floor/plasteel/white,
+/area/awaymission/snowdin/post)
+"KP" = (
+/obj/item/gun/ballistic/automatic/wt550,
+/obj/structure/rack,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/snowdin/post/secpost)
 "KQ" = (
-/obj/machinery/computer/shuttle/snowdin/mining{
+/obj/effect/turf_decal/stripes/white/line{
 	dir = 8
 	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/brown,
-/obj/effect/turf_decal/tile/brown{
-	dir = 4
-	},
-/turf/open/floor/plasteel,
-/area/awaymission/snowdin/post/mining_dock)
+/turf/open/floor/engine,
+/area/awaymission/snowdin/cargo)
 "KR" = (
 /obj/effect/turf_decal/tile/brown{
 	dir = 1
@@ -15779,6 +15749,18 @@
 /obj/effect/spawner/lootdrop/crate_spawner,
 /turf/open/floor/plating/asteroid/snow/ice,
 /area/awaymission/snowdin/cave/cavern)
+"Lc" = (
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 1
+	},
+/obj/effect/decal/fakelattice,
+/turf/open/floor/plating/ice/smooth,
+/area/awaymission/snowdin/cave)
+"Lf" = (
+/obj/machinery/space_heater,
+/obj/effect/turf_decal/box/white,
+/turf/open/floor/pod/dark,
+/area/awaymission/snowdin/cargo)
 "Lh" = (
 /obj/structure/flora/rock/icy,
 /turf/open/floor/plating/asteroid/snow{
@@ -15787,6 +15769,39 @@
 	slowdown = 1
 	},
 /area/awaymission/snowdin/cave)
+"Lm" = (
+/obj/structure/closet/secure_closet/engineering_electrical,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/snowdin/cargo)
+"Ln" = (
+/obj/machinery/power/apc/auto_name/north,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/machinery/power/terminal{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/awaymission/snowdin/cargo)
+"Lp" = (
+/obj/structure/sign/warning/fire{
+	pixel_y = 30
+	},
+/turf/open/floor/plating/asteroid/snow,
+/area/awaymission/snowdin/outside)
+"Ls" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/machinery/computer/shuttle/snowdin/mining{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/awaymission/snowdin/post/mining_dock)
+"Lt" = (
+/obj/structure/flora/bush,
+/turf/open/floor/plating/snowed/smoothed,
+/area/awaymission/snowdin/outside)
 "Lw" = (
 /obj/machinery/door/airlock/external/glass,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
@@ -15811,6 +15826,25 @@
 /mob/living/simple_animal/hostile/netherworld/blankbody,
 /turf/open/floor/plasteel/cult,
 /area/awaymission/snowdin/cave/cavern)
+"LE" = (
+/obj/structure/table/reinforced/brass,
+/obj/item/screwdriver/brass{
+	pixel_y = 14
+	},
+/obj/item/clockwork/alloy_shards/clockgolem_remains,
+/turf/open/floor/wood,
+/area/awaymission/snowdin/cabin)
+"LF" = (
+/obj/structure/table,
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/obj/item/storage/firstaid/ancient,
+/turf/open/floor/plasteel/white,
+/area/awaymission/snowdin/post)
 "LG" = (
 /obj/structure/barricade/wooden/snowed,
 /turf/open/floor/plating/asteroid/snow{
@@ -15819,12 +15853,77 @@
 	slowdown = 1
 	},
 /area/awaymission/snowdin/cave)
+"LJ" = (
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/machinery/button{
+	pixel_y = 23;
+	id = 9987;
+	name = "Shutter control"
+	},
+/turf/open/floor/plasteel,
+/area/awaymission/snowdin/post/research)
+"LN" = (
+/obj/item/stack/sheet/plasteel/twenty,
+/turf/open/floor/plating,
+/area/awaymission/snowdin/post/mining_main)
 "LR" = (
 /obj/machinery/atmospherics/pipe/simple/orange{
 	dir = 5
 	},
 /turf/open/floor/plating/snowed,
 /area/awaymission/snowdin/outside)
+"LS" = (
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/white/line{
+	dir = 1
+	},
+/turf/open/floor/plating/snowed/smoothed,
+/area/awaymission/snowdin/cave)
+"LT" = (
+/obj/structure/flora/stump,
+/obj/structure/flora/tree/pine,
+/turf/open/floor/plating/asteroid/snow,
+/area/awaymission/snowdin/outside)
+"Ma" = (
+/obj/effect/light_emitter{
+	light_color = "#FAA019";
+	light_power = 1;
+	light_range = 5;
+	name = "fire light"
+	},
+/turf/open/floor/plating/asteroid/snow,
+/area/awaymission/snowdin/cave)
+"Mc" = (
+/obj/structure/fence,
+/turf/open/floor/plating/snowed/smoothed,
+/area/awaymission/snowdin/outside)
+"Md" = (
+/obj/effect/light_emitter{
+	name = "outdoor light";
+	set_cap = 3;
+	set_luminosity = 6
+	},
+/obj/structure/fence{
+	pixel_x = 16
+	},
+/turf/open/floor/plating/snowed/smoothed,
+/area/awaymission/snowdin/outside)
+"Me" = (
+/obj/effect/turf_decal/stripes/white/line{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark/snowdin,
+/area/awaymission/snowdin/outside)
+"Mg" = (
+/turf/closed/mineral/snowmountain,
+/area/awaymission/snowdin/cargo)
 "Mk" = (
 /obj/effect/turf_decal/tile/yellow{
 	dir = 1
@@ -15835,10 +15934,59 @@
 /obj/effect/decal/cleanable/oil,
 /turf/open/floor/plasteel,
 /area/awaymission/snowdin/post/engineering)
+"Ms" = (
+/obj/machinery/power/floodlight,
+/obj/effect/turf_decal/bot,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/snowdin/cargo)
+"Mu" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 8
+	},
+/turf/open/floor/plating/asteroid/snow,
+/area/awaymission/snowdin/outside)
+"MB" = (
+/obj/effect/turf_decal/plaque,
+/turf/open/floor/pod/dark,
+/area/awaymission/snowdin/cargo)
+"MC" = (
+/obj/structure/table/reinforced/brass,
+/obj/item/wirecutters/brass,
+/turf/open/floor/wood,
+/area/awaymission/snowdin/cabin)
 "MD" = (
 /obj/effect/decal/cleanable/blood/old,
 /obj/effect/decal/cleanable/blood/old,
-/turf/open/floor/plating/asteroid/snow,
+/turf/open/floor/plating/snowed/smoothed,
+/area/awaymission/snowdin/outside)
+"MH" = (
+/obj/structure/fence/corner{
+	dir = 10
+	},
+/turf/open/floor/plating/snowed/smoothed,
+/area/awaymission/snowdin/outside)
+"MJ" = (
+/obj/machinery/button{
+	pixel_y = 23;
+	id = 502
+	},
+/turf/open/floor/plating,
+/area/awaymission/snowdin/post/mining_main)
+"MK" = (
+/obj/structure/sign/warning/xeno_mining,
+/turf/closed/wall/ice,
+/area/awaymission/snowdin/post/cavern1)
+"ML" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/dark,
+/area/awaymission/snowdin/cargo)
+"MO" = (
+/obj/effect/turf_decal/arrows/red{
+	dir = 8
+	},
+/turf/open/floor/plating/snowed/smoothed,
 /area/awaymission/snowdin/outside)
 "MP" = (
 /obj/effect/turf_decal/tile/blue{
@@ -15853,19 +16001,104 @@
 "MQ" = (
 /turf/closed/wall/r_wall/syndicate,
 /area/awaymission/snowdin/cave)
+"MR" = (
+/obj/structure/table/reinforced,
+/obj/item/stack/credits{
+	amount = 25
+	},
+/turf/open/floor/plasteel/dark,
+/area/awaymission/snowdin/cave)
+"MT" = (
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/snowdin/post/research)
+"MV" = (
+/obj/structure/chair/brass,
+/obj/effect/mob_spawn/human/corpse/charredskeleton,
+/turf/open/floor/carpet/royalblack,
+/area/awaymission/snowdin/cabin)
 "MW" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
 /turf/closed/indestructible/rock/snow,
 /area/awaymission/snowdin/cave/mountain)
-"Nh" = (
-/mob/living/simple_animal/hostile/netherworld/migo,
-/turf/open/floor/engine/cult{
-	initial_gas_mix = "o2=0;n2=82;plasma=24;TEMP=120";
-	temperature = 120
+"MZ" = (
+/obj/structure/fence{
+	dir = 4
 	},
-/area/awaymission/snowdin/cave/cavern)
+/obj/structure/fence{
+	pixel_x = -16
+	},
+/turf/open/floor/plating/asteroid/snow,
+/area/awaymission/snowdin/outside)
+"Na" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	piping_layer = 3;
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/obj/effect/turf_decal/tile/green,
+/obj/effect/turf_decal/tile/green{
+	dir = 4
+	},
+/mob/living/simple_animal/hostile/skeleton/eskimo,
+/turf/open/floor/plating{
+	icon_state = "platingdmg1"
+	},
+/area/awaymission/snowdin/post/hydro)
+"Nh" = (
+/obj/structure/lattice/catwalk,
+/turf/open/floor/plating/snowed,
+/area/awaymission/snowdin/outside)
+"Ni" = (
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/snowdin/post/research)
+"Nj" = (
+/obj/structure/closet/crate/bin,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/snowdin/cargo)
+"Nk" = (
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/item/reagent_containers/hypospray/medipen,
+/turf/open/floor/plasteel,
+/area/awaymission/snowdin/post/minipost)
+"Nl" = (
+/obj/effect/turf_decal/caution/stand_clear{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/white/line{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark/snowdin,
+/area/awaymission/snowdin/outside)
+"Nm" = (
+/obj/structure/fence/corner{
+	dir = 6;
+	pixel_x = 16
+	},
+/obj/structure/fence/corner{
+	dir = 9;
+	pixel_x = -16
+	},
+/turf/open/floor/plating/asteroid/snow,
+/area/awaymission/snowdin/outside)
+"Ns" = (
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/turf/open/floor/plating,
+/area/awaymission/snowdin/post/mining_main)
 "Nt" = (
 /obj/structure/flora/rock/pile/icy,
 /turf/open/floor/plating/asteroid/snow{
@@ -15893,10 +16126,43 @@
 /turf/open/floor/plating/asteroid/snow/ice,
 /area/awaymission/snowdin/cave/cavern)
 "NP" = (
-/obj/effect/decal/cleanable/blood/old,
-/obj/item/twohanded/cult_spear,
+/obj/effect/decal/cleanable/blood/tracks,
+/obj/docking_port/stationary{
+	name = "Medical Post";
+	area_type = /area/awaymission/snowdin/outside;
+	dwidth = 2;
+	height = 5;
+	id = "snowdintransit_b";
+	roundstart_template = /datum/map_template/shuttle/snowdin/transit;
+	width = 5;
+	dir = 8
+	},
+/turf/open/floor/plating/snowed,
+/area/awaymission/snowdin/outside)
+"NQ" = (
+/obj/structure/fence{
+	dir = 4
+	},
+/obj/structure/sign/nanotrasen,
+/obj/structure/fence{
+	pixel_x = 16
+	},
+/turf/open/floor/plating/asteroid/snow,
+/area/awaymission/snowdin/outside)
+"NS" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/closet/crate/bin,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/snowdin/post/custodials)
+"NW" = (
+/obj/item/clothing/suit/space/hardsuit/lavaknight,
 /turf/open/floor/plasteel/cult,
 /area/awaymission/snowdin/cave/cavern)
+"NY" = (
+/obj/effect/turf_decal/bot,
+/obj/structure/closet/crate/internals,
+/turf/open/floor/plating/snowed,
+/area/awaymission/snowdin/cave)
 "NZ" = (
 /obj/effect/turf_decal/weather/snow,
 /obj/effect/turf_decal/tile/neutral{
@@ -15922,10 +16188,44 @@
 /obj/effect/spawner/lootdrop/snowdin/dungeonmisc,
 /turf/open/floor/plating/snowed/cavern,
 /area/awaymission/snowdin/cave/cavern)
+"Oj" = (
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/structure/window/reinforced/fulltile/ice,
+/obj/structure/grille,
+/turf/open/floor/plating,
+/area/awaymission/snowdin/post/engineering)
+"Om" = (
+/obj/machinery/atmospherics/pipe/manifold4w/orange/visible,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/snowdin/cargo)
 "On" = (
 /obj/effect/decal/cleanable/blood/splatter,
 /turf/open/floor/plating/asteroid/snow,
 /area/awaymission/snowdin/outside)
+"Oo" = (
+/obj/structure/bonfire/prelit,
+/obj/effect/turf_decal/weather/snow,
+/turf/open/floor/plating/snowed/smoothed,
+/area/awaymission/snowdin/outside)
+"Ot" = (
+/obj/effect/baseturf_helper/asteroid/snow,
+/turf/closed/wall/ice,
+/area/awaymission/snowdin/comms)
+"Ov" = (
+/mob/living/simple_animal/hostile/skeleton/plasmaminer,
+/turf/open/floor/wood,
+/area/awaymission/snowdin/post/cavern1)
+"OC" = (
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/awaymission/snowdin/post/research)
 "OF" = (
 /obj/machinery/door/airlock/external{
 	name = "Ready Room";
@@ -15946,6 +16246,51 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/awaymission/snowdin/cave)
+"OH" = (
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 1
+	},
+/obj/effect/decal/fakelattice,
+/turf/open/floor/plating/asteroid/snow,
+/area/awaymission/snowdin/cave)
+"OI" = (
+/obj/item/clockwork/alloy_shards/clockgolem_remains,
+/turf/open/floor/wood,
+/area/awaymission/snowdin/cabin)
+"OK" = (
+/obj/item/stack/ore/iron{
+	amount = 30
+	},
+/turf/open/floor/plating/snowed,
+/area/awaymission/snowdin/cave)
+"OS" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/turf/open/floor/engine,
+/area/awaymission/snowdin/comms)
+"OV" = (
+/obj/structure/table/reinforced,
+/obj/item/storage/backpack/duffelbag/sec/surgery,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/snowdin/cave)
+"Pe" = (
+/mob/living/simple_animal/hostile/netherworld,
+/turf/open/floor/plasteel/cult,
+/area/awaymission/snowdin/cave/cavern)
+"Pg" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	piping_layer = 3;
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/obj/effect/turf_decal/tile/green,
+/obj/effect/turf_decal/tile/green{
+	dir = 4
+	},
+/obj/structure/holosign/barrier/atmos,
+/turf/open/floor/plasteel,
+/area/awaymission/snowdin/post/hydro)
 "Pp" = (
 /obj/effect/turf_decal/arrows/red{
 	dir = 8
@@ -15953,6 +16298,13 @@
 /obj/effect/turf_decal/arrows/red,
 /turf/open/floor/plating/snowed/cavern,
 /area/awaymission/snowdin/cave/cavern)
+"Pq" = (
+/obj/machinery/telecomms/bus,
+/turf/open/floor/circuit/red/telecomms,
+/area/awaymission/snowdin/comms)
+"Pu" = (
+/turf/closed/wall/ice,
+/area/awaymission/snowdin/cargo)
 "Pw" = (
 /obj/effect/light_emitter{
 	name = "outdoor light";
@@ -15966,12 +16318,32 @@
 	slowdown = 1
 	},
 /area/awaymission/snowdin/outside)
+"Pz" = (
+/obj/machinery/door/poddoor/shutters{
+	id = 9987
+	},
+/turf/open/floor/plasteel,
+/area/awaymission/snowdin/post/research)
+"PA" = (
+/mob/living/simple_animal/hostile/bear/snow,
+/turf/closed/mineral/snowmountain,
+/area/awaymission/snowdin/outside)
 "PB" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
 /turf/closed/indestructible/rock/snow/ice,
 /area/awaymission/snowdin/cave/cavern)
+"PC" = (
+/obj/structure/fence/door,
+/turf/open/floor/plating/snowed/smoothed,
+/area/awaymission/snowdin/outside)
+"PD" = (
+/obj/structure/holosign/barrier/atmos,
+/turf/open/floor/plating{
+	icon_state = "platingdmg1"
+	},
+/area/awaymission/snowdin/post/hydro)
 "PE" = (
 /obj/item/multitool,
 /turf/open/floor/plating/asteroid/snow,
@@ -15997,16 +16369,30 @@
 	},
 /turf/closed/mineral/snowmountain,
 /area/awaymission/snowdin/cave/mountain)
-"PP" = (
-/obj/docking_port/stationary{
-	name = "snowdin outpost";
-	area_type = /area/awaymission/snowdin/outside;
-	dwidth = 3;
-	height = 5;
-	id = "snowdintransit_a";
-	width = 5
+"PK" = (
+/obj/structure/grille/ratvar,
+/obj/machinery/door/window/clockwork,
+/obj/machinery/door/window/clockwork{
+	dir = 1
 	},
-/turf/open/floor/plating/snowed,
+/obj/machinery/door/window/clockwork{
+	dir = 8
+	},
+/obj/structure/window/reinforced/clockwork/fulltile,
+/turf/open/floor/wood,
+/area/awaymission/snowdin/cabin)
+"PP" = (
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 9
+	},
+/turf/open/floor/plating/asteroid/snow{
+	floor_variance = 0;
+	icon_state = "snow_dug";
+	slowdown = 1
+	},
 /area/awaymission/snowdin/outside)
 "PR" = (
 /obj/machinery/door/airlock/external{
@@ -16028,22 +16414,71 @@
 /area/awaymission/snowdin/cave)
 "PV" = (
 /obj/item/circuitboard/machine/power_compressor,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post/mining_main)
+"PY" = (
+/obj/item/stack/ore/gold,
+/turf/open/floor/plating/asteroid/snow,
+/area/awaymission/snowdin/cave)
+"Qb" = (
+/obj/effect/turf_decal/stripes/white/line{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark/snowdin,
+/area/awaymission/snowdin/outside)
+"Qc" = (
+/obj/machinery/power/smes/engineering,
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/turf/open/floor/plasteel/dark,
+/area/awaymission/snowdin/cargo)
 "Qq" = (
-/obj/item/circuitboard/computer/turbine_computer,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post/mining_main)
+"Qr" = (
+/obj/machinery/recharge_station,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/snowdin/post/research)
+"Qs" = (
+/obj/machinery/door/airlock/science{
+	req_access_txt = "207";
+	name = "Research and Development"
+	},
+/turf/open/floor/plasteel,
+/area/awaymission/snowdin/post/research)
 "Qv" = (
 /mob/living/simple_animal/hostile/skeleton/ice,
 /turf/open/floor/plating/asteroid/snow,
 /area/awaymission/snowdin/cave)
+"Qw" = (
+/obj/machinery/computer/shuttle/snowdin/transit{
+	dir = 4;
+	possible_destinations = "snowdintransit_a;snowdintransit_b;snowdintransit_c"
+	},
+/obj/effect/turf_decal/stripes/white/line{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark/snowdin,
+/area/awaymission/snowdin/transit)
+"QB" = (
+/obj/structure/mineral_door/wood,
+/turf/open/floor/carpet/royalblack,
+/area/awaymission/snowdin/cabin)
 "QF" = (
 /mob/living/simple_animal/hostile/poison/giant_spider/tarantula{
 	name = "tarantula queen";
 	health = 350;
 	maxHealth = 350;
-	minbodytemp = 0
+	minbodytemp = 0;
+	maxbodytemp = 1500;
+	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	},
 /turf/open/floor/plating/asteroid/snow/ice,
 /area/awaymission/snowdin/cave/cavern)
@@ -16063,8 +16498,16 @@
 /obj/item/stack/sheet/mineral/plasma{
 	amount = 40
 	},
-/turf/open/floor/plating,
-/area/awaymission/snowdin/cave)
+/obj/effect/turf_decal/bot,
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/pod,
+/area/awaymission/snowdin/cargo)
+"QL" = (
+/obj/item/clockwork/alloy_shards,
+/turf/open/floor/wood,
+/area/awaymission/snowdin/cabin)
 "QO" = (
 /mob/living/simple_animal/hostile/skeleton/ice{
 	name = "badass bone boss";
@@ -16083,6 +16526,10 @@
 /obj/effect/decal/cleanable/blood/tracks,
 /turf/open/floor/plasteel/dark/snowdin,
 /area/awaymission/snowdin/outside)
+"QR" = (
+/obj/structure/barricade/wooden/snowed,
+/turf/open/floor/plasteel/cult,
+/area/awaymission/snowdin/cave/cavern)
 "QS" = (
 /obj/item/flashlight/flare/torch,
 /turf/open/floor/plating/asteroid/snow/ice,
@@ -16091,6 +16538,10 @@
 /obj/effect/mob_spawn/human/corpse/syndicatesoldier,
 /turf/open/floor/plating/asteroid/snow,
 /area/awaymission/snowdin/cave)
+"QV" = (
+/obj/machinery/telecomms/hub,
+/turf/open/floor/circuit/red/telecomms,
+/area/awaymission/snowdin/comms)
 "QX" = (
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
@@ -16108,14 +16559,48 @@
 	},
 /turf/closed/mineral/snowmountain,
 /area/awaymission/snowdin/cave/mountain)
+"Rb" = (
+/obj/structure/flora/grass/both,
+/turf/closed/mineral/snowmountain,
+/area/awaymission/snowdin/outside)
+"Rd" = (
+/obj/machinery/vending/engineering,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/snowdin/cargo)
+"Rg" = (
+/obj/structure/bonfire{
+	burning = 1;
+	icon_state = "bonfire_warm"
+	},
+/obj/effect/light_emitter{
+	light_color = "#FAA019";
+	light_power = 1;
+	light_range = 5;
+	name = "fire light"
+	},
+/turf/open/floor/plating/asteroid/snow{
+	floor_variance = 0;
+	icon_state = "snow_dug";
+	slowdown = 1
+	},
+/area/awaymission/snowdin/outside)
 "Ri" = (
 /obj/machinery/atmospherics/miner/oxygen,
 /turf/open/floor/engine/vacuum,
 /area/awaymission/snowdin/outside)
-"Rm" = (
-/obj/item/weldingtool/mini,
-/turf/open/floor/plating/asteroid/snow,
+"Rj" = (
+/turf/open/floor/plasteel/dark/snowdin,
 /area/awaymission/snowdin/outside)
+"Rm" = (
+/obj/item/vending_refill/hydroseeds,
+/turf/open/floor/wood,
+/area/awaymission/snowdin/igloo)
+"Rp" = (
+/obj/structure/table/reinforced/brass,
+/obj/item/crowbar/brass,
+/obj/item/clockwork/component/belligerent_eye/blind_eye,
+/turf/open/floor/wood,
+/area/awaymission/snowdin/cabin)
 "Rs" = (
 /obj/effect/mob_spawn/human/corpse/cargo_tech,
 /turf/open/floor/plating/snowed/smoothed,
@@ -16124,6 +16609,30 @@
 /obj/effect/decal/cleanable/blood/gibs/human/core,
 /turf/closed/wall/ice,
 /area/awaymission/snowdin/cave/cavern)
+"Rw" = (
+/obj/structure/fence{
+	pixel_x = 16
+	},
+/obj/structure/fence{
+	dir = 4
+	},
+/turf/open/floor/plating/asteroid/snow,
+/area/awaymission/snowdin/outside)
+"Ry" = (
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/machinery/mech_bay_recharge_port,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/snowdin/post/research)
+"RC" = (
+/obj/machinery/atmospherics/pipe/simple/supply/visible{
+	dir = 8
+	},
+/obj/structure/closet/crate/bin,
+/turf/open/floor/plasteel,
+/area/awaymission/snowdin/post/engineering)
 "RD" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -16131,6 +16640,35 @@
 /obj/structure/destructible/cult/pylon,
 /turf/open/floor/engine/cult,
 /area/awaymission/snowdin/post/cavern2)
+"RE" = (
+/obj/structure/window/reinforced/fulltile/ice,
+/obj/structure/grille,
+/turf/open/floor/plating,
+/area/awaymission/snowdin/post/research)
+"RF" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/light,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/snowdin/cargo)
+"RH" = (
+/obj/item/clothing/head/cone,
+/obj/effect/turf_decal/stripes/white/line{
+	dir = 1
+	},
+/obj/machinery/light/floor,
+/turf/open/floor/engine,
+/area/awaymission/snowdin/cargo)
+"RI" = (
+/obj/effect/turf_decal/caution/stand_clear{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/white/line{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark/snowdin,
+/area/awaymission/snowdin/outside)
 "RJ" = (
 /obj/item/pipe_dispenser,
 /turf/open/floor/plating/asteroid/snow,
@@ -16145,18 +16683,50 @@
 /area/awaymission/snowdin/cave)
 "RQ" = (
 /obj/machinery/suit_storage_unit/mining,
-/turf/open/floor/plating,
-/area/awaymission/snowdin/cave)
+/obj/effect/turf_decal/bot,
+/turf/open/floor/pod,
+/area/awaymission/snowdin/cargo)
 "RR" = (
 /obj/effect/decal/cleanable/blood/old,
 /obj/effect/rune/convert,
 /obj/structure/spawner/nether{
-	max_mobs = 5;
+	max_mobs = 2;
 	spawn_time = 300;
 	name = "active netherworld link"
 	},
 /turf/open/floor/plasteel/cult,
 /area/awaymission/snowdin/cave/cavern)
+"RT" = (
+/obj/machinery/power/smes,
+/obj/structure/cable/yellow{
+	icon_state = "0-4"
+	},
+/turf/open/floor/engine,
+/area/awaymission/snowdin/comms)
+"RW" = (
+/obj/structure/grille/ratvar,
+/obj/machinery/door/window/clockwork{
+	dir = 1
+	},
+/obj/machinery/door/window/clockwork,
+/obj/machinery/door/window/clockwork{
+	dir = 8
+	},
+/obj/structure/window/reinforced/clockwork/fulltile,
+/turf/open/floor/wood,
+/area/awaymission/snowdin/cabin)
+"RX" = (
+/obj/effect/turf_decal/weather/snow,
+/obj/item/stack/ore/iron{
+	amount = 30
+	},
+/turf/open/floor/plasteel/dark/snowdin,
+/area/awaymission/snowdin/cave)
+"RZ" = (
+/obj/structure/rack,
+/obj/item/ammo_box/magazine/m45,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/snowdin/post/secpost)
 "Sc" = (
 /obj/effect/turf_decal/weather/snow,
 /obj/effect/turf_decal/tile/neutral{
@@ -16172,9 +16742,83 @@
 /obj/structure/barricade/wooden/snowed,
 /turf/open/floor/plasteel/dark/snowdin,
 /area/awaymission/snowdin/cave)
+"Se" = (
+/obj/effect/spawner/lootdrop/snowdin/dungeonmisc,
+/obj/effect/light_emitter{
+	light_color = "#FAA019";
+	light_power = 1;
+	light_range = 5;
+	name = "fire light"
+	},
+/turf/open/floor/plating/asteroid/snow,
+/area/awaymission/snowdin/cave)
+"Sj" = (
+/obj/effect/turf_decal/stripes/white/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/weather/snow,
+/turf/open/floor/plasteel/dark/snowdin,
+/area/awaymission/snowdin/outside)
+"Sm" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/wood,
+/area/awaymission/snowdin/cabin)
+"So" = (
+/obj/effect/decal/remains/human,
+/obj/effect/decal/cleanable/blood/old,
+/turf/open/floor/plating/snowed/smoothed,
+/area/awaymission/snowdin/outside)
+"Sp" = (
+/obj/machinery/door/poddoor{
+	name = "Turbine Vent";
+	id = 502
+	},
+/turf/open/floor/plating/airless,
+/area/awaymission/snowdin/post/mining_main)
+"Sq" = (
+/obj/structure/closet/wardrobe/cargotech,
+/obj/effect/turf_decal/bot,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/snowdin/cargo)
 "Sx" = (
 /turf/closed/mineral/snowmountain/cavern,
 /area/awaymission/snowdin/post/mining_dock)
+"Sz" = (
+/obj/item/clockwork/weapon/ratvarian_spear,
+/obj/structure/table/reinforced/brass,
+/turf/open/floor/wood,
+/area/awaymission/snowdin/cabin)
+"SB" = (
+/obj/structure/flora/tree/pine,
+/turf/open/floor/plating/snowed/smoothed,
+/area/awaymission/snowdin/outside)
+"SD" = (
+/obj/structure/grille/ratvar,
+/obj/machinery/door/window/clockwork,
+/obj/machinery/door/window/clockwork{
+	dir = 4
+	},
+/obj/machinery/door/window/clockwork{
+	dir = 1
+	},
+/obj/structure/window/reinforced/clockwork/fulltile,
+/turf/open/floor/wood,
+/area/awaymission/snowdin/cabin)
+"SH" = (
+/obj/machinery/light/small{
+	brightness = 3;
+	dir = 8
+	},
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 1
+	},
+/turf/open/floor/plating/ice/smooth,
+/area/awaymission/snowdin/cave)
+"SI" = (
+/turf/open/floor/engine,
+/area/awaymission/snowdin/comms)
 "SK" = (
 /mob/living/simple_animal/hostile/skeleton/templar{
 	health = 350;
@@ -16197,11 +16841,26 @@
 /obj/effect/decal/cleanable/ash,
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post/engineering)
+"SU" = (
+/obj/machinery/poweredfans,
+/obj/machinery/door/airlock/public/glass{
+	name = "Radio Tower Ground Floor";
+	req_access_txt = "204"
+	},
+/turf/open/floor/plasteel,
+/area/awaymission/snowdin/comms)
+"SW" = (
+/obj/structure/lattice/catwalk,
+/obj/effect/turf_decal/weather/snow,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/turf/open/floor/plating/snowed,
+/area/awaymission/snowdin/outside)
 "SX" = (
 /obj/machinery/door/airlock/external/glass,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
 	},
+/obj/machinery/poweredfans,
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post/mining_main)
 "SY" = (
@@ -16220,19 +16879,51 @@
 	},
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post/mining_main)
+"Ta" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/stack/sheet/metal,
+/turf/open/floor/plating{
+	icon_state = "platingdmg1"
+	},
+/area/awaymission/snowdin/post/hydro)
 "Tc" = (
 /obj/machinery/suit_storage_unit/open,
+/obj/effect/turf_decal/bot,
+/turf/open/floor/pod,
+/area/awaymission/snowdin/cargo)
+"Th" = (
+/obj/structure/flora/stump,
+/turf/closed/mineral/snowmountain,
+/area/awaymission/snowdin/outside)
+"Tp" = (
+/obj/machinery/door/poddoor{
+	name = "Turbine Vent";
+	id = 502
+	},
 /turf/open/floor/plating,
-/area/awaymission/snowdin/cave)
+/area/awaymission/snowdin/post/mining_main)
 "Tq" = (
 /obj/item/radio,
 /turf/open/floor/plating/asteroid/snow,
 /area/awaymission/snowdin/outside)
+"Tt" = (
+/obj/effect/turf_decal/bot,
+/obj/effect/turf_decal/delivery,
+/turf/open/floor/plating/snowed/smoothed,
+/area/awaymission/snowdin/cave)
 "Tu" = (
 /obj/effect/decal/cleanable/blood/old,
 /obj/structure/trash_pile,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/snowdin/cave)
+"Tw" = (
+/obj/item/book/manual/wiki/research_and_development,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/snowdin/post/research)
 "Tz" = (
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/plating/ice/smooth,
@@ -16248,15 +16939,38 @@
 	temperature = 120
 	},
 /area/awaymission/snowdin/cave/cavern)
+"TI" = (
+/turf/open/floor/plating/snowed/smoothed,
+/area/awaymission/snowdin/cave/mountain)
 "TM" = (
 /obj/effect/spawner/lootdrop/snowdin/dungeonheavy,
 /turf/open/floor/plating/asteroid/snow/ice,
 /area/awaymission/snowdin/cave/cavern)
+"TN" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/floor/carpet/royalblack,
+/area/awaymission/snowdin/cabin)
+"TR" = (
+/obj/structure/bed,
+/obj/item/bedsheet/wiz,
+/turf/open/floor/wood,
+/area/awaymission/snowdin/cabin)
 "TV" = (
 /obj/structure/flora/grass/both,
 /obj/effect/decal/cleanable/blood/tracks,
 /turf/open/floor/plating/asteroid/snow,
 /area/awaymission/snowdin/outside)
+"TX" = (
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/machinery/power/terminal{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/awaymission/snowdin/cargo)
 "TZ" = (
 /obj/structure/sign/poster/official/cleanliness,
 /turf/closed/wall,
@@ -16265,20 +16979,121 @@
 /obj/structure/sign/departments/science,
 /turf/closed/wall,
 /area/awaymission/snowdin/post/research)
+"Uh" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/lattice/catwalk,
+/obj/effect/turf_decal/weather/snow,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/turf/open/floor/plating/snowed,
+/area/awaymission/snowdin/outside)
+"Ui" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/snowdin/post/research)
+"Un" = (
+/obj/structure/cable/yellow{
+	icon_state = "0-2"
+	},
+/obj/machinery/power/apc{
+	pixel_y = 29;
+	name = "Radio Tower APC";
+	dir = 1;
+	start_charge = 0
+	},
+/turf/open/floor/engine,
+/area/awaymission/snowdin/comms)
 "Uo" = (
 /obj/effect/decal/cleanable/blood/old,
 /obj/item/melee/cultblade/dagger,
 /turf/open/floor/plasteel/cult,
 /area/awaymission/snowdin/cave/cavern)
+"Uu" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/bookcase/manuals/research_and_development,
+/turf/open/floor/plating,
+/area/awaymission/snowdin/post/research)
+"Uw" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/structure/flora/grass/both,
+/turf/open/floor/plating/asteroid/snow,
+/area/awaymission/snowdin/post/garage)
+"Ux" = (
+/obj/item/storage/toolbox/emergency/old,
+/turf/open/floor/plating/asteroid/snow,
+/area/awaymission/snowdin/outside)
+"UA" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/turf/open/floor/plating/snowed/smoothed,
+/area/awaymission/snowdin/outside)
 "UF" = (
 /obj/structure/sign/departments/security,
 /turf/closed/wall/rust,
 /area/awaymission/snowdin/post/secpost)
+"UG" = (
+/obj/item/wrench,
+/turf/open/floor/plating/snowed,
+/area/awaymission/snowdin/outside)
 "UI" = (
 /obj/effect/decal/cleanable/blood/splats,
 /obj/effect/decal/cleanable/blood/splats,
 /turf/open/floor/plating/asteroid/snow,
 /area/awaymission/snowdin/outside)
+"UK" = (
+/obj/structure/fence{
+	pixel_x = -16
+	},
+/obj/structure/fence{
+	dir = 4
+	},
+/turf/open/floor/plating/asteroid/snow,
+/area/awaymission/snowdin/outside)
+"UN" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/turf/open/floor/plating/snowed/smoothed,
+/area/awaymission/snowdin/outside)
+"UO" = (
+/obj/effect/turf_decal/bot,
+/obj/machinery/space_heater,
+/obj/machinery/space_heater,
+/turf/open/floor/plating/snowed/smoothed,
+/area/awaymission/snowdin/cave)
+"UR" = (
+/obj/effect/turf_decal/tile/yellow{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/yellow{
+	dir = 8
+	},
+/obj/item/multitool,
+/turf/open/floor/plasteel,
+/area/awaymission/snowdin/post/engineering)
+"US" = (
+/obj/machinery/door/airlock/science{
+	req_access_txt = "207";
+	name = "Science breakroom"
+	},
+/turf/open/floor/plasteel/dark,
+/area/awaymission/snowdin/post/research)
+"UU" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/turf/open/floor/pod/dark,
+/area/awaymission/snowdin/cargo)
 "UY" = (
 /mob/living/simple_animal/hostile/skeleton/bone_warrior,
 /turf/open/floor/plating/asteroid/snow/ice,
@@ -16287,6 +17102,16 @@
 /obj/machinery/space_heater,
 /turf/open/floor/plating/snowed,
 /area/awaymission/snowdin/cave)
+"Vc" = (
+/obj/structure/holosign/barrier/atmos,
+/turf/open/floor/plating{
+	icon_state = "platingdmg2"
+	},
+/area/awaymission/snowdin/post/hydro)
+"Vj" = (
+/obj/item/clockwork/alloy_shards/clockgolem_remains,
+/turf/open/floor/carpet/royalblack,
+/area/awaymission/snowdin/cabin)
 "Vk" = (
 /obj/effect/spawner/lootdrop/snowdin/dungeonmisc,
 /turf/open/floor/plating/asteroid/snow{
@@ -16296,15 +17121,33 @@
 	},
 /area/awaymission/snowdin/cave)
 "Vn" = (
-/obj/machinery/quantumpad{
-	name = "medical outpost link";
-	map_pad_id = "snowmed2";
-	map_pad_link_id = "snowmed1"
+/obj/structure/lattice/catwalk,
+/obj/structure/cable{
+	icon_state = "4-8"
 	},
-/turf/open/floor/plating{
-	icon_state = "platingdmg1"
+/turf/open/floor/plating/snowed/smoothed,
+/area/awaymission/snowdin/outside)
+"Vp" = (
+/obj/effect/turf_decal/caution,
+/obj/machinery/light/floor,
+/turf/open/floor/engine,
+/area/awaymission/snowdin/cargo)
+"Vq" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/cable{
+	icon_state = "1-2"
 	},
-/area/awaymission/snowdin/post/minipost)
+/obj/structure/fence/door/opened,
+/turf/open/floor/plating/snowed/smoothed,
+/area/awaymission/snowdin/outside)
+"Vs" = (
+/obj/item/gun/ballistic/automatic/pistol/m1911/no_mag,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/snowdin/post/secpost)
+"Vv" = (
+/obj/machinery/telecomms/processor,
+/turf/open/floor/circuit/red/telecomms,
+/area/awaymission/snowdin/comms)
 "Vy" = (
 /obj/item/bedsheet/cult,
 /obj/structure/bed,
@@ -16318,22 +17161,77 @@
 /obj/effect/decal/remains/human,
 /turf/open/floor/plasteel/cult,
 /area/awaymission/snowdin/cave/cavern)
+"VD" = (
+/obj/structure/window/reinforced/fulltile/ice,
+/obj/structure/grille,
+/turf/open/floor/plating,
+/area/awaymission/snowdin/post/engineering)
 "VF" = (
 /obj/effect/decal/cleanable/blood/gibs/human/torso,
 /turf/open/floor/plating/asteroid/snow,
 /area/awaymission/snowdin/outside)
-"VV" = (
-/obj/docking_port/stationary{
-	name = "snowdin excavation";
-	area_type = /area/awaymission/snowdin/outside;
-	dwidth = 3;
-	height = 5;
-	id = "snowdintransit_b";
-	roundstart_template = /datum/map_template/shuttle/snowdin/transit;
-	width = 5
+"VJ" = (
+/obj/structure/cable{
+	icon_state = "4-8"
 	},
-/turf/open/floor/plating/snowed,
+/obj/structure/holosign/barrier/atmos,
+/obj/structure/holosign/barrier/firelock,
+/turf/open/floor/plating,
+/area/awaymission/snowdin/post/mining_main)
+"VK" = (
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/structure/bookcase/manuals/research_and_development,
+/turf/open/floor/plasteel,
+/area/awaymission/snowdin/post/research)
+"VM" = (
+/obj/structure/grille/ratvar,
+/obj/machinery/door/window/clockwork{
+	dir = 4
+	},
+/obj/machinery/door/window/clockwork,
+/obj/machinery/door/window/clockwork{
+	dir = 8
+	},
+/obj/structure/window/reinforced/clockwork/fulltile,
+/turf/open/floor/wood,
+/area/awaymission/snowdin/cabin)
+"VN" = (
+/obj/effect/turf_decal/weather/snow,
+/turf/open/floor/plating/asteroid/snow,
 /area/awaymission/snowdin/outside)
+"VR" = (
+/obj/structure/fence{
+	dir = 4
+	},
+/obj/structure/fence{
+	dir = 4
+	},
+/turf/open/floor/plating/asteroid/snow,
+/area/awaymission/snowdin/outside)
+"VT" = (
+/obj/structure/fence{
+	dir = 4
+	},
+/obj/structure/fence{
+	pixel_x = 16
+	},
+/turf/open/floor/plating/asteroid/snow,
+/area/awaymission/snowdin/outside)
+"VU" = (
+/obj/structure/flora/tree/pine,
+/obj/structure/flora/grass/both,
+/obj/structure/flora/grass/both,
+/turf/open/floor/plating/asteroid/snow,
+/area/awaymission/snowdin/outside)
+"VV" = (
+/obj/structure/window/reinforced/fulltile/ice,
+/obj/structure/grille,
+/obj/structure/barricade/wooden/crude/snow,
+/turf/open/space/basic,
+/area/awaymission/snowdin/comms)
 "VW" = (
 /obj/machinery/door/airlock/external/glass,
 /obj/structure/fans/tiny,
@@ -16341,32 +17239,71 @@
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post/mining_dock)
 "VY" = (
-/obj/structure/flora/tree/pine,
-/obj/effect/decal/cleanable/blood/old,
-/turf/open/floor/plating/asteroid/snow,
-/area/awaymission/snowdin/outside)
+/obj/machinery/telecomms/receiver,
+/turf/open/floor/circuit/red/telecomms,
+/area/awaymission/snowdin/comms)
 "Wa" = (
 /obj/item/melee/cultblade,
 /turf/open/floor/plasteel/cult,
 /area/awaymission/snowdin/cave/cavern)
+"Wb" = (
+/obj/structure/flora/grass/both,
+/obj/structure/flora/tree/dead,
+/turf/open/floor/plating/asteroid/snow,
+/area/awaymission/snowdin/outside)
+"Wf" = (
+/obj/item/multitool,
+/turf/open/floor/engine,
+/area/awaymission/snowdin/comms)
+"Wg" = (
+/obj/machinery/poweredfans,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/public/glass{
+	name = "Radio Tower Ground Floor"
+	},
+/turf/open/floor/plasteel,
+/area/awaymission/snowdin/comms)
 "Wh" = (
-/obj/structure/table,
 /obj/machinery/light/small{
 	dir = 1
 	},
-/obj/item/paper/fluff/awaymissions/snowdin/research_feed,
+/obj/machinery/ore_silo,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/snowdin/post/research)
-"Wp" = (
-/obj/effect/turf_decal/tile/blue{
-	dir = 4
+"Wi" = (
+/mob/living/simple_animal/hostile/clockwork/marauder{
+	name = "completed experiment";
+	desc = "Some strange, mechanical construct, ghastly red flames floating around it."
 	},
-/obj/effect/turf_decal/tile/blue{
+/turf/open/floor/carpet/royalblack,
+/area/awaymission/snowdin/cabin)
+"Wm" = (
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/obj/item/weldingtool,
-/turf/open/floor/plasteel/white,
-/area/awaymission/snowdin/post)
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/snowdin/post/research)
+"Wo" = (
+/obj/machinery/computer/turbine_computer,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/turf/open/floor/plating,
+/area/awaymission/snowdin/post/mining_main)
+"Wp" = (
+/obj/effect/mob_spawn/human/skeleton,
+/turf/open/floor/plasteel/cult,
+/area/awaymission/snowdin/cave/cavern)
 "Wr" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
@@ -16379,10 +17316,30 @@
 	heat_capacity = 1e+006
 	},
 /area/awaymission/snowdin/post/mining_main)
+"Ws" = (
+/obj/structure/barricade/wooden/snowed,
+/obj/structure/barricade/wooden/snowed,
+/turf/open/floor/plasteel/cult,
+/area/awaymission/snowdin/cave/cavern)
+"Wu" = (
+/obj/item/circuitboard/machine/autolathe,
+/turf/open/floor/plating/asteroid/snow{
+	floor_variance = 0;
+	icon_state = "snow_dug";
+	slowdown = 1
+	},
+/area/awaymission/snowdin/cave)
+"Wx" = (
+/obj/item/stack/ore/glass{
+	amount = 50
+	},
+/turf/open/floor/plating/snowed,
+/area/awaymission/snowdin/cave)
 "WA" = (
 /obj/structure/closet/secure_closet/miner,
-/turf/open/floor/plating,
-/area/awaymission/snowdin/cave)
+/obj/effect/turf_decal/bot,
+/turf/open/floor/pod,
+/area/awaymission/snowdin/cargo)
 "WB" = (
 /obj/item/reagent_containers/food/drinks/beer{
 	list_reagents = null
@@ -16390,6 +17347,21 @@
 /mob/living/simple_animal/hostile/syndicate/ranged,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/snowdin/cave)
+"WD" = (
+/obj/structure/grille/ratvar,
+/obj/machinery/door/window/clockwork,
+/obj/machinery/door/window/clockwork{
+	dir = 1
+	},
+/obj/machinery/door/window/clockwork{
+	dir = 1
+	},
+/obj/machinery/door/window/clockwork{
+	dir = 4
+	},
+/obj/structure/window/reinforced/clockwork/fulltile,
+/turf/open/floor/wood,
+/area/awaymission/snowdin/cabin)
 "WI" = (
 /obj/structure/barricade/wooden/snowed,
 /turf/open/floor/plating/asteroid/snow{
@@ -16398,10 +17370,22 @@
 	slowdown = 1
 	},
 /area/awaymission/snowdin/outside)
+"WJ" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/effect/decal/fakelattice,
+/turf/open/floor/plating/snowed/smoothed,
+/area/awaymission/snowdin/outside)
 "WL" = (
 /obj/effect/decal/cleanable/blood/splats,
 /turf/open/floor/plating/snowed/smoothed,
 /area/awaymission/snowdin/cave)
+"WM" = (
+/obj/effect/turf_decal/weather/snow,
+/turf/open/floor/plating/snowed/smoothed,
+/area/awaymission/snowdin/outside)
 "WR" = (
 /obj/machinery/atmospherics/pipe/simple/orange{
 	dir = 9
@@ -16412,23 +17396,115 @@
 /obj/effect/mob_spawn/human/corpse/cargo_tech,
 /turf/open/floor/plating/snowed/cavern,
 /area/awaymission/snowdin/cave/cavern)
+"Xb" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/obj/machinery/computer/shuttle/snowdin/mining{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/awaymission/snowdin/post/mining_main)
+"Xc" = (
+/obj/structure/table/reinforced/brass,
+/obj/item/weldingtool/experimental/brass,
+/turf/open/floor/wood,
+/area/awaymission/snowdin/cabin)
+"Xd" = (
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral,
+/turf/closed/wall,
+/area/awaymission/snowdin/post/research)
 "Xi" = (
 /obj/item/screwdriver,
 /obj/effect/decal/cleanable/blood/gibs/human/down,
 /turf/open/floor/plating/asteroid/snow,
+/area/awaymission/snowdin/outside)
+"Xj" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plating/snowed/smoothed,
 /area/awaymission/snowdin/outside)
 "Xm" = (
 /obj/item/shard,
 /mob/living/simple_animal/hostile/bear/snow,
 /turf/open/floor/plating/asteroid/snow,
 /area/awaymission/snowdin/cave)
+"Xp" = (
+/obj/structure/girder,
+/turf/open/floor/plating{
+	icon_state = "platingdmg1"
+	},
+/area/awaymission/snowdin/post/hydro)
+"Xx" = (
+/obj/structure/statue/snow/snowman,
+/turf/open/floor/plating/asteroid/snow,
+/area/awaymission/snowdin/outside)
+"XA" = (
+/obj/effect/spawner/lootdrop/snowdin/dungeonlite,
+/obj/effect/light_emitter{
+	light_color = "#FAA019";
+	light_power = 1;
+	light_range = 5;
+	name = "fire light"
+	},
+/turf/open/floor/plating/asteroid/snow,
+/area/awaymission/snowdin/cave)
+"XB" = (
+/obj/structure/flora/stump,
+/obj/structure/fence{
+	dir = 4
+	},
+/turf/open/floor/plating/asteroid/snow,
+/area/awaymission/snowdin/outside)
+"XG" = (
+/obj/structure/table/reinforced,
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/item/stack/credits{
+	amount = 25
+	},
+/turf/open/floor/plasteel,
+/area/awaymission/snowdin/post/messhall)
 "XH" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2";
 	alpha = 1
 	},
-/turf/closed/wall/rust,
+/turf/closed/wall,
 /area/awaymission/snowdin/post/mining_main)
+"XJ" = (
+/obj/structure/frame/computer,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/awaymission/snowdin/post/research)
+"XM" = (
+/obj/machinery/atmospherics/pipe/simple/supply/visible{
+	dir = 8
+	},
+/obj/machinery/vending/wardrobe/atmos_wardrobe,
+/turf/open/floor/plasteel,
+/area/awaymission/snowdin/post/engineering)
+"XN" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/reagent_containers/hypospray/medipen,
+/turf/open/floor/plasteel,
+/area/awaymission/snowdin/post/minipost)
 "XR" = (
 /obj/item/stack/rods,
 /obj/effect/turf_decal/weather/snow,
@@ -16445,32 +17521,124 @@
 /obj/structure/barricade/wooden/snowed,
 /turf/open/floor/plasteel/dark/snowdin,
 /area/awaymission/snowdin/cave)
+"XT" = (
+/obj/structure/fence/corner{
+	dir = 4
+	},
+/turf/open/floor/plating/asteroid/snow,
+/area/awaymission/snowdin/outside)
 "XX" = (
 /turf/open/floor/plasteel/cult,
 /area/awaymission/snowdin/cave/cavern)
+"XY" = (
+/obj/machinery/light,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/snowdin/cargo)
+"XZ" = (
+/obj/effect/turf_decal/stripes/white/line{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark/snowdin,
+/area/awaymission/snowdin/outside)
+"Ye" = (
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/structure/lattice/catwalk,
+/obj/effect/turf_decal/weather/snow,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 6
+	},
+/turf/open/floor/plating/snowed,
+/area/awaymission/snowdin/outside)
+"Yg" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/closet/crate/bin,
+/turf/open/floor/plasteel,
+/area/awaymission/snowdin/post/kitchen)
+"Yi" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/closed/wall/ice,
+/area/awaymission/snowdin/comms)
 "Yn" = (
 /obj/machinery/door/airlock/external/glass,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
 	},
+/obj/machinery/poweredfans,
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post/garage)
+"Yp" = (
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/obj/item/bedsheet/medical,
+/turf/open/floor/plasteel/white,
+/area/awaymission/snowdin/post)
+"Yq" = (
+/obj/effect/baseturf_helper/asteroid/snow,
+/turf/closed/wall/mineral/wood/nonmetal,
+/area/awaymission/snowdin/cabin)
 "Ys" = (
 /turf/open/floor/plasteel/elevatorshaft,
 /area/awaymission/snowdin/post/mining_dock)
+"Yv" = (
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/turf/open/floor/engine,
+/area/awaymission/snowdin/comms)
+"Yx" = (
+/turf/closed/wall/r_wall,
+/area/awaymission/snowdin/cave/mountain)
+"Yz" = (
+/obj/structure/closet/cabinet,
+/obj/item/clothing/suit/hooded/wintercoat/ratvar{
+	name = "armored brass winter coat";
+	desc = "A heavy jacket made from 'synthetic' animal furs. It has haphazardly sewn on plating that appears to be brass."
+	},
+/turf/open/floor/wood,
+/area/awaymission/snowdin/cabin)
+"YG" = (
+/obj/machinery/cell_charger,
+/obj/structure/table,
+/obj/item/disk/holodisk/snowdin/weregettingpaidright,
+/obj/item/stock_parts/cell/high/plus,
+/turf/open/floor/plasteel/dark,
+/area/awaymission/snowdin/post/research)
+"YI" = (
+/turf/closed/wall/ice,
+/area/awaymission/snowdin/comms)
+"YJ" = (
+/turf/open/floor/plasteel/dark,
+/area/awaymission/snowdin/cargo)
 "YM" = (
 /obj/effect/mob_spawn/human/corpse/cargo_tech,
 /turf/open/floor/plasteel,
 /area/awaymission/snowdin/post/mining_main)
+"YP" = (
+/obj/structure/fence/door/opened,
+/turf/open/floor/plating/snowed/smoothed,
+/area/awaymission/snowdin/outside)
 "YR" = (
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
+/turf/closed/wall/mineral/wood/nonmetal,
+/area/awaymission/snowdin/cabin)
+"YS" = (
+/obj/structure/table/wood,
+/obj/item/card/id/away/snowdin/captain{
+	access = list(200,201,202,203,204,205,206,24)
 	},
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/turf/closed/indestructible/rock/snow/ice,
-/area/awaymission/snowdin/cave/cavern)
+/turf/open/floor/carpet,
+/area/awaymission/snowdin/post/dorm)
+"YT" = (
+/obj/effect/baseturf_helper/asteroid/snow,
+/turf/closed/wall/ice,
+/area/awaymission/snowdin/cargo)
 "YV" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/crowbar,
@@ -16490,6 +17658,44 @@
 /mob/living/simple_animal/hostile/syndicate/melee,
 /turf/open/floor/plasteel/dark,
 /area/awaymission/snowdin/cave)
+"Zb" = (
+/obj/item/flashlight/lantern{
+	on = 1
+	},
+/turf/open/floor/plating/asteroid/snow,
+/area/awaymission/snowdin/cave)
+"Zd" = (
+/obj/docking_port/stationary{
+	name = "Mining Base";
+	area_type = /area/awaymission/snowdin/outside;
+	dwidth = 2;
+	height = 5;
+	id = "snowdintransit_c";
+	width = 5;
+	dir = 8
+	},
+/turf/open/floor/plating/snowed,
+/area/awaymission/snowdin/outside)
+"Ze" = (
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/turf/open/floor/plasteel,
+/area/awaymission/snowdin/comms)
+"Zf" = (
+/obj/structure/fireplace{
+	lit = 1
+	},
+/turf/open/floor/wood,
+/area/awaymission/snowdin/cabin)
+"Zg" = (
+/obj/effect/turf_decal/stripes,
+/turf/open/floor/pod/dark,
+/area/awaymission/snowdin/cargo)
+"Zh" = (
+/obj/item/melee/transforming/energy/sword/cx,
+/turf/open/floor/plasteel/cult,
+/area/awaymission/snowdin/cave/cavern)
 "Zj" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
@@ -16509,12 +17715,33 @@
 	pixel_y = -3;
 	pixel_x = 32
 	},
+/obj/structure/closet/crate/bin,
 /turf/open/floor/plasteel/cafeteria,
 /area/awaymission/snowdin/post/messhall)
+"ZA" = (
+/turf/open/floor/wood,
+/area/awaymission/snowdin/cabin)
 "ZD" = (
 /obj/effect/decal/cleanable/blood/splatter,
 /turf/open/floor/plating/snowed/cavern,
 /area/awaymission/snowdin/cave/cavern)
+"ZE" = (
+/obj/structure/sign/nanotrasen,
+/turf/closed/wall/ice,
+/area/awaymission/snowdin/outside)
+"ZJ" = (
+/obj/structure/table/reinforced/brass,
+/obj/item/clockwork/component/geis_capacitor/fallen_armor,
+/obj/item/wrench/brass,
+/turf/open/floor/wood,
+/area/awaymission/snowdin/cabin)
+"ZL" = (
+/obj/effect/turf_decal/weather/snow,
+/obj/item/stack/ore/glass{
+	amount = 50
+	},
+/turf/open/floor/plasteel/dark/snowdin,
+/area/awaymission/snowdin/cave)
 "ZM" = (
 /obj/effect/turf_decal/tile/yellow{
 	dir = 1
@@ -16529,6 +17756,10 @@
 /obj/machinery/door/airlock/medical,
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post/minipost)
+"ZO" = (
+/obj/structure/flora/bush,
+/turf/closed/mineral/snowmountain,
+/area/awaymission/snowdin/outside)
 "ZP" = (
 /obj/structure/lattice/catwalk,
 /obj/machinery/atmospherics/pipe/manifold/orange/visible{
@@ -16536,6 +17767,22 @@
 	},
 /turf/open/floor/plating/asteroid/snow,
 /area/awaymission/snowdin/outside)
+"ZQ" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/engine,
+/area/awaymission/snowdin/comms)
+"ZR" = (
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/awaymission/snowdin/post/research)
 
 (1,1,1) = {"
 aa
@@ -19978,8 +21225,8 @@ tx
 tx
 tx
 tx
-tI
-tI
+tx
+tx
 tI
 tI
 tx
@@ -20165,7 +21412,7 @@ af
 al
 af
 af
-jc
+af
 af
 af
 af
@@ -20237,7 +21484,7 @@ tx
 tx
 tx
 tI
-tI
+Ma
 tI
 tx
 tx
@@ -20495,7 +21742,7 @@ tx
 tx
 tI
 tI
-tI
+tx
 tx
 tx
 tx
@@ -20729,8 +21976,8 @@ wc
 aj
 aj
 aj
-tI
-tx
+ii
+ii
 tx
 tx
 vK
@@ -20929,7 +22176,7 @@ af
 af
 aK
 dA
-aV
+Bv
 aK
 aK
 aK
@@ -21002,7 +22249,7 @@ wc
 aj
 aj
 aj
-tI
+Ma
 tI
 tQ
 tQ
@@ -21188,7 +22435,7 @@ aK
 dB
 dZ
 eN
-dC
+YS
 gg
 gX
 hG
@@ -21258,12 +22505,12 @@ wc
 wc
 wc
 aj
-tI
+bd
 tI
 tI
 ud
 tI
-tI
+Zb
 vJ
 tI
 vJ
@@ -21441,7 +22688,7 @@ af
 aK
 bO
 cm
-aV
+Bv
 dC
 ea
 eO
@@ -21496,7 +22743,7 @@ wc
 wc
 aj
 aj
-tI
+ii
 tx
 tx
 tx
@@ -21753,7 +23000,7 @@ wc
 wc
 aj
 tI
-tI
+ii
 tx
 tx
 vK
@@ -21778,15 +23025,15 @@ tI
 aj
 aj
 tI
-tJ
+tQ
 tQ
 aj
 aj
+Se
 tI
 tI
 tI
 tI
-ud
 tI
 aj
 tI
@@ -22009,7 +23256,7 @@ wc
 wc
 wc
 tG
-tI
+ud
 ja
 tx
 tx
@@ -22043,9 +23290,9 @@ tI
 tI
 tQ
 aj
+hg
 tI
-tI
-tI
+Ma
 aj
 aj
 aj
@@ -22207,8 +23454,8 @@ wc
 af
 af
 aK
-aQ
-bi
+aY
+bl
 bx
 bQ
 cp
@@ -22266,7 +23513,7 @@ wc
 wc
 af
 af
-wF
+So
 Tz
 tN
 tN
@@ -22286,7 +23533,7 @@ wc
 wc
 wc
 aj
-tI
+Se
 tI
 tI
 tI
@@ -22467,7 +23714,7 @@ aK
 aR
 bj
 by
-aV
+Bv
 cq
 cW
 dD
@@ -22546,11 +23793,11 @@ aj
 aj
 aj
 aj
-tI
+PY
 tI
 yK
 tI
-tI
+ud
 aj
 tI
 tQ
@@ -22568,7 +23815,7 @@ wc
 aj
 aj
 tI
-ud
+tI
 wx
 tI
 tx
@@ -22585,7 +23832,7 @@ tx
 tx
 tx
 tx
-tx
+aj
 aj
 aj
 wc
@@ -22722,9 +23969,9 @@ af
 af
 aK
 aS
-aV
+Bv
 aS
-aV
+Bv
 cr
 cX
 dE
@@ -22780,7 +24027,7 @@ af
 af
 af
 af
-af
+dX
 af
 tN
 tN
@@ -22809,7 +24056,7 @@ aj
 aj
 aj
 aj
-tI
+hg
 tI
 tI
 tI
@@ -22841,9 +24088,9 @@ tx
 tx
 tx
 tx
-tx
-tx
-tx
+aj
+aj
+aj
 uq
 tN
 wc
@@ -22979,7 +24226,7 @@ ak
 af
 aK
 aY
-bi
+bl
 bx
 bR
 cs
@@ -23034,9 +24281,9 @@ af
 af
 af
 af
-fq
 af
 af
+dX
 af
 af
 af
@@ -23069,7 +24316,7 @@ aj
 aj
 aj
 tI
-tI
+XA
 aj
 aj
 aj
@@ -23094,12 +24341,12 @@ tQ
 tI
 tI
 tI
-tI
+aj
 tx
 tx
-tx
-tx
-tx
+aj
+aj
+aj
 tx
 tN
 tN
@@ -23291,10 +24538,10 @@ af
 af
 ak
 af
-jc
 af
 af
-fq
+dX
+af
 af
 af
 af
@@ -23350,12 +24597,12 @@ aj
 aj
 aj
 tI
-tI
-tI
+ud
+aj
 tx
-tx
-tx
-tx
+aj
+aj
+aj
 xR
 tN
 tN
@@ -23494,7 +24741,7 @@ af
 aK
 aS
 aS
-aV
+Bv
 aS
 ct
 da
@@ -23548,9 +24795,9 @@ af
 af
 af
 af
-jc
 af
-af
+dX
+dX
 af
 af
 af
@@ -23608,8 +24855,8 @@ wc
 aj
 aj
 aj
-tI
-tI
+aj
+aj
 aj
 aj
 tN
@@ -23751,12 +24998,12 @@ af
 aK
 aW
 bl
-bA
+bx
 bS
 cu
 db
 aV
-eh
+aX
 eW
 aS
 gm
@@ -23866,7 +25113,7 @@ wc
 aj
 aj
 aj
-tI
+aj
 ai
 aj
 tN
@@ -24060,10 +25307,10 @@ tC
 af
 af
 af
-fq
+af
 af
 sf
-am
+af
 af
 al
 af
@@ -24264,16 +25511,16 @@ af
 af
 aK
 aS
-aV
+Bv
 aS
 aS
 cr
 dd
 dF
 ei
-eX
-Wp
 gr
+gr
+bA
 fw
 dK
 is
@@ -24320,7 +25567,7 @@ af
 af
 af
 sf
-am
+dX
 af
 af
 af
@@ -24462,11 +25709,11 @@ af
 af
 af
 af
-am
 af
 af
 af
 af
+af
 wc
 wc
 wc
@@ -24487,15 +25734,15 @@ wc
 wc
 wc
 wc
-wc
-wc
-wc
-wc
-wc
-wc
-wc
-wc
-wc
+bc
+bc
+bc
+bc
+bc
+bc
+bc
+bc
+bc
 ac
 ac
 ac
@@ -24572,15 +25819,15 @@ af
 af
 af
 af
-VY
+sf
 sf
 af
 af
 Fo
+dX
 af
 af
 af
-fq
 af
 af
 af
@@ -24638,7 +25885,7 @@ af
 af
 af
 af
-ko
+ZE
 sw
 sH
 sH
@@ -24646,7 +25893,7 @@ sH
 sH
 sH
 tn
-af
+dX
 af
 af
 am
@@ -24718,6 +25965,7 @@ am
 af
 af
 af
+tq
 af
 af
 af
@@ -24725,7 +25973,6 @@ af
 af
 af
 af
-af
 wc
 wc
 wc
@@ -24744,15 +25991,15 @@ wc
 wc
 wc
 wc
-wc
-wc
-wc
-wc
-wc
-wc
-wc
-wc
-wc
+bc
+Gq
+Gq
+Gq
+Gq
+Gq
+Gq
+Gq
+bc
 ac
 ac
 ac
@@ -24788,7 +26035,7 @@ dM
 eY
 fy
 go
-gr
+Yp
 hM
 it
 jm
@@ -24796,7 +26043,7 @@ lY
 lY
 lm
 mb
-mG
+NS
 mG
 nD
 oc
@@ -24804,7 +26051,7 @@ oz
 pi
 pH
 qn
-qo
+KP
 pH
 af
 af
@@ -24833,10 +26080,10 @@ af
 af
 ak
 af
+MO
 af
 af
 af
-am
 af
 af
 af
@@ -24895,7 +26142,7 @@ af
 af
 af
 af
-tq
+dX
 sS
 td
 sS
@@ -24903,7 +26150,7 @@ td
 sS
 sI
 yU
-af
+dX
 af
 af
 af
@@ -24975,41 +26222,41 @@ af
 af
 ak
 af
-af
-af
-fq
-af
-af
-am
-af
+tq
+tq
+XZ
+Nl
+Nl
+XZ
+Rj
 af
 ag
 af
 wc
 wc
-wc
-wc
-wc
-wc
-wc
-wc
-wc
-wc
-wc
-wc
-wc
-wc
-wc
-wc
-wc
-wc
-wc
-wc
-wc
-wc
-wc
-wc
-wc
+Yx
+Yx
+Yx
+pN
+pN
+pN
+pN
+pN
+pN
+pN
+pN
+Yx
+Yx
+Yx
+bc
+Gq
+Gq
+Gq
+Gq
+Gq
+Gq
+Gq
+bc
 ac
 ac
 ac
@@ -25035,9 +26282,9 @@ af
 af
 aK
 aS
-aV
-aV
-aV
+Bv
+Bv
+Bv
 cx
 de
 dG
@@ -25045,7 +26292,7 @@ dM
 eZ
 fz
 gp
-hg
+gr
 hN
 it
 jn
@@ -25060,25 +26307,25 @@ oc
 oA
 oH
 pH
-qo
+Vs
 aT
 pH
 am
 af
 sx
 sJ
+te
+te
+te
+te
+te
 dX
-te
-te
-te
-te
 dX
 af
 af
 af
 af
 af
-af
 sf
 sf
 af
@@ -25090,7 +26337,7 @@ af
 af
 af
 af
-af
+MO
 af
 af
 af
@@ -25153,14 +26400,14 @@ af
 af
 af
 dX
-dX
+te
 te
 te
 te
 te
 yF
 yU
-af
+dX
 am
 af
 af
@@ -25232,41 +26479,41 @@ af
 af
 af
 af
+dX
+te
+te
+te
+te
+te
+KC
 af
 af
 af
-af
-af
-af
-ak
-af
-am
-af
 wc
 wc
-wc
-wc
-wc
-wc
-wc
-wc
-wc
-wc
-wc
-wc
-wc
-wc
-wc
-wc
-Go
-Go
-GP
-Go
-Go
-GP
-GP
-Go
-wc
+Yx
+eh
+eh
+eh
+eh
+eh
+eh
+eh
+eh
+eh
+eh
+eh
+eh
+eh
+Tp
+Gq
+Gq
+Gq
+Gq
+Gq
+Gq
+Gq
+bc
 ac
 ac
 ac
@@ -25324,11 +26571,12 @@ af
 am
 sx
 sK
+te
+te
+te
+te
+te
 dX
-te
-te
-te
-te
 dX
 af
 af
@@ -25345,9 +26593,8 @@ af
 af
 af
 af
-af
-af
-af
+dX
+MO
 af
 af
 af
@@ -25410,74 +26657,29 @@ af
 af
 af
 dX
-dX
+te
 te
 te
 te
 te
 yG
 yU
-af
-af
-af
-af
-af
-am
-af
-ak
-af
-af
-af
-af
-af
-am
-af
-af
-af
-tN
-af
-af
-af
-af
-ko
-af
-af
-af
-af
-af
-am
-af
-af
-af
-af
-am
+dX
 af
 af
 af
 af
 af
 af
-fq
-af
-af
-af
-am
 af
 af
 af
 af
 af
-fq
 af
 af
 af
-fq
-ak
 af
-tN
-tN
-fq
-ak
 af
 tN
 af
@@ -25490,40 +26692,85 @@ af
 af
 af
 af
-al
-af
-af
-af
-fq
 af
 af
 af
 af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+tN
+tN
+af
+af
+af
+tN
+af
+af
+af
+af
+af
+af
+af
+af
+af
+dX
+te
+te
+te
+te
+te
+Qb
+af
+af
+af
 wc
 wc
-wc
-wc
-wc
-wc
-wc
-wc
-wc
-wc
-wc
-wc
-wc
-wc
-wc
-wc
-GP
+Yx
+eh
+Yx
+pN
+pN
+pN
+pN
+pN
+pN
+pN
+pN
+Yx
+Yx
+Yx
+bc
+MJ
 Gq
 Gq
 Gq
 Gq
 Gq
 Gq
-GP
-wc
+bc
 ac
 ac
 ac
@@ -25572,20 +26819,20 @@ nd
 nF
 oe
 oC
-pk
+pL
 pJ
 qo
-qo
+RZ
 pH
 ak
 af
 sx
 sJ
-dX
 te
 te
 te
-PP
+te
+te
 dX
 DA
 DA
@@ -25667,97 +26914,100 @@ dX
 dX
 dX
 dX
-dX
 te
 te
 te
-VV
-yF
+te
+te
+Sj
 yU
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+DM
+DM
+DM
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+dX
+te
+te
+te
+te
+te
+Qb
 af
 af
-af
-af
-af
-af
-af
-af
-af
-am
-af
-af
-af
-af
-af
-af
-af
-af
-af
-ak
-af
-af
-ks
-af
-am
-af
-af
-af
-af
-af
-af
-af
-af
-af
-af
-hf
-hf
-hf
-am
-af
-af
-af
-af
-af
-af
-af
-af
-af
-af
-am
-af
-af
-af
-af
-af
-af
-tN
-tN
-tN
-af
-af
-af
-tN
-tN
-tN
-tN
-tN
-tN
-af
-af
-fq
-af
-af
-af
-af
-af
-af
-af
-af
-af
-fq
 af
 ko
 wc
+Yx
+eh
+Yx
 wc
 wc
 wc
@@ -25769,18 +27019,15 @@ wc
 wc
 wc
 wc
-wc
-wc
-wc
-Go
+bc
 Gq
 Gq
 Gq
 Gq
+Ns
+LN
 Gq
-Gq
-Go
-wc
+bc
 ac
 ac
 ac
@@ -25802,21 +27049,21 @@ af
 af
 am
 aq
-ar
-ar
+RE
+RE
 aK
 aS
 aS
-aV
+Bv
 aS
 cq
 dd
 dJ
 dK
-fc
+LF
 fC
 fc
-fc
+KO
 dK
 iw
 jp
@@ -25838,13 +27085,13 @@ af
 fq
 sx
 sK
+te
+te
+te
+te
+te
 dX
-te
-te
-te
-te
 dX
-af
 af
 af
 af
@@ -25924,21 +27171,14 @@ af
 af
 af
 dX
-dX
+te
 te
 te
 te
 te
 yG
 yU
-af
-fq
-af
-af
-af
-af
-af
-fq
+dX
 af
 af
 af
@@ -25947,13 +27187,20 @@ af
 af
 af
 af
-fq
-am
+af
+af
+af
+af
+af
+af
+af
+af
+af
 af
 jc
 af
 af
-ko
+af
 af
 hf
 hf
@@ -25966,7 +27213,6 @@ af
 af
 af
 af
-fq
 af
 af
 af
@@ -25975,23 +27221,23 @@ af
 af
 af
 af
-fq
-af
-af
-fq
 af
 af
 af
 af
 af
 af
-am
+af
+af
+af
+af
+af
+af
 af
 tN
 tN
 af
 af
-am
 af
 af
 af
@@ -26003,21 +27249,22 @@ af
 af
 af
 af
-am
 af
-af
-jc
-af
-af
-af
+dX
+te
+te
+te
+te
+te
+Qb
 af
 af
 af
 Fl
-af
-wc
-wc
-wc
+dX
+Yx
+Sp
+Yx
 wc
 wc
 wc
@@ -26025,19 +27272,19 @@ wc
 wc
 wc
 Go
-GP
-GP
 Go
 Go
-GP
 Go
-Gq
+Go
+bc
+bc
+Wo
 Qq
 PV
 yc
 Gq
-Go
-wc
+Gq
+bc
 ac
 ac
 ac
@@ -26060,11 +27307,11 @@ al
 ag
 ar
 aw
-aE
-aL
-bc
-bo
-bE
+aM
+aG
+az
+Uu
+VK
 az
 cz
 dg
@@ -26089,19 +27336,19 @@ oE
 pm
 pK
 qq
-af
+am
 ak
 af
 sf
 sx
 sJ
+te
+te
+Ke
+te
+te
 dX
-te
-te
-te
-te
 dX
-af
 af
 af
 af
@@ -26147,7 +27394,7 @@ af
 af
 af
 pI
-Rm
+Ux
 af
 af
 af
@@ -26180,15 +27427,15 @@ af
 af
 af
 af
-dX
 dX
 te
-xq
+te
+NP
 xq
 xq
 QP
 yU
-af
+dX
 af
 ak
 am
@@ -26210,18 +27457,18 @@ af
 hf
 hf
 af
-ks
-af
-af
-af
-am
-af
-af
 af
 af
 af
 af
 am
+af
+af
+af
+af
+af
+af
+af
 af
 af
 af
@@ -26249,7 +27496,7 @@ am
 af
 af
 af
-fq
+af
 af
 am
 af
@@ -26260,19 +27507,20 @@ af
 af
 af
 af
-af
-af
-af
-fq
-af
-af
-af
+dX
+te
+te
+Zd
+te
+te
+KC
 af
 af
 af
 ko
-am
-af
+dX
+dX
+TI
 wc
 wc
 wc
@@ -26280,21 +27528,20 @@ wc
 wc
 wc
 wc
-wc
-GP
-HT
-Iq
 Go
 HT
 Iq
 Go
-Go
-Go
-GP
-Gq
-GP
-Go
-wc
+HT
+Iq
+bc
+bc
+bc
+bc
+VJ
+bc
+bc
+bc
 ac
 ac
 ac
@@ -26317,9 +27564,9 @@ af
 af
 ar
 ax
-aF
+aM
 aE
-aE
+US
 bo
 bE
 az
@@ -26346,13 +27593,13 @@ oF
 pn
 pL
 qq
-ag
+Au
 rj
 am
 af
 sx
 sI
-sU
+tl
 tf
 tl
 tf
@@ -26437,7 +27684,7 @@ af
 af
 af
 ak
-tq
+dX
 tl
 tf
 tl
@@ -26445,29 +27692,29 @@ tf
 sU
 sI
 yU
+dX
+af
+am
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
 af
 af
 am
 af
 af
-af
-af
-af
-af
-af
-af
-af
-af
-af
-af
-af
-af
-af
-af
-af
-am
-af
-ko
 af
 af
 fq
@@ -26517,20 +27764,20 @@ am
 af
 af
 af
+tq
+tq
+Me
+RI
+RI
+Qw
+Rj
 af
 af
-af
-af
-am
-af
-af
-af
-fq
 af
 ko
-af
-af
-af
+dX
+dX
+dX
 wc
 wc
 wc
@@ -26538,10 +27785,10 @@ wc
 wc
 wc
 wc
-GP
+Go
 HU
 Ir
-GP
+Go
 HU
 Ir
 Go
@@ -26576,7 +27823,7 @@ ar
 ay
 aG
 aM
-bc
+az
 bp
 bE
 Ud
@@ -26603,7 +27850,7 @@ oG
 po
 pM
 qq
-am
+tB
 af
 af
 af
@@ -26694,7 +27941,7 @@ af
 af
 af
 af
-kp
+ZE
 sy
 sL
 sL
@@ -26702,7 +27949,7 @@ sL
 sL
 sL
 to
-am
+BN
 am
 af
 af
@@ -26774,20 +28021,20 @@ af
 af
 fq
 af
+tq
+af
+af
+dX
+dX
 af
 af
 af
 af
 af
-af
-af
-af
-af
-af
-ko
-af
-am
-ag
+Nm
+ra
+ra
+Md
 wc
 wc
 wc
@@ -26795,19 +28042,19 @@ wc
 wc
 wc
 wc
-GP
-HT
-Is
 Go
 HT
 Is
 Go
+HT
+Is
+Go
 wc
-GP
+Go
 Kk
 Kw
 KI
-GP
+Go
 wc
 ac
 CW
@@ -27034,8 +28281,8 @@ af
 af
 af
 fq
-af
-af
+dX
+dX
 af
 af
 af
@@ -27058,13 +28305,13 @@ Go
 Go
 HV
 Go
-GP
 Go
-GP
+Go
+Go
 Go
 Kx
 KJ
-GP
+Go
 wc
 ac
 CW
@@ -27087,10 +28334,10 @@ af
 af
 ag
 ar
-aw
-aE
-aE
-bd
+XJ
+OC
+Wm
+az
 br
 bI
 bW
@@ -27115,17 +28362,17 @@ nJ
 hM
 oI
 pp
-pN
+nJ
 dK
 qM
 rk
 rG
 af
 am
-dX
-DA
-DA
 af
+DA
+DA
+dX
 fq
 af
 ko
@@ -27208,7 +28455,7 @@ af
 af
 af
 af
-ks
+ko
 af
 ak
 af
@@ -27291,11 +28538,11 @@ ak
 af
 af
 af
+dX
+Lt
 af
-ak
 af
 af
-fq
 ko
 af
 af
@@ -27308,7 +28555,7 @@ af
 wc
 wc
 wc
-GP
+Go
 HD
 GR
 It
@@ -27321,7 +28568,7 @@ Iq
 Go
 Ky
 SZ
-GP
+Go
 wc
 ac
 CW
@@ -27343,14 +28590,14 @@ ag
 af
 af
 af
-ar
+RE
 aA
-aH
-aN
-aE
-bs
+aM
+MT
+JT
+cB
 bH
-bX
+Pz
 cB
 bE
 az
@@ -27381,11 +28628,11 @@ dX
 dX
 dX
 DA
-dX
-dX
 af
 af
-ks
+dX
+dX
+PC
 af
 af
 af
@@ -27465,7 +28712,7 @@ af
 af
 af
 af
-ko
+VR
 af
 af
 af
@@ -27548,8 +28795,8 @@ af
 af
 af
 af
-af
-af
+dX
+dX
 af
 af
 af
@@ -27564,7 +28811,7 @@ af
 FQ
 FZ
 Go
-GP
+Go
 Go
 HE
 Gq
@@ -27575,7 +28822,7 @@ HV
 HT
 JK
 HT
-GP
+Go
 Kz
 Gq
 Go
@@ -27600,14 +28847,14 @@ af
 af
 af
 af
-ar
+RE
 aB
-aG
-aO
-bc
-br
+aM
+Tw
+az
+LJ
 bI
-bY
+Pz
 cC
 bE
 dK
@@ -27635,94 +28882,94 @@ qO
 rl
 qL
 oa
-dX
-dX
+af
+af
 dX
 dX
 af
+af
+dX
+kr
+af
+af
+af
+af
+am
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+fq
+af
+af
+af
+af
+af
+af
+af
+af
+af
+fq
+af
+af
+af
+af
+fq
+af
+af
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+af
+af
+af
+af
+af
+af
+af
+af
+fq
+af
+af
+af
+am
+am
+af
+af
+af
+fq
+af
+af
+af
+am
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+am
 af
 af
 ko
-af
-af
-af
-af
-am
-af
-af
-af
-af
-af
-af
-af
-af
-af
-af
-fq
-af
-af
-af
-af
-af
-af
-af
-af
-af
-fq
-af
-af
-af
-af
-fq
-af
-af
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-af
-af
-af
-af
-af
-af
-af
-af
-fq
-af
-af
-af
-am
-am
-af
-af
-af
-fq
-af
-af
-af
-am
-af
-af
-af
-af
-af
-af
-af
-af
-af
-af
-af
-af
-af
-af
-am
-af
-af
-ks
 af
 af
 af
@@ -27742,7 +28989,7 @@ AX
 AX
 yW
 yW
-yY
+yX
 yX
 wc
 wc
@@ -27805,8 +29052,8 @@ af
 af
 am
 af
-af
-af
+dX
+dX
 af
 af
 af
@@ -27829,9 +29076,9 @@ Gq
 Gq
 IS
 Go
-GP
 Go
-GP
+Go
+Go
 Go
 Go
 KK
@@ -27858,9 +29105,9 @@ ak
 af
 ao
 ar
-az
-az
-az
+YG
+aE
+Ui
 az
 bt
 bJ
@@ -27896,10 +29143,10 @@ dX
 dX
 dX
 dX
-af
 dX
 dX
-ks
+dX
+PC
 af
 af
 af
@@ -28062,19 +29309,19 @@ fq
 af
 af
 af
-af
-af
-fq
-af
-af
-ks
-hf
-hf
-hf
-hf
-af
 dX
-am
+dX
+dX
+dX
+dX
+PC
+DM
+DM
+DM
+DM
+dX
+dX
+BN
 dX
 Gb
 Gq
@@ -28115,12 +29362,12 @@ af
 af
 af
 ar
+aB
+aM
 aE
-aE
-aE
-bc
-br
-bs
+az
+Qs
+Xd
 az
 cD
 dl
@@ -28151,11 +29398,11 @@ rG
 af
 af
 af
+af
+af
+af
+af
 dX
-af
-af
-af
-af
 ko
 af
 af
@@ -28248,7 +29495,7 @@ zo
 zo
 yW
 zV
-Vn
+Ai
 Aw
 zp
 AM
@@ -28257,7 +29504,7 @@ zp
 Bj
 zp
 BB
-yY
+yX
 wc
 wc
 wc
@@ -28319,19 +29566,19 @@ af
 af
 af
 af
-af
-af
-af
-af
-am
-ko
-af
-af
-af
 dX
-af
-af
-af
+dX
+dX
+dX
+dX
+kr
+dX
+dX
+dX
+dX
+dX
+dX
+dX
 dX
 Gb
 Gq
@@ -28349,7 +29596,7 @@ HW
 GR
 GR
 KL
-GP
+Go
 wc
 ac
 CW
@@ -28373,11 +29620,11 @@ am
 ag
 ar
 Wh
-aI
 aE
 aE
-bp
-bs
+Qr
+aE
+Ry
 az
 cE
 dk
@@ -28411,13 +29658,13 @@ af
 af
 ak
 af
-af
 dX
-kp
-af
-af
-af
-af
+dX
+NQ
+uv
+uv
+uv
+uv
 af
 af
 af
@@ -28506,12 +29753,12 @@ zx
 yX
 zW
 Aj
-Aj
+XN
 Oa
 AN
-Aj
+XN
 Bf
-yY
+yX
 Br
 BC
 yX
@@ -28576,14 +29823,14 @@ af
 af
 af
 af
-hf
-hf
-af
-af
-af
-ks
-af
-af
+DM
+DM
+dX
+dX
+dX
+PC
+dX
+dX
 af
 af
 af
@@ -28594,8 +29841,8 @@ FZ
 FZ
 Go
 Go
-GP
-GP
+Go
+Go
 Go
 HF
 Gq
@@ -28606,7 +29853,7 @@ Gq
 Gq
 GR
 KM
-GP
+Go
 wc
 ac
 CW
@@ -28630,10 +29877,10 @@ af
 af
 ar
 aD
-aG
-aO
-bc
-bo
+Ni
+Ni
+Ni
+ZR
 bK
 az
 cF
@@ -28641,7 +29888,7 @@ dm
 dO
 er
 ex
-fJ
+XG
 gA
 hp
 gA
@@ -28668,13 +29915,13 @@ af
 sV
 af
 af
-af
-af
+dX
+dX
+dX
+dX
+dX
+Lt
 ko
-af
-af
-ak
-af
 af
 af
 af
@@ -28757,7 +30004,7 @@ am
 af
 wc
 wc
-yY
+yX
 zq
 zy
 zL
@@ -28767,10 +30014,10 @@ Ax
 AE
 Ai
 Ba
-yY
-yY
 yX
-yY
+yX
+yX
+yX
 yX
 wc
 wc
@@ -28863,7 +30110,7 @@ Go
 Kl
 KA
 KN
-GP
+Go
 wc
 ac
 CW
@@ -28887,8 +30134,8 @@ af
 af
 ar
 ar
-ar
-ar
+RE
+RE
 ar
 az
 az
@@ -28926,12 +30173,12 @@ af
 af
 am
 af
-af
+dX
+dX
+dX
+dX
+dX
 ko
-af
-af
-af
-af
 af
 am
 af
@@ -29016,14 +30263,14 @@ wc
 wc
 yZ
 yX
-yY
+yX
 yX
 yX
 Ak
 Ay
 AF
 AO
-AO
+Nk
 ZN
 Bk
 Bs
@@ -29116,12 +30363,12 @@ IU
 Go
 Jt
 JN
-GP
+Go
 Go
 KB
 Go
 Go
-GP
+Go
 ac
 CW
 ac
@@ -29171,7 +30418,7 @@ nQ
 ZM
 Mk
 nQ
-nQ
+UR
 op
 qR
 rp
@@ -29180,15 +30427,15 @@ rp
 sz
 rp
 af
-af
-af
+UK
+EC
+EC
+EC
+MZ
+Lp
 dX
 dX
-ko
-af
-af
-af
-ao
+XB
 af
 af
 af
@@ -29276,8 +30523,8 @@ wc
 wc
 wc
 yX
-yY
-yY
+yX
+yX
 yX
 AP
 yX
@@ -29373,7 +30620,7 @@ IV
 Go
 Ju
 Gq
-GP
+Go
 Gq
 Gq
 Kc
@@ -29438,14 +30685,14 @@ sA
 rp
 rp
 rp
-ag
-dX
-dX
+tM
+af
+af
 ko
 af
-af
-am
-af
+dX
+BN
+ko
 af
 af
 af
@@ -29534,14 +30781,14 @@ wc
 wc
 wc
 wc
-yW
+yX
 AG
 AQ
 Bb
 yX
 Bm
 Bu
-yY
+yX
 wc
 wc
 wc
@@ -29695,14 +30942,14 @@ sB
 sM
 sW
 tg
-dX
+af
+af
+af
+ko
+af
 dX
 dX
 ko
-af
-af
-af
-af
 af
 af
 af
@@ -29782,29 +31029,29 @@ wc
 wc
 wc
 wc
-ai
-ai
-ai
-ai
-ai
-ai
-ai
+Pu
+Pu
+Pu
+Pu
+Pu
+Pu
+Pu
 wc
 wc
-yW
+yX
 AH
 AQ
 AQ
-yW
-yY
 yX
-yY
+yX
+yX
+yX
 wc
 wc
-ai
-ai
-ai
-ai
+aj
+aj
+aj
+aj
 wc
 wc
 wc
@@ -29873,26 +31120,26 @@ af
 af
 af
 af
-af
+Mu
 af
 af
 Gr
 wc
 wc
-GP
+Go
 Go
 Iv
 IH
 Iv
-GP
-GP
-GP
+Go
+Go
+Go
 Go
 JL
 HW
 Gq
 KM
-GP
+Go
 ac
 CW
 ac
@@ -29952,14 +31199,14 @@ sC
 rp
 rp
 rp
-dX
+pk
 af
 af
 ko
 af
-af
-af
-af
+dX
+dX
+ko
 af
 am
 af
@@ -30022,7 +31269,7 @@ af
 af
 af
 af
-af
+am
 af
 fq
 af
@@ -30039,29 +31286,29 @@ wc
 wc
 wc
 wc
-ai
+Pu
 RQ
 Ei
 QH
 Ei
 WA
-ai
+Pu
 wc
 wc
-yW
-yW
+yX
+yX
 AR
 AQ
-yW
+yX
 wc
 wc
 wc
 wc
 wc
-ai
-yh
-yg
-ai
+aj
+aj
+aj
+aj
 wQ
 wc
 wc
@@ -30130,7 +31377,7 @@ af
 ak
 af
 af
-af
+Mu
 af
 af
 af
@@ -30141,7 +31388,7 @@ FZ
 Iw
 Gq
 IX
-GP
+Go
 Jv
 Jv
 Jv
@@ -30149,7 +31396,7 @@ Gq
 HW
 HW
 KM
-GP
+Go
 ac
 CW
 ac
@@ -30199,7 +31446,7 @@ nU
 oq
 oQ
 py
-pV
+RC
 SS
 qV
 rp
@@ -30208,15 +31455,15 @@ rp
 rp
 rp
 af
-af
-af
-am
-dX
 ko
 af
 af
 af
+ko
 af
+dX
+dX
+ko
 af
 af
 af
@@ -30279,7 +31526,7 @@ af
 al
 af
 af
-af
+am
 af
 af
 af
@@ -30293,16 +31540,16 @@ af
 af
 af
 wc
-aj
-aj
-aj
-ai
+Pu
+Pu
+Pu
+Pu
 Tc
 Ei
 Ei
 Ei
 WA
-ai
+Pu
 wc
 wc
 wc
@@ -30315,10 +31562,10 @@ wc
 wc
 wQ
 wQ
-ai
-yg
-za
-ai
+wS
+wS
+wS
+wS
 wS
 wQ
 aj
@@ -30387,7 +31634,7 @@ ao
 af
 am
 af
-af
+Mu
 af
 dX
 af
@@ -30398,15 +31645,15 @@ Ia
 Gq
 Gq
 Ix
-GP
+Go
 Jw
 JP
-JP
+Xb
 Km
 JP
-KO
+JP
 KS
-GP
+Go
 ac
 CW
 ac
@@ -30436,7 +31683,7 @@ af
 bf
 cf
 cL
-dr
+Yg
 cd
 cd
 dp
@@ -30456,24 +31703,24 @@ nN
 nN
 nN
 nN
-pV
+XM
 oP
 qW
 rs
-rM
+rO
 sh
 oW
 af
 fq
-af
+ko
 af
 af
 af
 ko
-am
 af
-af
-af
+dX
+dX
+ko
 af
 af
 af
@@ -30514,13 +31761,13 @@ af
 af
 fq
 af
-tN
-tN
-tN
-tN
-tN
-tN
-tN
+af
+af
+af
+af
+af
+af
+af
 af
 af
 af
@@ -30536,7 +31783,7 @@ af
 af
 af
 af
-am
+tB
 af
 af
 af
@@ -30550,17 +31797,17 @@ af
 wc
 wc
 wc
-aj
-an
+Pu
+bY
 xS
-ai
+Pu
 Tc
 Ei
 Ei
 Ei
 WA
-ai
-aj
+Pu
+Mg
 ai
 aj
 aj
@@ -30572,10 +31819,10 @@ wc
 wS
 wS
 wS
-ai
-yf
-yt
-ai
+wS
+wS
+wS
+wS
 wS
 wS
 aj
@@ -30644,7 +31891,7 @@ af
 af
 af
 af
-af
+Mu
 af
 ak
 af
@@ -30722,15 +31969,15 @@ si
 oW
 am
 af
-am
-af
-dX
-dX
 ko
 af
 af
 af
+ko
 af
+dX
+dX
+ko
 af
 af
 af
@@ -30770,17 +32017,17 @@ af
 af
 af
 af
+am
+am
 af
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
+af
+af
+af
+af
+af
+af
+af
+af
 af
 af
 af
@@ -30792,7 +32039,7 @@ af
 af
 af
 af
-af
+am
 af
 af
 af
@@ -30807,18 +32054,18 @@ ag
 wc
 wc
 wc
-aj
-ii
-ii
-ai
-ai
-ai
+Pu
+bY
+RF
+Pu
+Pu
+Pu
 vN
-ai
-ai
-ai
-aj
-Al
+Pu
+Pu
+Pu
+Mg
+SH
 tx
 aj
 aj
@@ -30830,10 +32077,10 @@ wS
 wS
 wS
 BJ
-xL
+ys
 ys
 BU
-an
+NY
 wS
 aj
 wS
@@ -30845,7 +32092,7 @@ tI
 tI
 Ch
 tI
-tI
+ii
 aj
 wQ
 wQ
@@ -30901,7 +32148,7 @@ af
 af
 af
 af
-af
+Mu
 am
 af
 af
@@ -30920,7 +32167,7 @@ JQ
 JQ
 JQ
 KT
-GP
+Go
 ac
 CW
 ac
@@ -30979,15 +32226,15 @@ nN
 oW
 ag
 af
-af
-af
-dX
-dX
 ko
 af
 af
 af
+ko
 af
+dX
+dX
+ko
 af
 af
 fq
@@ -31027,18 +32274,6 @@ af
 fq
 af
 af
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
 af
 af
 af
@@ -31048,7 +32283,19 @@ af
 af
 af
 af
-am
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+tB
 af
 af
 af
@@ -31062,20 +32309,20 @@ af
 wc
 wc
 wc
-wc
 wQ
-wS
-tI
-tI
-ii
-ii
-an
-an
-an
-ii
+wQ
+Pu
+Ln
+ML
+YJ
+YJ
+bX
+UU
+bX
+YJ
 zM
-ii
-tI
+Pu
+OH
 tI
 tx
 aj
@@ -31086,11 +32333,11 @@ wS
 wS
 tI
 wS
-Bv
-BN
-BS
-BV
-an
+tI
+tI
+tI
+tI
+tI
 BZ
 Ce
 wS
@@ -31102,7 +32349,7 @@ tI
 tI
 tI
 tI
-tI
+ii
 aj
 wS
 ai
@@ -31158,7 +32405,7 @@ af
 af
 ao
 af
-af
+Mu
 af
 am
 af
@@ -31177,7 +32424,7 @@ JQ
 JQ
 JQ
 KU
-GP
+Go
 ac
 CW
 ac
@@ -31214,13 +32461,13 @@ cd
 fR
 gG
 hx
-gI
+gH
 iJ
 gI
 gH
 kR
 lH
-ms
+kf
 mt
 nw
 nW
@@ -31236,15 +32483,15 @@ sj
 oW
 am
 am
-af
-af
-af
-af
+Rw
+uv
+uv
+uv
+VT
+Lp
+dX
+dX
 ko
-af
-af
-af
-af
 af
 af
 af
@@ -31283,24 +32530,6 @@ af
 af
 af
 af
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
 af
 af
 af
@@ -31313,41 +32542,59 @@ af
 af
 af
 af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+tN
 wc
 wc
 wc
 wc
 wc
-wc
-wc
+wQ
+wQ
+Pu
+Pu
+Qc
+TX
+YJ
+YJ
+bX
+bX
+bX
+YJ
+Sq
+Pu
+OH
+tI
+tI
+tI
+tI
 wS
 wS
-ii
-tI
-ii
-ii
-an
-an
-an
-ii
-ij
-tI
-tI
-tI
-tI
-tI
-tI
-wS
-wS
 wS
 tI
 tI
 tI
-ii
-ii
-ii
-ii
-ii
+tI
+tI
+tI
+tI
+tI
 Ca
 Ca
 aj
@@ -31359,7 +32606,7 @@ tI
 tI
 tI
 tI
-tI
+ii
 Cj
 tI
 Cm
@@ -31424,9 +32671,9 @@ wc
 wc
 Go
 Go
-GP
-GP
-GP
+Go
+Go
+Go
 Jx
 JQ
 JQ
@@ -31434,7 +32681,7 @@ JQ
 JQ
 JQ
 KT
-GP
+Go
 ac
 CW
 ac
@@ -31486,7 +32733,7 @@ oT
 nN
 qa
 qy
-ra
+qY
 rt
 rP
 si
@@ -31496,25 +32743,16 @@ am
 af
 af
 dX
-af
-ko
-af
-af
-af
-ao
-af
-af
+dX
+dX
+dX
+dX
+dX
+XB
 af
 af
 af
 af
-af
-af
-af
-af
-af
-af
-am
 af
 af
 af
@@ -31527,6 +32765,15 @@ am
 af
 af
 af
+af
+af
+af
+af
+af
+am
+af
+af
+af
 tN
 tN
 tN
@@ -31537,31 +32784,31 @@ tN
 tN
 af
 af
+af
+am
+am
+af
+af
+fq
 af
 vH
+af
+af
+af
 am
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+am
+af
 af
 af
 af
@@ -31569,27 +32816,27 @@ af
 af
 fq
 af
-af
+tN
 wc
 wc
 wc
 wc
 wc
-wc
-wS
-wS
-an
-ii
-tI
-wS
-wS
-an
-an
-an
-ii
-tI
-tI
-tI
+wQ
+Pu
+Pu
+Ms
+YJ
+YJ
+YJ
+YJ
+bX
+bX
+bX
+XY
+Pu
+Pu
+aI
 tI
 tI
 tI
@@ -31616,7 +32863,7 @@ tx
 tI
 tI
 tI
-tI
+ii
 Ck
 BW
 Cn
@@ -31691,7 +32938,7 @@ JQ
 JQ
 JQ
 KT
-GP
+Go
 ac
 CW
 ac
@@ -31730,7 +32977,7 @@ gI
 gH
 gI
 gJ
-gG
+mt
 kg
 kS
 lH
@@ -31753,12 +33000,12 @@ am
 af
 dX
 dX
-fq
-ko
-af
-af
-af
-af
+dX
+dX
+dX
+dX
+dX
+Nm
 af
 af
 af
@@ -31793,32 +33040,32 @@ tN
 tN
 tN
 tN
+tN
+tN
+tN
+af
+af
+af
+af
 af
 af
 am
+af
+af
+vH
+af
+af
+af
+tB
+af
+af
+af
+fq
+af
 am
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
+af
+fq
+af
 af
 af
 fq
@@ -31826,27 +33073,27 @@ af
 af
 af
 af
-mZ
-wc
-wc
+uq
 wc
 wc
 wc
 wQ
-wS
-an
-an
-ii
-ii
-wS
-wS
-an
-an
-an
-ii
-tI
-ii
-ii
+wQ
+wQ
+Pu
+Rd
+YJ
+YJ
+YJ
+YJ
+YJ
+bX
+MB
+MB
+bX
+Zg
+aN
+LS
 ii
 ii
 ii
@@ -31855,7 +33102,7 @@ ii
 yb
 ii
 ii
-tI
+ii
 ii
 ii
 ii
@@ -31873,7 +33120,7 @@ tx
 tx
 tI
 tI
-tI
+ii
 Ck
 ii
 tI
@@ -31948,7 +33195,7 @@ Ko
 JU
 JU
 KV
-GP
+Go
 ac
 CW
 ac
@@ -32002,19 +33249,19 @@ qc
 qA
 qZ
 ru
-rQ
+rO
 sk
 oW
 af
 af
 af
-af
-af
-af
-ko
-af
-af
-af
+dX
+dX
+dX
+MZ
+EC
+EC
+EC
 af
 af
 af
@@ -32050,65 +33297,65 @@ tN
 tN
 tN
 tN
-af
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
 af
 am
+af
+af
+af
+af
+af
+af
+tB
 am
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
 af
 af
 af
 af
-af
-af
-af
+fq
 am
+af
+af
+af
+af
+af
+af
+af
+af
+tN
+tN
 wc
 wc
 wc
-wc
-tG
-aj
-aj
-an
-an
-an
-an
-an
+wQ
+YT
+Pu
+Pu
+Lm
+YJ
+YJ
+YJ
+YJ
+YJ
+bX
+MB
+MB
+bX
+Zg
+aN
+LS
 ii
-an
-an
-an
 ii
 ii
 ii
 ii
-ii
-ii
-ii
-tI
-tI
 ii
 ii
 ii
@@ -32199,11 +33446,11 @@ wc
 wc
 Go
 Go
-GP
-GP
-GP
 Go
-GP
+Go
+Go
+Go
+Go
 Go
 Go
 ac
@@ -32240,13 +33487,13 @@ dW
 eD
 TZ
 fU
-gK
+gJ
 hz
 gG
 iJ
 gI
-hz
-gI
+Ta
+gH
 lK
 ms
 kf
@@ -32265,9 +33512,9 @@ oW
 ag
 af
 af
-af
-lS
-iY
+dX
+MH
+Mc
 sN
 af
 af
@@ -32307,73 +33554,73 @@ tN
 tN
 tN
 tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+af
+af
+af
+al
+af
+af
+tB
+af
+af
+af
+af
 af
 af
 af
 fq
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-af
-am
 af
 af
-af
-af
+tN
+tN
+tN
+tN
 wc
 wc
 wc
-wc
-aj
-an
+wQ
+Pu
+Vp
 xk
-xk
+bs
 xC
 xC
+bs
 xk
-xk
+Vp
+bX
+bX
+YJ
+XY
+Pu
+Pu
+aI
+tI
+tI
+tI
+tI
+tI
+tI
+tI
+tI
+tI
+tI
+tI
+tI
 ii
-an
-an
-an
-tI
-tI
-tI
-tI
-tI
-tI
-tI
-tI
-tI
-tI
-tI
-tI
-tI
-tI
-tI
-tI
-tI
 ii
 ii
 tI
@@ -32502,8 +33749,8 @@ hA
 ib
 iL
 jB
-iL
-iL
+Pg
+Na
 lL
 mv
 hx
@@ -32564,36 +33811,36 @@ tN
 tN
 tN
 tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
 af
 af
 af
 af
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
+af
+af
+af
+af
+af
+af
+af
 uq
 wc
 wc
@@ -32601,8 +33848,8 @@ wc
 wc
 wc
 wc
-wc
-aj
+wQ
+Pu
 xa
 xl
 xl
@@ -32610,14 +33857,23 @@ xl
 xK
 xl
 xl
-an
-an
-an
-an
+RH
+bX
+bX
+YJ
+YJ
+bY
+Pu
+Lc
 tI
 tI
-tx
-tx
+tI
+tI
+ii
+ii
+ii
+ii
+ii
 tI
 tI
 tI
@@ -32627,24 +33883,15 @@ ii
 ii
 ii
 ii
-tI
-tI
-tI
-tI
-tI
-tI
-ii
-tI
-tI
-ii
-tI
 ii
 ii
-tI
-tI
 ii
-tI
-BX
+ii
+ii
+ii
+ii
+ii
+yr
 ai
 wS
 aj
@@ -32750,8 +33997,8 @@ af
 af
 af
 ag
-af
-af
+am
+am
 fm
 fW
 fW
@@ -32759,9 +34006,9 @@ fW
 fW
 fW
 fW
-fW
-fW
-fW
+Xp
+PD
+Vc
 fW
 fW
 fW
@@ -32771,7 +34018,7 @@ oX
 pz
 qf
 qD
-oW
+VD
 af
 ag
 af
@@ -32821,36 +34068,36 @@ tN
 tN
 tN
 tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
 af
 af
 af
 af
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
+af
+af
 tN
 wc
 wc
@@ -32858,8 +34105,8 @@ wc
 wc
 wc
 wc
-wc
-aj
+wQ
+Pu
 xa
 xl
 xl
@@ -32868,13 +34115,13 @@ xl
 xl
 xl
 yp
-an
-an
-an
-tI
-tI
-tI
-tx
+bX
+bX
+YJ
+YJ
+bY
+Pu
+Lc
 tI
 tI
 AT
@@ -32889,19 +34136,19 @@ ii
 ij
 tI
 tI
-tI
-tI
-tI
-tI
-tI
-tI
 ii
 ii
-AT
-tI
-tI
-tI
-tI
+ii
+ii
+ii
+ii
+ii
+ii
+Dn
+ii
+ii
+ii
+ii
 wS
 wS
 aj
@@ -33007,16 +34254,16 @@ af
 af
 af
 af
-af
-af
+am
+am
 ag
 af
 af
 af
 af
 am
-jC
-iM
+Ye
+Uh
 kT
 hB
 mw
@@ -33026,11 +34273,11 @@ iM
 jD
 oW
 oW
-oW
-oW
-oW
-af
-ao
+VD
+Oj
+AU
+Xj
+UA
 af
 af
 af
@@ -33077,11 +34324,11 @@ tN
 tN
 tN
 tN
-af
-af
-af
-af
-af
+tF
+tF
+tF
+tF
+ag
 tN
 tN
 tN
@@ -33116,7 +34363,7 @@ wc
 wc
 wc
 wQ
-ai
+Pu
 xb
 xl
 xl
@@ -33125,12 +34372,12 @@ xl
 xl
 xl
 yq
-an
-an
-an
-wS
-tI
-tI
+bX
+bX
+YJ
+YJ
+YJ
+Pu
 Am
 Az
 wS
@@ -33138,15 +34385,15 @@ ai
 wS
 wS
 wS
-Bv
-xT
 an
-xE
-xL
-xT
-Az
-Am
-Am
+an
+an
+an
+an
+an
+UO
+il
+il
 tx
 Cg
 tx
@@ -33265,14 +34512,14 @@ af
 af
 af
 af
-ak
-af
-af
+uC
+Nh
+Nh
 gM
-hB
-hB
-iM
-jD
+SW
+SW
+Uh
+gK
 ak
 am
 am
@@ -33287,7 +34534,7 @@ af
 af
 af
 af
-af
+za
 am
 af
 af
@@ -33334,15 +34581,15 @@ tN
 tN
 tN
 tN
+tF
+tF
+tF
+tF
+tF
 af
 af
 af
 af
-af
-tN
-tN
-tN
-tN
 tN
 tN
 tN
@@ -33373,7 +34620,7 @@ wc
 wc
 wc
 wQ
-ai
+Pu
 xb
 xl
 xl
@@ -33382,28 +34629,28 @@ xl
 xl
 xl
 yq
-an
-an
-an
-tI
-tI
-tI
+bX
+bX
+YJ
+YJ
+Nj
+Pu
 Am
-Az
+Tt
 wS
 wQ
 wQ
 wQ
 wS
 Bw
-ys
-ye
+an
+an
 BI
-BK
-xM
-Az
-Az
-Am
+an
+an
+il
+il
+il
 wS
 ai
 wS
@@ -33468,7 +34715,7 @@ wc
 tq
 Fq
 Ft
-te
+UG
 te
 dX
 ao
@@ -33521,8 +34768,8 @@ af
 af
 al
 af
-af
-af
+am
+Nh
 af
 af
 gN
@@ -33544,7 +34791,7 @@ af
 af
 af
 af
-af
+Vn
 af
 dX
 dX
@@ -33584,27 +34831,27 @@ af
 tN
 tN
 tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+af
+tF
+tF
+tF
+tF
 af
 af
-tN
-tN
-tN
-tN
-tN
+af
+am
 af
 af
 af
-fq
 af
 af
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
 tN
 tN
 tN
@@ -33630,7 +34877,7 @@ wc
 wc
 wc
 wQ
-wS
+Pu
 xa
 xl
 xl
@@ -33638,24 +34885,24 @@ xl
 xl
 xl
 xl
-yr
-an
-an
-an
-ii
-ii
-tI
-Am
-Az
+yp
+bX
+bX
+YJ
+YJ
+XY
+Pu
+Pu
+ai
 wS
 wQ
 wQ
 wQ
 wS
-ai
-yt
-yf
-ai
+wS
+wS
+wS
+wS
 aj
 aj
 aj
@@ -33779,7 +35026,7 @@ af
 af
 ao
 af
-af
+Nh
 af
 af
 gN
@@ -33794,14 +35041,14 @@ fY
 fY
 fY
 dX
+dX
+dX
+dX
+dX
+dX
+dX
 af
-af
-dX
-dX
-dX
-dX
-af
-dX
+Vn
 dX
 dX
 af
@@ -33850,27 +35097,27 @@ tN
 tN
 af
 af
+tF
+tF
+tF
+tF
 af
 af
 af
 af
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
+af
+af
+af
+af
+am
+af
+af
+af
+af
+af
+am
+af
+af
 tN
 tN
 tN
@@ -33887,7 +35134,7 @@ wc
 wc
 wc
 wQ
-wS
+Pu
 xa
 xl
 xl
@@ -33896,23 +35143,23 @@ xl
 xl
 xl
 yp
-an
-an
-an
-an
-an
+bX
+bX
+YJ
+YJ
+bi
 zY
+Pu
+wS
+wS
+wc
+wc
+wQ
+wQ
+wS
+wS
 aj
-wS
-wS
-wc
-wc
-wQ
-wQ
-ai
-yu
-yg
-ai
+aj
 wc
 wc
 wc
@@ -34036,7 +35283,7 @@ af
 af
 af
 af
-af
+Nh
 af
 fX
 gO
@@ -34051,14 +35298,14 @@ mx
 mS
 Yn
 dX
-dX
 af
-af
-dX
 af
 af
 dX
-af
+dX
+dX
+dX
+Vn
 af
 af
 af
@@ -34100,38 +35347,38 @@ tN
 tN
 tN
 af
-af
 tN
 tN
 tN
 tN
 tN
 af
+tF
+tF
+tF
+tF
+tF
+af
+am
+am
 af
 af
 af
-fq
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
 tN
 tN
 tN
@@ -34144,32 +35391,32 @@ wc
 wc
 wc
 wQ
-wS
-an
-xp
+Pu
+Vp
+KQ
 xp
 xD
 xD
 xp
-xp
-an
-gT
-an
-an
-an
-an
+KQ
+Vp
+bX
+bX
+YJ
+YJ
+bi
 zY
+Pu
+wQ
+wQ
+wc
+wc
+wc
+wc
 aj
-wQ
-wQ
-wc
-wc
-wc
-wc
-ai
-yg
-yh
-ai
+aj
+aj
+aj
 wc
 wc
 wc
@@ -34293,7 +35540,7 @@ af
 af
 af
 af
-af
+Nh
 af
 fY
 gP
@@ -34309,13 +35556,13 @@ mT
 Yn
 dX
 dX
-af
-af
 dX
 dX
 af
 af
-af
+dX
+dX
+za
 af
 af
 af
@@ -34362,36 +35609,36 @@ tN
 tN
 tN
 tN
-tN
+ag
+tF
+tF
+tF
+tF
+tF
+tB
 af
 af
 af
 af
 af
 af
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
+fq
+af
+am
+af
+am
+af
+am
+af
+af
+am
+af
+af
+af
+af
+af
+af
+af
 tN
 tN
 wc
@@ -34401,32 +35648,32 @@ wc
 wc
 wc
 wQ
-wS
-aj
-aj
-an
-an
-an
-an
-an
-an
-an
-zf
+Pu
+Pu
+Pu
+Lf
+bX
+bX
+bX
+bX
+bX
+BS
+aO
 zf
 zz
 zN
+Pu
+Pu
+wQ
+wc
+wc
+wc
+wc
+wc
 aj
 aj
-wc
-wc
-wc
-wc
-wc
-wc
-ai
-ai
-ai
-ai
+aj
+aj
 wc
 wc
 wc
@@ -34550,7 +35797,7 @@ af
 ao
 af
 am
-af
+Nh
 af
 fY
 gQ
@@ -34568,11 +35815,11 @@ dX
 af
 af
 af
-fq
-af
 af
 dX
-af
+dX
+dX
+Vn
 af
 af
 af
@@ -34619,36 +35866,36 @@ tN
 tN
 tN
 tN
-tN
-tN
-tN
-tN
-tN
+af
+tF
+tF
+tF
+tF
+tF
 af
 af
 af
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
+am
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
 tN
 uq
 wc
@@ -34657,24 +35904,24 @@ wc
 wc
 wc
 wc
-wc
-wc
 wQ
-wS
-wS
-xE
+wQ
+wQ
+Pu
+Pu
+wp
 xL
 xT
-an
+YJ
 xE
 yL
-wS
-wS
-ai
-aj
-aj
-wc
-wc
+Pu
+Pu
+Pu
+Pu
+Pu
+wQ
+wQ
 wc
 wc
 wc
@@ -34807,7 +36054,7 @@ af
 af
 af
 af
-af
+Nh
 af
 fY
 gR
@@ -34826,10 +36073,10 @@ af
 ak
 af
 af
-af
-af
-af
-am
+dX
+dX
+dX
+Vn
 af
 af
 af
@@ -34869,46 +36116,46 @@ tN
 tN
 tN
 tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+af
+tF
+tF
+tF
+tF
+tF
 af
 af
 af
+af
+af
+am
+af
+af
+af
+Xx
+af
+af
+af
+af
+af
+tB
+vH
+af
+af
+af
+af
+af
+af
+af
+af
 tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-wc
+rM
 wc
 wc
 wc
@@ -34917,20 +36164,20 @@ wc
 wc
 wc
 wQ
-wS
-wS
+Pu
+Pu
 xF
 xM
 xU
 ye
-ys
+Om
 yM
-wS
+Pu
 wQ
 wQ
 wQ
-wc
-wc
+wQ
+wQ
 wc
 wc
 wc
@@ -35064,7 +36311,7 @@ af
 af
 af
 ao
-af
+Nh
 ag
 fY
 gS
@@ -35084,9 +36331,9 @@ fq
 af
 af
 dX
-af
 dX
-af
+dX
+Vn
 af
 af
 lS
@@ -35133,37 +36380,37 @@ tN
 tN
 tN
 tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
+af
+tF
+tF
+tF
+tF
+tF
+af
+am
+af
+af
+fq
+fq
+af
+af
+VN
+WM
+WM
+WM
+WM
+VN
+af
+af
+af
+vH
+am
+af
+af
+af
+af
+af
+af
 tN
 tN
 wc
@@ -35173,17 +36420,17 @@ wc
 wc
 wc
 wc
-wc
-wc
-aj
-wS
-wS
-ai
+wQ
+wQ
+Pu
+Pu
+Pu
+Pu
 yf
 yt
-ai
-aj
-wc
+Pu
+Pu
+wQ
 wQ
 wQ
 wc
@@ -35321,7 +36568,7 @@ af
 af
 af
 af
-af
+Nh
 af
 fY
 fY
@@ -35340,10 +36587,10 @@ af
 af
 af
 af
+dX
 af
 af
-af
-af
+Vn
 af
 am
 ko
@@ -35390,41 +36637,39 @@ tN
 tN
 tN
 tN
+af
+tF
+tF
+tF
+tF
+tF
+af
+af
+af
+af
+af
+af
+af
+rQ
+Oo
+WM
+WM
+WM
+WM
+Oo
+rQ
+af
+af
+fq
+af
+af
+af
+af
+af
+af
+af
+af
 tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-wc
-wc
 wc
 wc
 wc
@@ -35435,12 +36680,14 @@ wc
 wc
 wQ
 wQ
-ai
+wQ
+wQ
+Pu
 yg
 yu
-ai
-wc
-wc
+Pu
+wQ
+wQ
 wQ
 wQ
 wc
@@ -35577,8 +36824,8 @@ af
 af
 ao
 af
-af
-af
+Nh
+Nh
 af
 af
 af
@@ -35592,16 +36839,16 @@ lP
 mC
 mX
 fY
-af
+am
 am
 af
 fq
 dX
+dX
 af
 af
+Vn
 af
-af
-al
 af
 ko
 af
@@ -35646,40 +36893,41 @@ tN
 tN
 tN
 tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
+af
+af
+tF
+tF
+tF
+tF
+ag
+af
+af
+af
+af
+af
+af
+af
+VN
+YR
+YR
+YR
+zb
+YR
+YR
+VN
+af
+af
+af
+tB
+af
+af
+fq
+af
+af
+af
+af
 uq
+rM
 wc
 wc
 wc
@@ -35690,13 +36938,12 @@ wc
 wc
 wc
 wc
-wc
-wc
-ai
+wQ
+Pu
 yh
 yg
-ai
-wc
+Pu
+wQ
 wc
 wc
 wc
@@ -35834,7 +37081,7 @@ af
 af
 af
 ak
-af
+Nh
 eE
 eE
 eE
@@ -35849,15 +37096,15 @@ lQ
 id
 ie
 fY
-nZ
-af
-af
+Uw
 af
 af
 af
 dX
+dX
+dX
 af
-af
+Vn
 af
 af
 ko
@@ -35903,40 +37150,40 @@ tN
 tN
 tN
 tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
+af
+af
+tF
+tF
+tF
+tF
+fq
+af
+af
+af
+af
+af
+af
+af
+Yq
+YR
+QL
+Sm
+ZA
+ZA
+YR
+YR
+af
+af
+af
+af
+af
+af
+af
+am
+af
+af
+am
+af
 tN
 wc
 wc
@@ -35948,12 +37195,12 @@ wc
 wc
 wc
 wc
-wc
-ai
-ai
-ai
-ai
-wc
+wQ
+Pu
+Pu
+Pu
+Pu
+wQ
 wc
 wc
 wc
@@ -36091,7 +37338,7 @@ af
 af
 af
 af
-af
+Nh
 eE
 fn
 fZ
@@ -36107,14 +37354,14 @@ hE
 mY
 nB
 dX
+am
 af
 af
+dX
+dX
 af
 af
-af
-af
-af
-af
+za
 am
 lS
 sN
@@ -36160,41 +37407,41 @@ tN
 tN
 tN
 tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
+af
+af
+tF
+tF
+tF
+tF
+tF
+af
+af
+am
+af
+al
+af
+af
+RW
+QL
+ZA
+OI
+OI
+ZA
+ZJ
+PK
+af
+af
+af
+af
+af
+vH
+af
+af
+af
+af
+am
+am
+af
 wc
 wc
 wc
@@ -36205,12 +37452,12 @@ wc
 wc
 wc
 wc
-wc
-wc
-wc
-wc
-wc
-wc
+wQ
+wQ
+wQ
+wQ
+wQ
+wQ
 wc
 wc
 wc
@@ -36348,7 +37595,7 @@ af
 af
 af
 af
-dX
+Nh
 eF
 fo
 ga
@@ -36368,10 +37615,10 @@ dX
 af
 af
 dX
+dX
 af
 af
-af
-af
+Vn
 af
 ko
 af
@@ -36418,40 +37665,40 @@ tN
 tN
 af
 am
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
+tF
+tF
+tF
+tF
+tF
+tF
+tF
+af
+af
 af
 am
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
+af
+af
+SD
+ZA
+JR
+JR
+JR
+Vj
+MC
+WD
+af
+am
+af
+af
+tB
+af
+af
+af
+af
+af
+af
+af
+af
 wc
 wc
 wc
@@ -36462,8 +37709,8 @@ wc
 wc
 wc
 wc
-wc
-wc
+wQ
+wQ
 wc
 wc
 wc
@@ -36604,8 +37851,8 @@ af
 af
 af
 am
-af
-af
+am
+Nh
 eE
 fp
 gb
@@ -36624,18 +37871,18 @@ oa
 dX
 dX
 af
-af
-af
 dX
+dX
+dX
+am
+Vn
+lS
+XT
+af
+am
 am
 af
 af
-ko
-af
-af
-af
-af
-fq
 af
 af
 af
@@ -36675,41 +37922,41 @@ tN
 tN
 af
 af
+tF
+tF
+tF
+tF
+tF
+tF
 af
-af
-af
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
 am
 af
 af
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-uq
+af
+fq
+af
+YR
+ZA
+JR
+JR
+JR
+MV
+LE
+YR
+af
+af
+af
+af
+af
+am
+af
+af
+af
+al
+af
+af
+af
+ag
 wc
 wc
 wc
@@ -36860,9 +38107,9 @@ af
 af
 af
 af
-af
-af
-af
+am
+am
+Nh
 eE
 eE
 eE
@@ -36881,24 +38128,24 @@ dX
 af
 af
 af
+dX
+dX
 af
 af
-af
-af
-af
-af
+za
 ko
 af
+eX
+eX
 af
 af
 af
 af
-am
 af
 af
 af
-af
-af
+eX
+eX
 af
 fq
 af
@@ -36931,42 +38178,42 @@ tN
 af
 af
 af
+tF
+tF
+tF
+tF
+tF
+tF
 af
 af
 af
-fq
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
 af
 af
 af
-wp
 af
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
+af
+YR
+Zf
+JR
+Wi
+JR
+JR
+Xc
+YR
+af
+af
+af
+af
+af
+af
+af
+af
+am
+af
+af
+af
+af
+af
 wc
 wc
 wc
@@ -37114,10 +38361,10 @@ wc
 ag
 af
 af
+am
+Au
 af
-ag
-af
-af
+am
 af
 ag
 dX
@@ -37138,24 +38385,24 @@ nZ
 af
 af
 af
-af
-af
+dX
+dX
 af
 ak
+Vn
+ko
 af
-lS
-kt
-af
-af
-af
-af
-af
-af
-af
+eX
+aH
+aH
+am
+am
 af
 af
 af
-af
+aH
+aH
+eX
 af
 af
 af
@@ -37188,42 +38435,42 @@ tN
 fq
 am
 am
-af
-fq
-af
-af
-af
+tF
+tF
+tF
+tF
+tF
 al
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-am
 af
 af
-am
 af
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
+af
+af
+af
+af
+af
+YR
+QL
+JR
+TN
+JR
+JR
+Rp
+YR
+af
+af
+tB
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
 wc
 wc
 wc
@@ -37396,11 +38643,60 @@ af
 fq
 af
 dX
-dX
 af
 af
 af
-ko
+UN
+Vq
+za
+za
+WJ
+YI
+YI
+VV
+VV
+VV
+YI
+YI
+aH
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+af
+af
+tF
+tF
+tF
+tF
+tF
+tF
 af
 af
 am
@@ -37409,7 +38705,15 @@ af
 af
 af
 af
-ak
+af
+YR
+YR
+YR
+YR
+QB
+YR
+YR
+YR
 af
 af
 am
@@ -37418,70 +38722,13 @@ af
 af
 af
 af
-af
-af
-af
-af
-af
-af
-af
-af
-af
-af
-af
-af
-af
-af
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-af
-af
-af
-af
-af
-af
-af
-af
-af
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-af
 am
 af
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
+fq
+af
+af
+af
+af
 uq
 wc
 wc
@@ -37503,7 +38750,7 @@ zZ
 Aa
 ze
 zD
-AU
+AV
 Aa
 Aa
 af
@@ -37649,25 +38896,25 @@ af
 af
 dX
 af
-af
-af
+am
+am
 af
 dX
-dX
+af
 af
 af
 af
 ko
-af
-af
-af
-af
-af
-af
-fq
-af
-af
-fq
+dX
+Ot
+Yi
+YI
+VY
+SI
+lT
+SI
+BK
+YI
 af
 af
 af
@@ -37701,44 +38948,44 @@ tN
 tN
 af
 af
+tF
+tF
+tF
+ZO
+tF
+tF
+af
+af
+am
+af
+af
+fq
 af
 af
 af
-ak
+YR
+wO
+ZA
+Sm
+ZA
+ZA
+Sz
+YR
 af
 af
 af
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
+af
+af
+af
+af
+af
+am
+af
+af
+af
+af
+af
+af
 af
 af
 fq
@@ -37905,26 +39152,26 @@ af
 af
 af
 af
-af
+am
 am
 af
 af
 af
-af
+dX
 af
 am
 af
 ko
-af
-af
-af
-fq
-af
-af
-af
-af
-af
-af
+dX
+YI
+aL
+YI
+SI
+aF
+ZQ
+zP
+SI
+YI
 af
 af
 af
@@ -37958,44 +39205,44 @@ tN
 tN
 af
 af
-af
+tF
+tF
+Rb
+tF
+tF
+tF
 fq
+af
+af
+af
+af
+am
+am
+af
+af
+YR
+YR
+ZA
+yY
+TR
+Yz
+YR
+YR
+af
 am
 af
 af
 af
-fq
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
 af
 af
 af
@@ -38023,7 +39270,7 @@ Aa
 af
 zZ
 Aa
-zD
+tJ
 zD
 AV
 Aa
@@ -38066,7 +39313,7 @@ CX
 Eb
 Ef
 DH
-CH
+MR
 Eu
 Ez
 EH
@@ -38166,25 +39413,25 @@ fq
 af
 af
 af
-af
-af
+dX
+dX
 af
 af
 af
 ko
+dX
+SU
+Ze
+Wg
+ZQ
+Yv
+RT
+ym
+aQ
+YI
 af
 af
 af
-af
-af
-af
-af
-af
-af
-af
-af
-af
-fq
 af
 af
 af
@@ -38214,7 +39461,14 @@ tN
 tN
 am
 af
-ak
+Fi
+tF
+tF
+tF
+tF
+tF
+tF
+ag
 af
 af
 af
@@ -38222,38 +39476,31 @@ af
 af
 af
 af
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
+af
+af
+YR
+YR
+Kd
+VM
+YR
+YR
+am
+af
+af
+af
+fq
+af
+am
+am
+af
+am
+am
+vH
+af
+af
+af
+af
+af
 al
 am
 af
@@ -38423,22 +39670,22 @@ af
 af
 af
 af
-af
+dX
 dX
 af
 af
 am
 ko
-af
-af
-af
-af
-af
-af
-fq
-af
-af
-af
+dX
+YI
+Ac
+YI
+Un
+OS
+BV
+SI
+SI
+YI
 af
 af
 af
@@ -38473,44 +39720,44 @@ af
 af
 af
 af
+tF
+PA
+Rb
+tF
+tF
+tF
+am
 af
-uH
+af
 am
 af
 af
 af
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
+af
+am
+af
+fq
+af
+af
+af
+af
+af
+af
+af
+af
+am
+am
+vH
+af
+am
+af
+af
+af
+af
+af
+am
+af
+af
 af
 af
 fq
@@ -38680,22 +39927,22 @@ af
 af
 af
 af
-af
+dX
 dX
 af
 af
 af
 ko
-af
-af
-af
-al
-af
-af
-af
-af
-af
-fq
+dX
+YI
+YI
+YI
+Vv
+Wf
+QV
+SI
+Pq
+YI
 af
 af
 af
@@ -38730,46 +39977,46 @@ af
 af
 fq
 af
+tF
+tF
+tF
+tF
+tF
+af
+am
+af
+am
 af
 af
 af
 af
 af
 af
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
+am
+af
+af
+Wb
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+tB
+tB
+am
+af
+af
+af
+af
 af
 af
 af
@@ -38783,7 +40030,7 @@ wc
 wc
 wc
 wc
-af
+fq
 af
 Aa
 Aa
@@ -38936,13 +40183,24 @@ af
 af
 af
 am
-af
-af
-af
+dX
+dX
+dX
 af
 af
 af
 ko
+dX
+dX
+aH
+YI
+YI
+VV
+VV
+VV
+YI
+YI
+aH
 af
 af
 af
@@ -38951,7 +40209,61 @@ af
 af
 af
 af
-jc
+af
+am
+af
+af
+af
+af
+af
+af
+af
+af
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+af
+af
+af
+af
+tF
+tF
+tF
+tF
+tF
+tF
+am
+af
+af
+af
+af
+af
+af
+fq
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+am
+af
+af
+af
+af
+am
 af
 am
 af
@@ -38963,72 +40275,7 @@ af
 af
 af
 af
-am
 af
-af
-af
-af
-af
-af
-af
-af
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-af
-af
-af
-af
-af
-af
-af
-af
-af
-af
-am
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
 am
 af
 wc
@@ -39195,23 +40442,23 @@ fq
 af
 dX
 dX
-af
+dX
 af
 af
 af
 ko
-fq
-af
+dX
+eX
+aH
+aH
 af
 af
 af
 am
 af
-af
-af
-af
-af
-af
+aH
+aH
+eX
 af
 fq
 af
@@ -39242,50 +40489,50 @@ af
 fq
 af
 af
+tF
+tF
+Rb
+tF
+tF
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
 af
 af
 am
-af
+tB
 af
 fq
 af
 af
 af
+am
+af
+am
 af
 af
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
+af
+af
+am
+af
+af
+af
+af
+am
+af
+af
+af
+af
+af
+af
 af
 af
 ag
@@ -39353,7 +40600,7 @@ DT
 CC
 Er
 Ex
-EC
+Dj
 Dk
 ER
 CC
@@ -39457,18 +40704,18 @@ af
 af
 af
 ko
-af
-af
-fq
-af
-af
-af
-af
-ak
+dX
+eX
+eX
 af
 af
 af
+am
+am
 af
+af
+eX
+eX
 af
 af
 af
@@ -39499,50 +40746,50 @@ af
 af
 am
 af
+tF
+tF
+tF
+tF
+tF
+tF
+af
+af
+vH
+tB
+af
+am
+al
 af
 af
 af
 af
+tB
 af
-af
-af
-af
-fq
 am
 af
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
+am
+af
+af
+af
+Rb
+tF
+Rb
+tF
+af
+af
+af
+af
+af
+af
+af
+am
+af
+fq
+af
+af
+af
+af
+af
 fq
 af
 am
@@ -39707,29 +40954,22 @@ af
 af
 af
 af
-af
-af
+dX
+dX
 af
 af
 af
 fq
 ko
+dX
+dX
+am
+am
 af
 af
 af
 af
 af
-ak
-af
-af
-af
-af
-fq
-af
-af
-af
-af
-fq
 af
 af
 af
@@ -39739,6 +40979,13 @@ af
 fq
 af
 af
+af
+af
+af
+af
+fq
+af
+af
 fq
 af
 af
@@ -39755,51 +41002,51 @@ af
 af
 af
 af
+tF
+tF
+tF
+tF
+Rb
+Rb
+Rb
+Rb
 af
 af
-fq
-af
-af
-al
 af
 af
 af
 af
 af
 af
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
+am
+af
+af
+af
+vH
+af
+af
+af
+af
+af
+tF
+tF
+tF
+tF
+tF
+tF
+tF
+am
+am
+VU
+af
+af
+af
+af
+af
+af
+af
+af
+af
 af
 af
 af
@@ -39867,7 +41114,7 @@ Eh
 CC
 AJ
 CC
-CH
+OV
 EM
 CH
 CC
@@ -39971,6 +41218,27 @@ af
 af
 af
 ko
+dX
+dX
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
 af
 af
 af
@@ -39979,27 +41247,6 @@ af
 af
 af
 fq
-af
-af
-af
-af
-af
-af
-af
-af
-af
-af
-af
-af
-af
-af
-af
-af
-af
-af
-af
-af
-fq
 tN
 tN
 tN
@@ -40012,9 +41259,43 @@ fq
 af
 af
 af
+tF
+tF
+tF
+Rb
+tF
+tF
+tF
+tF
+af
+af
+am
+af
+af
+am
 af
 af
 af
+af
+af
+am
+af
+af
+am
+am
+af
+af
+tF
+tF
+tF
+tF
+tF
+Rb
+Rb
+af
+af
+am
+am
 am
 af
 af
@@ -40024,42 +41305,8 @@ af
 af
 af
 af
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
+af
+af
 am
 af
 af
@@ -40228,8 +41475,8 @@ af
 af
 af
 ko
-af
-af
+dX
+dX
 af
 af
 af
@@ -40269,54 +41516,54 @@ af
 af
 af
 am
-af
-af
-af
-af
-af
+tF
+tF
+tF
+tF
+tF
 af
 af
 fq
 ak
 am
+am
+af
+fq
+af
+af
+af
+af
+af
+am
+af
+af
+af
+fq
+fq
+am
+af
+tF
+Rb
+tF
+tF
+tF
+tF
+tF
+am
+af
+af
+af
+af
+af
+af
 af
 af
 fq
 af
 af
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
+af
+af
+af
 af
 af
 am
@@ -40449,7 +41696,7 @@ wc
 aj
 aj
 an
-ap
+ZL
 aj
 ap
 ap
@@ -40476,8 +41723,8 @@ af
 af
 af
 dX
-af
-af
+dX
+dX
 dX
 dX
 dX
@@ -40485,8 +41732,8 @@ dX
 af
 lS
 kt
-af
-al
+dX
+dX
 af
 af
 af
@@ -40512,9 +41759,9 @@ am
 af
 af
 af
-af
-af
-af
+tF
+tF
+tF
 tN
 tN
 tN
@@ -40530,6 +41777,7 @@ tF
 tF
 tF
 tF
+tF
 af
 af
 af
@@ -40541,39 +41789,38 @@ af
 af
 af
 af
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
+am
+am
+af
+af
+af
+am
+af
+fq
+af
+af
+Rb
+tF
+tF
+tF
+tF
+tF
+am
+am
+af
+af
+al
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
 af
 af
 af
@@ -40732,20 +41979,88 @@ dX
 af
 af
 af
-af
-af
-af
-af
-af
+dX
+dX
+dX
+dX
+dX
 dX
 dX
 af
 kp
 af
+dX
+dX
 af
 af
 af
 af
+af
+af
+af
+af
+fq
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+fq
+af
+tF
+tF
+tF
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+tN
+fq
+tF
+tF
+tF
+tF
+tF
+Fi
+af
+af
+af
+af
+af
+af
+af
+af
+fq
+am
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+tF
+tF
+tF
+tF
 af
 af
 af
@@ -40763,74 +42078,6 @@ af
 af
 af
 af
-af
-af
-af
-af
-fq
-af
-af
-tF
-tF
-tN
-af
-af
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-fq
-tF
-tF
-tF
-tF
-af
-ak
-af
-af
-af
-af
-af
-af
-af
-af
-fq
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
 af
 af
 af
@@ -40846,9 +42093,9 @@ af
 af
 af
 af
-tF
 af
 af
+fq
 Bn
 zh
 zh
@@ -40969,7 +42216,7 @@ an
 an
 an
 an
-an
+OK
 aj
 an
 cT
@@ -40988,8 +42235,18 @@ dX
 dX
 af
 dX
+dX
+dX
+dX
 af
 af
+af
+af
+dX
+af
+ko
+af
+dX
 dX
 af
 af
@@ -40997,16 +42254,6 @@ af
 af
 af
 af
-ko
-af
-af
-af
-af
-af
-af
-af
-af
-af
 af
 af
 af
@@ -41036,10 +42283,10 @@ tN
 tN
 tN
 tN
-af
-af
 tN
-af
+tN
+tN
+ag
 tF
 tF
 tF
@@ -41055,40 +42302,40 @@ am
 af
 af
 af
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-ao
+af
+af
+af
+af
+af
+af
+af
+am
+af
+am
+af
+af
+af
+tF
+Rb
+tF
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+LT
 af
 am
 af
@@ -41103,9 +42350,9 @@ af
 af
 fq
 af
-tF
-tF
-tF
+af
+af
+af
 af
 AB
 zh
@@ -41220,7 +42467,7 @@ wc
 aj
 aj
 aj
-an
+OK
 an
 an
 an
@@ -41241,7 +42488,9 @@ ij
 ja
 dX
 ko
-af
+dX
+dX
+dX
 dX
 af
 af
@@ -41250,14 +42499,12 @@ af
 af
 af
 af
-af
-af
 dX
-af
-ks
-af
-af
-am
+dX
+PC
+dX
+dX
+dX
 af
 af
 af
@@ -41289,12 +42536,12 @@ tF
 tF
 tN
 tN
-af
-af
-af
 tN
-af
-af
+tN
+tN
+tN
+tN
+tN
 tN
 tN
 tF
@@ -41312,39 +42559,39 @@ af
 af
 af
 af
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
+af
+af
+af
+fq
+fq
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+am
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+fq
+af
+af
+af
+af
 af
 af
 ao
@@ -41360,11 +42607,11 @@ af
 af
 af
 am
-tF
-tF
-tF
 af
-AB
+af
+af
+af
+Bn
 zh
 zs
 af
@@ -41500,21 +42747,21 @@ dX
 kr
 dX
 af
+dX
+dX
+dX
+af
+af
+af
+af
+af
 af
 dX
 dX
-af
-af
-af
-af
-af
-af
-af
-af
-ko
-af
-af
-af
+kr
+dX
+dX
+dX
 af
 ao
 af
@@ -41569,39 +42816,39 @@ af
 ak
 af
 af
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
+af
+af
+af
+af
+af
+af
+af
+fq
+af
+af
+af
+af
+af
+af
+af
+af
+af
+am
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+fq
+af
+af
 af
 am
 af
@@ -41615,14 +42862,14 @@ zu
 zu
 af
 af
-tF
-tF
-tF
-tF
-tF
-tF
-tF
-zh
+af
+An
+zA
+zr
+af
+af
+af
+AB
 zs
 af
 am
@@ -41755,9 +43002,9 @@ ii
 ii
 dX
 ks
-af
-af
-af
+dX
+dX
+dX
 af
 dX
 af
@@ -41766,12 +43013,12 @@ af
 af
 af
 af
-fq
-af
-kq
-af
-sf
-Fo
+SB
+dX
+YP
+dX
+DA
+dX
 af
 af
 af
@@ -41815,14 +43062,9 @@ af
 tF
 tF
 tF
+tF
 af
 af
-af
-af
-af
-af
-af
-fq
 af
 af
 af
@@ -41830,56 +43072,61 @@ af
 fq
 af
 af
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
+af
+af
+fq
 af
 af
 af
-yv
-yv
 af
+af
+af
+af
+af
+af
+af
+fq
+fq
+af
+af
+af
+af
+af
+am
+af
+af
+af
+fq
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+tF
+tF
+tF
 zu
 zC
-zP
-Ac
+zE
+zE
 zu
 ag
 af
-tF
-tF
-tF
-tF
-tF
-tF
-tF
-zh
+af
+AB
+Rg
+zs
+af
+af
+af
+AB
 zs
 af
 tF
@@ -41991,15 +43238,15 @@ wc
 aj
 aj
 aj
-an
-an
-aj
+Wx
 an
 aj
+an
+aj
 aj
 an
 an
-an
+OK
 ap
 ap
 ap
@@ -42027,8 +43274,8 @@ af
 af
 ko
 af
-am
-am
+af
+af
 af
 sf
 af
@@ -42070,8 +43317,8 @@ tN
 tN
 af
 af
-af
-af
+tF
+tF
 af
 af
 af
@@ -42087,55 +43334,55 @@ af
 af
 am
 af
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
 af
 af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+fq
 af
 af
 am
-yv
+am
+am
 af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+Rb
+tF
+tF
 tF
 zu
-zD
-zD
-zD
+zE
+zE
+Rm
 zu
 af
 af
 af
-tF
-tF
-tF
-tF
-tF
-zh
+Bn
+zB
+zO
+af
+af
+PP
 zh
 zs
 af
@@ -42328,7 +43575,7 @@ tN
 af
 fq
 af
-af
+ag
 af
 af
 af
@@ -42347,37 +43594,37 @@ af
 fq
 af
 af
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+fq
+af
+af
+af
 af
 am
-af
-ao
-af
-yv
-af
+tF
+Th
+tF
+tF
+tF
 tF
 zu
 zE
@@ -42387,12 +43634,12 @@ Ao
 ag
 af
 ao
-tF
-tF
-tF
-tF
-tF
-zh
+af
+af
+af
+af
+af
+AB
 zh
 tF
 tF
@@ -42505,7 +43752,7 @@ wc
 aj
 aj
 aj
-ap
+RX
 au
 ap
 ap
@@ -42604,36 +43851,36 @@ af
 af
 af
 fq
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
 af
 af
 af
-am
 af
-yv
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+fq
+af
+af
+af
+af
+af
+af
+af
+af
+af
+tF
+Rb
+tF
+tF
 tF
 tF
 zu
@@ -42644,11 +43891,11 @@ zu
 af
 af
 af
-tF
-tF
-tF
-tF
-zh
+af
+af
+af
+af
+PP
 zh
 zh
 tF
@@ -42865,31 +44112,31 @@ af
 af
 af
 fq
-tN
-tN
-tN
-tN
-af
-af
-af
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
 af
 af
 af
 af
 af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+fq
+af
+af
+af
+af
+af
+tF
+tF
 tF
 tF
 tF
@@ -42904,7 +44151,7 @@ af
 af
 af
 af
-af
+fq
 AB
 zh
 zh
@@ -43087,15 +44334,15 @@ af
 af
 af
 tq
-tT
 tW
 tW
 tW
-ua
-ua
-ua
-tT
-uv
+tW
+tW
+tW
+tW
+tW
+tW
 tq
 af
 af
@@ -43131,15 +44378,15 @@ af
 fq
 af
 af
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
+af
+af
+af
+af
+af
+af
+af
+af
+af
 af
 af
 af
@@ -43147,8 +44394,8 @@ af
 fq
 af
 af
-yv
-af
+tF
+tF
 af
 af
 am
@@ -43343,17 +44590,17 @@ af
 am
 af
 af
-dX
 te
 te
 te
 te
-ua
-ua
-ua
 te
-dX
-dX
+te
+te
+te
+te
+te
+te
 af
 af
 af
@@ -43388,15 +44635,15 @@ af
 af
 af
 af
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
-tN
+af
+af
+fq
+af
+af
+af
+af
+fq
+af
 af
 af
 af
@@ -43600,17 +44847,17 @@ af
 af
 sf
 sf
-dX
 te
 te
 te
-ua
-ua
-ua
+te
+te
+te
+te
 yJ
 te
 te
-dX
+te
 af
 af
 ao
@@ -43647,11 +44894,11 @@ af
 fq
 af
 af
-tN
-tN
-tN
-tN
-tN
+af
+af
+af
+af
+af
 af
 al
 af
@@ -43857,17 +45104,17 @@ af
 af
 ao
 af
-dX
-te
-te
-te
-ua
-ua
 te
 te
 te
 te
-dX
+te
+te
+te
+te
+te
+te
+te
 af
 am
 af
@@ -44114,17 +45361,17 @@ af
 af
 af
 af
-dX
 te
 te
 te
-ua
-ua
-ua
-ua
 te
 te
-dX
+te
+te
+te
+te
+te
+te
 af
 af
 af
@@ -44372,15 +45619,15 @@ af
 af
 af
 tq
-tU
 tX
 tX
-ua
-ua
-ua
-ua
-tU
-uC
+tX
+tX
+tX
+tX
+tX
+tX
+tX
 tq
 af
 ak
@@ -47223,7 +48470,7 @@ wc
 wc
 aj
 vP
-vQ
+Wu
 vP
 aj
 aj
@@ -52253,7 +53500,7 @@ bh
 bh
 bh
 bh
-YR
+vF
 bh
 bh
 bh
@@ -53572,10 +54819,10 @@ eJ
 eJ
 eJ
 eJ
-eJ
-eJ
-eJ
-eJ
+tp
+tp
+tp
+tp
 eJ
 eJ
 eJ
@@ -53826,12 +55073,14 @@ bh
 bh
 bh
 eJ
-eJ
-eJ
-eJ
-eJ
+tp
+tp
+tp
+tp
 eK
 eK
+tp
+tp
 eJ
 eJ
 eJ
@@ -53885,19 +55134,17 @@ eJ
 eJ
 eJ
 eJ
-eJ
-eJ
-yn
-yn
-yn
-yn
-yn
-yn
-yn
-yn
-yn
-yn
-yn
+tp
+tp
+tp
+tp
+tp
+tp
+tp
+tp
+tp
+tp
+tp
 eJ
 eJ
 eJ
@@ -54083,15 +55330,15 @@ bh
 bh
 bh
 eJ
-eJ
-eK
-eK
-eJ
+tp
 eK
 eK
 eK
-eJ
-eJ
+eK
+eK
+eK
+tp
+tp
 eJ
 eJ
 eJ
@@ -54137,14 +55384,14 @@ eJ
 eJ
 eJ
 eJ
-yn
-yn
-yn
-yn
-yn
-yn
-yn
-yn
+tp
+tp
+tp
+tp
+tp
+tp
+tp
+tp
 tH
 tH
 oZ
@@ -54154,8 +55401,8 @@ oZ
 oZ
 tH
 tH
-yn
-yn
+tp
+tp
 eJ
 eJ
 eJ
@@ -54340,20 +55587,20 @@ bh
 bh
 bh
 eJ
-eJ
+tp
 eK
 eK
 XX
-il
 XX
 XX
 eK
-eJ
-gc
-eJ
-eJ
-eJ
-eJ
+eK
+tp
+tp
+tp
+tp
+tp
+tp
 eJ
 eJ
 eJ
@@ -54391,15 +55638,15 @@ eJ
 eJ
 eJ
 eJ
-yn
-yn
-yn
-yn
+tp
+tp
+tp
+tp
 oZ
 tH
 tH
-yn
-yn
+tp
+tp
 oZ
 tH
 oZ
@@ -54412,9 +55659,9 @@ oZ
 tH
 tH
 tH
-yn
-yn
-yn
+tp
+tp
+tp
 eJ
 eJ
 ge
@@ -54596,9 +55843,9 @@ bh
 bh
 bh
 bh
-eJ
-eJ
-XX
+tp
+tp
+eK
 XX
 SY
 SY
@@ -54606,25 +55853,23 @@ XX
 XX
 eK
 eK
-eJ
 eK
 eK
 eK
-eJ
-eJ
-eJ
-eJ
-eJ
-eJ
-eJ
-eJ
-eJ
 eK
+tp
+tp
+tp
+eJ
+eJ
+eJ
+eJ
 eJ
 eJ
 eK
 eJ
 eJ
+eK
 eJ
 eJ
 eJ
@@ -54647,8 +55892,10 @@ eJ
 eJ
 eJ
 eJ
-yn
-yn
+eJ
+eJ
+tp
+tp
 tH
 oZ
 oZ
@@ -54661,9 +55908,9 @@ oZ
 tL
 oZ
 oZ
-yn
-yn
-yn
+tp
+tp
+tp
 oZ
 oZ
 QF
@@ -54671,9 +55918,9 @@ oZ
 oZ
 oY
 tO
-yn
-yn
-yn
+tp
+tp
+tp
 ge
 ge
 ge
@@ -54853,23 +56100,23 @@ bh
 bh
 bh
 bh
-eJ
+tp
 eK
-eJ
+eK
 Vz
 hF
 im
 XX
 XX
 XX
-eK
-gc
-eK
+XX
 eK
 eK
 eK
 eK
-eJ
+eK
+eK
+tp
 eJ
 eJ
 eJ
@@ -54903,26 +56150,26 @@ eJ
 eJ
 eJ
 eJ
-yn
-yn
+tp
+tp
 tH
 oZ
 oZ
 tH
-yn
-yn
+tp
+tp
 oZ
 oZ
 oZ
 oZ
 oZ
 oZ
-yn
-yn
+tp
+tp
 eJ
-yn
-yn
-yn
+tp
+tp
+tp
 oZ
 tL
 oZ
@@ -54930,7 +56177,7 @@ tH
 oZ
 oZ
 oZ
-yn
+tp
 ge
 ge
 ge
@@ -55117,16 +56364,16 @@ XX
 XX
 SY
 Vz
-NP
+SY
 XX
-eJ
-eK
+XX
+XX
+XX
+XX
 XX
 eK
 eK
-eK
-eK
-eJ
+tp
 eJ
 eJ
 eK
@@ -55160,34 +56407,34 @@ eJ
 eJ
 eJ
 eJ
-yn
+tp
 oZ
 tK
 tH
-yn
-yn
-yn
-yn
-yn
-yn
+tp
+tp
+tp
+tp
+tp
+tp
 oZ
 tH
 tH
 oZ
-yn
-yn
+tp
+tp
 eJ
 eJ
 eJ
-yn
+tp
 oZ
 oZ
 oZ
-yn
-yn
+tp
+tp
 tO
-yn
-yn
+tp
+tp
 eJ
 eJ
 eJ
@@ -55369,7 +56616,7 @@ bh
 bh
 eK
 eK
-XX
+eK
 XX
 Uo
 XX
@@ -55380,9 +56627,9 @@ XX
 XX
 XX
 XX
-eK
-eK
-gc
+XX
+XX
+XX
 eK
 eK
 eJ
@@ -55416,34 +56663,34 @@ eJ
 eJ
 eJ
 eJ
-yn
-yn
+tp
+tp
 oZ
 tL
-yn
-yn
+tp
+tp
 eJ
 eJ
 eJ
 eJ
-yn
-yn
+tp
+tp
 tH
 tH
 oZ
 oZ
-yn
-yn
-yn
+tp
+tp
+tp
 eJ
-yn
-yn
+tp
+tp
 oZ
-yn
-yn
-yn
-yn
-yn
+tp
+tp
+tp
+tp
+tp
 eJ
 eJ
 eJ
@@ -55624,11 +56871,11 @@ bh
 bh
 bh
 bh
-eJ
 eK
 eK
-XX
-XX
+eK
+NW
+Wp
 XX
 XX
 XX
@@ -55637,12 +56884,12 @@ SY
 XX
 XX
 SY
-gc
-gc
-TH
-eJ
+XX
+XX
+Pe
 eK
-gc
+eK
+XX
 TH
 gV
 oZ
@@ -55673,30 +56920,30 @@ eJ
 eJ
 eJ
 eJ
-yn
+tp
 tO
 oZ
 tH
-yn
+tp
 eJ
 eJ
 eJ
 eJ
 eJ
 eJ
-yn
-yn
+tp
+tp
 oZ
 oZ
 oZ
 tH
 tH
-yn
+tp
 eJ
-yn
-yn
+tp
+tp
 tO
-yn
+tp
 eJ
 eJ
 eJ
@@ -55881,25 +57128,25 @@ bh
 bh
 bh
 bh
-eJ
 eK
 eK
-XX
+eK
+Zh
 XX
 XX
 SY
 XX
 XX
-eK
-ge
+XX
+XX
 XX
 XX
 LC
-gV
-gV
-gc
-gc
-gV
+SY
+SY
+QR
+QR
+SY
 gc
 oZ
 oZ
@@ -55930,11 +57177,11 @@ eJ
 eJ
 eJ
 eJ
-yn
-yn
+tp
+tp
 tH
-yn
-yn
+tp
+tp
 eJ
 eJ
 eJ
@@ -55942,18 +57189,18 @@ eJ
 eJ
 eJ
 eJ
-yn
+tp
 oZ
 uw
 oZ
 oZ
 uP
-yn
-yn
-yn
+tp
+tp
+tp
 tH
 tH
-yn
+tp
 eJ
 eJ
 eJ
@@ -56138,25 +57385,25 @@ bh
 bh
 bh
 bh
-eJ
 eK
-ge
+eK
+eK
 hZ
 XX
 XX
 XX
 XX
-ge
-ge
-eK
 XX
 XX
-ge
-gc
-gc
-Nh
-gc
-gV
+XX
+XX
+XX
+XX
+XX
+XX
+Ws
+Ws
+SY
 gc
 gc
 gc
@@ -56188,9 +57435,9 @@ eJ
 eJ
 eJ
 eJ
-yn
+tp
 sX
-yn
+tp
 eJ
 eJ
 eJ
@@ -56199,18 +57446,18 @@ eJ
 eJ
 eJ
 eJ
-yn
-yn
-yn
+tp
+tp
+tp
 oY
 oZ
 oZ
 oZ
-yn
-yn
-yn
-yn
-yn
+tp
+tp
+tp
+tp
+tp
 eJ
 eJ
 eJ
@@ -56395,27 +57642,27 @@ bh
 bh
 bh
 bh
-eJ
-eJ
-XX
+eK
+eK
+eK
 SY
 Vz
 XX
 XX
 XX
-eK
-ge
+XX
+XX
 XX
 XX
 SY
+XX
+XX
+XX
 eK
 eK
-gc
-eJ
-TH
-gc
+XX
 yI
-gV
+SY
 gc
 oZ
 gc
@@ -56445,9 +57692,9 @@ eJ
 eJ
 eJ
 eJ
-yn
-yn
-yn
+tp
+tp
+tp
 eJ
 eJ
 eJ
@@ -56458,12 +57705,12 @@ eJ
 eJ
 eJ
 eJ
-yn
-yn
+tp
+tp
 tH
 oZ
 tH
-yn
+tp
 eJ
 eJ
 eJ
@@ -56652,8 +57899,8 @@ bh
 bh
 bh
 bh
-eJ
-eJ
+eK
+eK
 gf
 XX
 XX
@@ -56661,14 +57908,14 @@ SY
 Wa
 XX
 XX
+XX
+XX
+XX
+XX
+XX
+XX
+XX
 eK
-lT
-eK
-eK
-ge
-gc
-gc
-gc
 eK
 qg
 oZ
@@ -56716,12 +57963,12 @@ eJ
 eJ
 eJ
 eJ
-yn
+tp
 oZ
 oZ
 oZ
-yn
-yn
+tp
+tp
 eJ
 eJ
 eJ
@@ -56911,21 +58158,21 @@ bh
 bh
 eK
 eK
-eJ
+eK
 XX
 hF
 RR
 SY
 XX
-eK
+XX
+XX
+XX
+XX
+XX
 XX
 eK
 eK
-eK
-eK
-ge
-eK
-ge
+tp
 eJ
 gc
 oZ
@@ -56973,12 +58220,12 @@ eJ
 eJ
 eJ
 eJ
-yn
-yn
+tp
+tp
 oZ
 oZ
 sX
-yn
+tp
 eJ
 eJ
 eJ
@@ -57166,23 +58413,23 @@ bh
 bh
 bh
 bh
-eJ
-eJ
 eK
-eJ
+eK
+eK
+XX
 XX
 XX
 XX
 Vz
+XX
+XX
 eK
 eK
 eK
 eK
 eK
-ge
 eK
-eK
-ge
+tp
 eK
 oZ
 gc
@@ -57231,11 +58478,11 @@ eJ
 eJ
 eJ
 eJ
-yn
+tp
 oZ
 oZ
 tH
-yn
+tp
 eJ
 eJ
 eJ
@@ -57423,23 +58670,23 @@ bh
 bh
 bh
 bh
-eJ
 eK
 eK
 eK
 XX
 XX
 XX
+XX
+XX
 eK
 eK
 eK
-eJ
 eK
 eK
-ge
-ge
 eK
-eJ
+eK
+eK
+tp
 eJ
 oZ
 gc
@@ -57488,11 +58735,11 @@ gW
 gW
 eJ
 eJ
-yn
+tp
 tH
 oZ
 tH
-yn
+tp
 eJ
 eJ
 eJ
@@ -57680,23 +58927,23 @@ bh
 bh
 bh
 bh
-eJ
 eK
 eK
 eK
-eJ
+eK
 XX
 XX
+XX
 eK
 eK
 eK
-eJ
-ge
-ge
-ge
-ge
-ge
-eJ
+tp
+tp
+tp
+tp
+tp
+tp
+tp
 eJ
 eK
 eJ
@@ -57745,11 +58992,11 @@ eJ
 eJ
 eJ
 eJ
-yn
-yn
+tp
+tp
 oZ
 tH
-yn
+tp
 eJ
 eJ
 eJ
@@ -57937,17 +59184,17 @@ bh
 bh
 bh
 bh
-eJ
-eJ
-eJ
-eJ
+tp
+tp
+tp
+tp
 eK
 eK
 eK
-eJ
-ge
-ge
-eJ
+tp
+tp
+tp
+tp
 ge
 ge
 ge
@@ -58003,10 +59250,10 @@ eJ
 eJ
 eJ
 eJ
-yn
+tp
 oZ
 oZ
-yn
+tp
 eJ
 eJ
 eJ
@@ -58197,11 +59444,11 @@ bh
 eJ
 eJ
 eJ
-eJ
-eJ
+tp
+tp
 eK
 eK
-eJ
+tp
 eJ
 ge
 eJ
@@ -58260,7 +59507,7 @@ eJ
 eJ
 eJ
 eJ
-yn
+tp
 oZ
 QS
 yn
@@ -58456,9 +59703,9 @@ eJ
 eJ
 eL
 fr
-eL
-eJ
-eJ
+tp
+tp
+tp
 eJ
 eJ
 eJ
@@ -58517,10 +59764,10 @@ eJ
 eJ
 eJ
 eJ
-yn
+tp
 tH
 oZ
-yn
+tp
 eJ
 eJ
 eJ
@@ -58774,10 +60021,10 @@ eJ
 eJ
 eJ
 eJ
-yn
+tp
 oZ
 tH
-yn
+tp
 eJ
 eJ
 eJ
@@ -59031,10 +60278,10 @@ eJ
 eJ
 eJ
 eJ
-yn
+tp
 tH
 tH
-yn
+tp
 eJ
 eJ
 eJ
@@ -59268,12 +60515,12 @@ eJ
 eJ
 eJ
 eJ
-yn
-yn
-yn
-yn
-yn
-yn
+tp
+tp
+tp
+tp
+tp
+tp
 oZ
 oZ
 oZ
@@ -59288,10 +60535,10 @@ eJ
 eJ
 eJ
 eJ
-yn
+tp
 tH
 tH
-yn
+tp
 eJ
 eJ
 eJ
@@ -59525,12 +60772,12 @@ eJ
 eJ
 eJ
 eJ
-yn
+tp
 qi
 qi
 vU
 qi
-yn
+tp
 oZ
 oZ
 oZ
@@ -59545,10 +60792,10 @@ oZ
 eJ
 eJ
 eJ
-yn
+tp
 tH
 tH
-yn
+tp
 eJ
 eJ
 eJ
@@ -59780,14 +61027,14 @@ eJ
 eJ
 eJ
 eJ
-yn
-yn
-yn
+tp
+tp
+tp
 tw
 qi
 qi
 qi
-yn
+tp
 eJ
 oZ
 oZ
@@ -59802,10 +61049,10 @@ oZ
 oZ
 eJ
 eJ
-yn
+tp
 uY
 tH
-yn
+tp
 eJ
 eJ
 eJ
@@ -60037,14 +61284,14 @@ eJ
 eJ
 eJ
 eJ
-yn
+tp
 aP
-yn
-yn
-yn
-yn
+tp
+tp
+tp
+tp
 tv
-yn
+tp
 eJ
 eJ
 oZ
@@ -60059,10 +61306,10 @@ oZ
 oZ
 oZ
 eJ
-yn
+tp
 uY
 uY
-yn
+tp
 eJ
 oZ
 oZ
@@ -60294,14 +61541,14 @@ eJ
 eJ
 eJ
 gW
-yn
+tp
 qi
 qi
 qi
-yn
+tp
 vU
 qi
-yn
+tp
 eJ
 eJ
 oZ
@@ -60551,15 +61798,15 @@ eJ
 gW
 gW
 eJ
-yn
+tp
 qi
 qi
 qi
 qi
 qi
 qi
-yn
-yn
+tp
+tp
 tP
 oZ
 oZ
@@ -60807,8 +62054,8 @@ eJ
 eJ
 eJ
 eJ
-yn
-yn
+tp
+tp
 qi
 qi
 vU
@@ -61064,17 +62311,17 @@ eJ
 eJ
 eJ
 eJ
-yn
+tp
 qi
 QO
 yn
 tv
-yn
-yn
-yn
-yn
-yn
-yn
+tp
+tp
+tp
+tp
+tp
+tp
 oZ
 oZ
 eJ
@@ -61321,7 +62568,7 @@ eJ
 eJ
 eJ
 eJ
-yn
+tp
 qi
 qi
 yn
@@ -61329,7 +62576,7 @@ qi
 qi
 vU
 qi
-yn
+tp
 eJ
 oZ
 oZ
@@ -61578,7 +62825,7 @@ eJ
 eJ
 eJ
 eJ
-yn
+tp
 qi
 qi
 yn
@@ -61586,7 +62833,7 @@ qi
 qi
 qi
 tD
-yn
+tp
 eJ
 oZ
 oZ
@@ -61835,15 +63082,15 @@ eJ
 eJ
 eJ
 eJ
-yn
+tp
 ts
 tu
-yn
-yn
-yn
-yn
-yn
-yn
+tp
+tp
+tp
+tp
+tp
+tp
 oZ
 oZ
 oZ
@@ -61858,11 +63105,11 @@ eJ
 eJ
 eJ
 eJ
-uI
+MK
 uZ
 vm
 uZ
-uI
+MK
 oZ
 eJ
 eJ
@@ -62092,10 +63339,10 @@ eJ
 eJ
 eJ
 eJ
-yn
-yn
-yn
-yn
+tp
+tp
+tp
+tp
 eJ
 eJ
 eJ
@@ -62880,7 +64127,7 @@ eJ
 eJ
 tZ
 ub
-ue
+Ov
 ue
 tY
 ul
@@ -64000,7 +65247,7 @@ oZ
 oZ
 oZ
 oZ
-UY
+oZ
 oZ
 oZ
 eJ
@@ -64014,7 +65261,7 @@ eJ
 Cl
 qi
 AW
-UY
+oZ
 Ci
 oZ
 oZ
@@ -64289,7 +65536,7 @@ Cl
 ge
 EW
 oZ
-UY
+oZ
 oZ
 oZ
 oZ
@@ -64582,10 +65829,10 @@ wL
 wD
 JG
 Ka
-xO
+Ls
 Ks
 Ka
-KQ
+Ka
 KW
 wE
 bh
@@ -67561,7 +68808,7 @@ xB
 xJ
 xO
 xZ
-ym
+xZ
 yy
 yQ
 wE
@@ -67731,7 +68978,7 @@ qi
 oZ
 oZ
 sX
-rv
+oZ
 oZ
 oZ
 fr
@@ -69075,7 +70322,7 @@ eJ
 tp
 Ob
 qi
-vU
+qi
 qi
 qi
 tp
@@ -69351,7 +70598,7 @@ eJ
 wE
 wJ
 wN
-wO
+wL
 wD
 wZ
 xj
@@ -69544,15 +70791,15 @@ eJ
 eJ
 eL
 eJ
-yn
-yn
-yn
-yn
-yn
-yn
-yn
-yn
-yn
+tp
+tp
+tp
+tp
+tp
+tp
+tp
+tp
+tp
 eJ
 oZ
 oZ
@@ -69795,21 +71042,21 @@ oZ
 eJ
 eJ
 eJ
-yn
-yn
-yn
-yn
-yn
-yn
-yn
+tp
+tp
+tp
+tp
+tp
+tp
+tp
 qi
 qi
 qi
 qi
 qi
-tz
+qi
 tD
-yn
+tp
 eJ
 eJ
 eJ
@@ -70052,21 +71299,21 @@ eJ
 eJ
 eJ
 gW
-yn
-tw
+tp
 tw
 qi
 qi
-yn
-yn
+qi
+tp
+tp
 tv
-yn
-yn
-yn
-tz
+tp
+tp
+tp
+qi
 tz
 qi
-yn
+tp
 eJ
 eJ
 eJ
@@ -70303,13 +71550,13 @@ pG
 tj
 ox
 eJ
-yn
-yn
-yn
-yn
-yn
-yn
-yn
+tp
+tp
+tp
+tp
+tp
+tp
+tp
 qi
 qi
 qi
@@ -70317,20 +71564,20 @@ tt
 qi
 qi
 qi
-yn
-yn
-yn
-yn
-yn
-yn
-yn
-yn
-yn
-yn
-yn
-yn
-oZ
-oZ
+tp
+tp
+tp
+tp
+tp
+tp
+tp
+tp
+tp
+tp
+tp
+tp
+tp
+tp
 oZ
 oZ
 oZ
@@ -70359,12 +71606,12 @@ vU
 qi
 tp
 qi
-RK
+qi
 tp
 qi
 tR
 qi
-tw
+qi
 tp
 eJ
 eJ
@@ -70560,13 +71807,13 @@ tc
 tk
 ox
 eJ
-yn
+tp
 ts
-tu
-yn
+qi
+tp
 tw
 tw
-yn
+tp
 qi
 qi
 tt
@@ -70817,34 +72064,34 @@ ox
 ow
 ow
 eJ
-yn
+tp
 qi
 qi
-yn
+tp
 qi
 qi
-yn
+tp
 qi
-yn
-yn
-yn
-yn
-yn
-yn
-yn
-yn
-yn
-yn
-yn
-yn
-yn
-yn
-yn
-yn
-yn
-yn
-yn
-yn
+tp
+tp
+tp
+tp
+tp
+tp
+tp
+tp
+tp
+tp
+tp
+tp
+tp
+tp
+tp
+tp
+tp
+tp
+tp
+tp
 oZ
 oZ
 oZ
@@ -71074,32 +72321,32 @@ eJ
 eJ
 eJ
 gW
-yn
+tp
 qi
 qi
-yn
+tp
 qi
 qi
-yn
+tp
 qi
-yn
+tp
 qi
 qi
 tw
-yn
-yn
-yn
-yn
-qi
-tz
-qi
-yn
-yn
-yn
+tp
+tp
+tp
+tp
 qi
 qi
-tz
-yn
+qi
+tp
+tp
+tp
+qi
+qi
+qi
+tp
 gW
 eJ
 oZ
@@ -71331,15 +72578,15 @@ eJ
 eJ
 eJ
 eJ
-yn
+tp
 qi
 qi
-yn
+tp
 tv
-yn
-yn
+tp
+tp
 qi
-yn
+tp
 qi
 qi
 tz
@@ -71355,8 +72602,8 @@ qi
 qi
 qi
 qi
-tz
-yn
+qi
+tp
 eJ
 eJ
 oZ
@@ -71588,7 +72835,7 @@ eJ
 eJ
 eJ
 eJ
-yn
+tp
 SK
 qi
 tv
@@ -71598,22 +72845,22 @@ tt
 qi
 tv
 qi
-yn
-yn
-yn
-yn
-yn
-yn
-qi
-tz
-yn
-yn
-yn
-yn
-yn
+tp
+tp
+tp
+tp
+tp
+tp
 qi
 qi
-yn
+tp
+tp
+tp
+tp
+tp
+qi
+qi
+tp
 eJ
 eJ
 eJ
@@ -71845,32 +73092,32 @@ eJ
 gW
 eJ
 eJ
-yn
+tp
 qi
 qi
-yn
+tp
 qi
 tt
 qi
-yn
-yn
-yn
-yn
+tp
+tp
+tp
+tp
 eJ
 eJ
 gW
 eJ
-yn
+tp
 tz
 tD
-yn
+tp
 eJ
 eJ
 eJ
-yn
+tp
 tD
 tz
-yn
+tp
 eJ
 eJ
 eJ
@@ -72102,14 +73349,14 @@ eJ
 eJ
 eJ
 eJ
-yn
-yn
-yn
-yn
+tp
+tp
+tp
+tp
 qi
 qi
 tt
-yn
+tp
 eJ
 gW
 eJ
@@ -72117,17 +73364,17 @@ eJ
 eJ
 eJ
 eJ
-yn
-yn
-yn
-yn
+tp
+tp
+tp
+tp
 eJ
 eJ
 eJ
-yn
-yn
-yn
-yn
+tp
+tp
+tp
+tp
 eJ
 eJ
 eJ
@@ -72362,11 +73609,11 @@ eJ
 eJ
 eJ
 eJ
-yn
-yn
-yn
-yn
-yn
+tp
+tp
+tp
+tp
+tp
 gW
 eJ
 eJ

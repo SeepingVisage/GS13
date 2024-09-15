@@ -338,6 +338,11 @@
 /obj/item/card/id/captains_spare/Initialize()
 	var/datum/job/captain/J = new/datum/job/captain
 	access = J.get_access()
+	GLOB.poi_list |= src
+	. = ..()
+
+/obj/item/card/id/captains_spare/Destroy()
+	GLOB.poi_list -= src
 	. = ..()
 
 /obj/item/card/id/centcom
@@ -650,6 +655,38 @@
 	assignment = "Arctic Station Doctor"
 	access = list(ACCESS_AWAY_GENERAL, ACCESS_AWAY_MED, ACCESS_AWAY_MAINT)
 	icon_state = "retromed"
+	uses_overlays = FALSE
+
+/obj/item/card/id/away/snowdin/sec
+	name = "Arctic Station Security's ID card"
+	desc = "A faded Arctic Station ID card. You can make out the rank \"Security\"."
+	assignment = "Arctic Station Security"
+	access = list(ACCESS_AWAY_GENERAL, ACCESS_AWAY_SEC, ACCESS_AWAY_MAINT)
+	icon_state = "retrosec"
+	uses_overlays = FALSE
+
+/obj/item/card/id/away/snowdin/captain
+	name = "Arctic Station Captain's ID card"
+	desc = "A faded Arctic Station ID card. You can make out the rank \"Captain\"."
+	assignment = "Arctic Station Captain"
+	access = list(ACCESS_AWAY_GENERAL, ACCESS_AWAY_MAINT)
+	icon_state = "retrosec"
+	uses_overlays = FALSE
+
+/obj/item/card/id/away/snowdin/botany
+	name = "Arctic Station Botanist's ID card"
+	desc = "A faded Arctic Station ID card. You can make out the rank \"Botanist\"."
+	assignment = "Arctic Station Botanist"
+	access = list(ACCESS_AWAY_GENERAL, ACCESS_AWAY_BOTANY, ACCESS_AWAY_MAINT)
+	icon_state = "retrosrv"
+	uses_overlays = FALSE
+
+/obj/item/card/id/away/snowdin/explore
+	name = "Arctic Station Explorer's ID card"
+	desc = "A faded Arctic Station ID card. You can make out the rank \"Explorer\"."
+	assignment = "Arctic Station Explorer"
+	access = list(ACCESS_AWAY_GENERAL, ACCESS_AWAY_SEC, ACCESS_AWAY_MAINT)
+	icon_state = "retrosup"
 	uses_overlays = FALSE
 
 /obj/item/card/id/debug

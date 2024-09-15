@@ -19,8 +19,18 @@
 	var/blueberry_inflation = FALSE
 	///Extreme weight gain
 	var/weight_gain_extreme = FALSE
-	///stuckage
+	///Persistant fatness
+	var/weight_gain_persistent = FALSE
+	///Permanent weight gain
+	var/weight_gain_permanent = FALSE
+	/// At what weight will you start to get stuck in airlocks?
 	var/stuckage = FALSE
+	/// At what weight will you start to break chairs?
+	var/chair_breakage = FALSE
+	/// Are items that only affect those at high weights able to affect the player?
+	var/fatness_vulnerable = FALSE
+	/// Similar to fatness_vulnerable, but with more extreme effects such as transformation/hypno.
+	var/extreme_fatness_vulnerable = FALSE
 
 	// Helplessness, a set of prefs that make things extra tough at higher weights. If set to FALSE, they won't do anything.
 	///What fatness level disables movement?
@@ -47,6 +57,9 @@
 
 	///Does the person wish to be involved with non-con weight gain events?
 	var/noncon_weight_gain = FALSE
+
+	//Does the person wish to be fed from bots?
+	var/bot_feeding = FALSE
 
 	///What is the max weight that the person wishes to be? If set to FALSE, there will be no max weight
 	var/max_weight = FALSE

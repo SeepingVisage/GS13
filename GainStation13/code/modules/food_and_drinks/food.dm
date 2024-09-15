@@ -136,3 +136,4 @@
 	filling_color = "#e9e6e3"
 	tastes = list("eggs", "breakfast" = 1)
 	foodtype = GRAIN | SUGAR
+

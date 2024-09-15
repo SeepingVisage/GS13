@@ -3,6 +3,14 @@
 #define POPCOUNT_SHUTTLE_ESCAPEES "shuttle_escapees" 	//Emergency shuttle only.
 
 /datum/controller/subsystem/ticker/proc/gather_roundend_feedback()
+
+	//GS13 Process permanent fat
+	for(var/mob/m in GLOB.player_list)
+		if(iscarbon(m))
+			var/mob/living/carbon/C = m
+			if(C)
+				C.perma_fat_save(C)
+		
 	gather_antag_data()
 	record_nuke_disk_location()
 	var/json_file = file("[GLOB.log_directory]/round_end_data.json")

@@ -79,6 +79,7 @@
 #define TRAIT_MONKEYLIKE		"monkeylike" //sets IsAdvancedToolUser to FALSE
 #define TRAIT_PACIFISM			"pacifism"
 #define TRAIT_IGNORESLOWDOWN	"ignoreslow"
+#define TRAIT_IMMUTABLE_SLOW	"immutableslow" //Cannot become faster
 #define TRAIT_GOTTAGOFAST		"fast"
 #define TRAIT_GOTTAGOREALLYFAST	"2fast"
 #define TRAIT_DEATHCOMA			"deathcoma" //Causes death-like unconsciousness
@@ -206,6 +207,7 @@
 #define TRAIT_WEB_WEAVER		"web_weaving"
 #define TRAIT_METAL_CRUNCHER 	"metal_cruncher"
 #define TRAIT_WATER_SPONGE 		"water_sponge"
+#define TRAIT_FATROUSAL         "fatrousal"
 
 //Hyper
 #define TRAIT_MACROPHILE		"macrophile" //likes the big
@@ -227,6 +229,9 @@
 #define TRAIT_NO_MISC "no_misc"
 #define TRAIT_NO_BACKPACK "no_backpack"
 #define TRAIT_NO_BUCKLE "no_buckle"
+#define TRAIT_DOCILE "docile"
+#define TRAIT_LIVESTOCK "livestock"
+#define TRAIT_NO_FAT_SLOWDOWN "no_fat_slowdown"
 
 // common trait sources
 #define TRAIT_GENERIC "generic"

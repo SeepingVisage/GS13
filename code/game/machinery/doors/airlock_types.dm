@@ -12,7 +12,11 @@
 	if(!istype(L))
 		return ..()
 
-	if(L.fatness > 5000 && L.client?.prefs?.stuckage)
+	var/stuckage_weight = L?.client?.prefs?.stuckage
+	if(isnull(stuckage_weight) || (stuckage_weight < 10))
+		return ..() // They aren't able to get stuck
+	
+	if(L.fatness > (stuckage_weight * 2))
 		if(rand(1, 3) == 1)
 			L.doorstuck = 1
 			L.visible_message("<span class'danger'>[L] gets stuck in the doorway!</span>")
@@ -22,7 +26,7 @@
 			L.Knockdown(1)
 		return ..()
 
-	else if(L.fatness > 3000 && L.client?.prefs?.stuckage)
+	else if(L.fatness > stuckage_weight)
 		if(rand(1, 5) == 1)
 			L.doorstuck = 1
 			L.visible_message("<span class'danger'>[L] gets stuck in the doorway!</span>")
@@ -35,13 +39,13 @@
 			to_chat(L, "<span class='danger'>With great effort, you manage to squeeze your massive form through  \the [src]. It's a tight fit, but you successfully navigate the narrow opening, barely avoiding getting stuck.</span>")
 			return ..()
 
-	else if(L.fatness > 1890  && L.client?.prefs?.stuckage)
+	else if(L.fatness > (stuckage_weight / 2))
 		if(rand(1, 5) == 1)
 			L.visible_message("<span class'danger'>[L]'s hips brush against the doorway...</span>")
 			to_chat(L, "<span class='danger'>As you pass through  \the [src], you feel a slight brushing against your hips. The [src] frame accommodates your form, but it's a close fit..</span>")
 			return ..()
-	else
-		return ..()
+
+	return ..()
 
 /obj/machinery/door/airlock/abandoned
 	abandoned = TRUE
@@ -692,7 +696,7 @@
 /obj/machinery/door/airlock/clockwork/proc/attempt_construction(obj/item/I, mob/living/user)
 	if(!I || !user || !user.canUseTopic(src))
 		return 0
-	else if(istype(I, /obj/item/wrench))
+	else if(I.tool_behaviour == TOOL_WRENCH)
 		if(construction_state == GEAR_SECURE)
 			user.visible_message("<span class='notice'>[user] begins loosening [src]'s cogwheel...</span>", "<span class='notice'>You begin loosening [src]'s cogwheel...</span>")
 			if(!I.use_tool(src, user, 75, volume=50) || construction_state != GEAR_SECURE)
@@ -708,7 +712,7 @@
 			playsound(src, 'sound/items/deconstruct.ogg', 50, 1)
 			construction_state = GEAR_SECURE
 		return 1
-	else if(istype(I, /obj/item/crowbar))
+	else if(I.tool_behaviour == TOOL_CROWBAR)
 		if(construction_state == GEAR_SECURE)
 			to_chat(user, "<span class='warning'>[src]'s cogwheel is too tightly secured! Your [I.name] can't reach under it!</span>")
 			return 1
